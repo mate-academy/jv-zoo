@@ -1,6 +1,6 @@
-package core.basesyntax.zooInhabitantsInstanses;
+package core.basesyntax.instanses;
 
-import core.basesyntax.abstractClasses.Bird;
+import core.basesyntax.abstractclasses.Bird;
 import core.basesyntax.interfaces.Flyable;
 
 public class Sparrow extends Bird implements Flyable {

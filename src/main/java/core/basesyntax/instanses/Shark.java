@@ -1,6 +1,6 @@
-package core.basesyntax.zooInhabitantsInstanses;
+package core.basesyntax.instanses;
 
-import core.basesyntax.abstractClasses.Fish;
+import core.basesyntax.abstractclasses.Fish;
 import core.basesyntax.interfaces.Swimable;
 
 public class Shark extends Fish implements Swimable {

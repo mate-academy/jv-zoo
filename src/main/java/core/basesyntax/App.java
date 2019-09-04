@@ -1,9 +1,9 @@
 package core.basesyntax;
 
-import core.basesyntax.zooInhabitantsInstanses.Penguin;
-import core.basesyntax.zooInhabitantsInstanses.Shark;
-import core.basesyntax.zooInhabitantsInstanses.Sparrow;
-import core.basesyntax.zooInhabitantsInstanses.Tiger;
+import core.basesyntax.instanses.Penguin;
+import core.basesyntax.instanses.Shark;
+import core.basesyntax.instanses.Sparrow;
+import core.basesyntax.instanses.Tiger;
 
 public class App {
     public static void main(String[] args) {

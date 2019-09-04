@@ -1,6 +1,6 @@
-package core.basesyntax.zooInhabitantsInstanses;
+package core.basesyntax.instanses;
 
-import core.basesyntax.abstractClasses.Animal;
+import core.basesyntax.abstractclasses.Animal;
 
 public class Tiger extends Animal {
     @Override

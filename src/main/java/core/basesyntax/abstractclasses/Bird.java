@@ -1,4 +1,4 @@
-package core.basesyntax.abstractClasses;
+package core.basesyntax.abstractclasses;
 
 public abstract class Bird extends ZooInhabitant {
 }

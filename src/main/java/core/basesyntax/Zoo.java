@@ -1,9 +1,9 @@
 package core.basesyntax;
 
-import core.basesyntax.abstractClasses.Animal;
-import core.basesyntax.abstractClasses.Bird;
-import core.basesyntax.abstractClasses.Fish;
-import core.basesyntax.abstractClasses.ZooInhabitant;
+import core.basesyntax.abstractclasses.Animal;
+import core.basesyntax.abstractclasses.Bird;
+import core.basesyntax.abstractclasses.Fish;
+import core.basesyntax.abstractclasses.ZooInhabitant;
 
 import java.util.ArrayList;
 import java.util.List;
