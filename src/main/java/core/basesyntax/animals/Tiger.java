@@ -1,6 +1,6 @@
 package core.basesyntax.animals;
 
-public class Tiger extends Animals {
+public class Tiger extends Animal {
     String name;
 
     public Tiger(String name) {

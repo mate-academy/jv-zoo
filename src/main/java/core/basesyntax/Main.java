@@ -1,50 +1,43 @@
 package core.basesyntax;
 
-import core.basesyntax.animals.Animals;
-import core.basesyntax.animals.Birds;
-import core.basesyntax.animals.Fishes;
+import core.basesyntax.animals.Animal;
 import core.basesyntax.animals.Penguin;
 import core.basesyntax.animals.Shark;
 import core.basesyntax.animals.Sparrow;
 import core.basesyntax.animals.Tiger;
-import core.basesyntax.buildings.Aquarium;
-import core.basesyntax.buildings.Aviary;
-import core.basesyntax.buildings.Enclosure;
+import core.basesyntax.buildings.Cage;
 import core.basesyntax.buildings.Zoo;
 import core.basesyntax.skills.Fly;
 import core.basesyntax.skills.Swim;
 
 public class Main {
     public static void main(String[] args) {
-        Aquarium<Fishes> aquarium = new Aquarium<>();
-        Shark shark = new Shark("Bit");
-        aquarium.setAnimal(shark);
-        Penguin penguin = new Penguin("Lucky");
-        Sparrow sparrow = new Sparrow("Quick");
-        Aviary<Birds> aviary = new Aviary<>();
-        aviary.setAnimal(penguin);
-        aviary.setAnimal(sparrow);
-        Tiger tiger = new Tiger("Sad");
-        Enclosure<Tiger> enclosure = new Enclosure<>();
-        enclosure.setAnimal(tiger);
+        Cage<Animal> cage = new Cage<>();
+        Zoo myZoo = new Zoo(cage);
+        Animal shark = new Shark("Bit");
+        cage.add(shark);
+        Animal penguin = new Penguin("Lucky");
+        cage.add(penguin);
+        Animal sparrow = new Sparrow("Quick");
+        cage.add(sparrow);
+        Animal tiger = new Tiger("Sad");
+        cage.add(tiger);
 
-        Zoo zoo = new Zoo(aviary, enclosure,aquarium);
+        cage.giveEat(shark);
+        cage.giveEat(penguin);
+        cage.giveEat(sparrow);
+        cage.giveEat(tiger);
 
-        Animals anyAnimals = tiger;
-        tiger.eat();
-        anyAnimals = sparrow;
-        anyAnimals.eat();
-        anyAnimals = shark;
-        anyAnimals.eat();
-        anyAnimals = penguin;
-        penguin.eat();
+        System.out.println();
 
-        Fly fly = sparrow;
-        fly.flying();
+        Swim swimedShark = (Swim) shark;
+        swimedShark.swimming();
+        Swim swimedPenguin = (Swim) penguin;
+        swimedPenguin.swimming();
 
-        Swim swim = shark;
-        swim.swimming();
-        swim = penguin;
-        penguin.swimming();
+        System.out.println();
+
+        Fly fliedSparrow = (Fly) sparrow;
+        fliedSparrow.flying();
     }
 }
