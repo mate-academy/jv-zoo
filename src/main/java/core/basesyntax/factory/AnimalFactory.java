@@ -1,9 +1,13 @@
 package core.basesyntax.factory;
 
+import core.basesyntax.animals.Animal;
+import core.basesyntax.animals.Penguin;
+import core.basesyntax.animals.Shark;
+import core.basesyntax.animals.Tiger;
+import core.basesyntax.animals.Sparrow;
 import core.basesyntax.enumerate.AnimalType;
-import core.basesyntax.animals.*;
 
-public class AnimalFactory{
+public class AnimalFactory {
     public static <T extends Animal> T animalFactory(AnimalType animalType) {
         Animal animal;
         switch (animalType) {
@@ -19,8 +23,8 @@ public class AnimalFactory{
             case SPARROW:
                 animal = new Sparrow();
                 break;
-                default:
-                    throw new IllegalArgumentException();
+            default:
+                throw new IllegalArgumentException();
         }
         return (T) animal;
     }
