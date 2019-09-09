@@ -2,7 +2,7 @@ package core.basesyntax.animals;
 
 import core.basesyntax.interfaces.Swimable;
 
-public class Penguin extends Animal implements Swimable {
+public class Penguin implements Swimable {
     @Override
     public void swim() {
         System.out.println("I'm penguin and I'm swiming");

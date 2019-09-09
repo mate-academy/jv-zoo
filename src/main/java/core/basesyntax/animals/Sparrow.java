@@ -2,7 +2,7 @@ package core.basesyntax.animals;
 
 import core.basesyntax.interfaces.Flyable;
 
-public class Sparrow extends Animal implements Flyable {
+public class Sparrow implements Flyable {
     @Override
     public void fly() {
         System.out.println("I'm sparrow and I'm flying");

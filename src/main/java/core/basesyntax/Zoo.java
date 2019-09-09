@@ -1,49 +1,34 @@
 package core.basesyntax;
 
-import core.basesyntax.animals.Animal;
+import core.basesyntax.animals.Penguin;
+import core.basesyntax.animals.Shark;
+import core.basesyntax.animals.Sparrow;
+import core.basesyntax.cells.AnimalsHome;
+import core.basesyntax.cells.Aquarium;
+import core.basesyntax.cells.BirdsHome;
 import core.basesyntax.enumerate.AnimalType;
-import core.basesyntax.factory.AnimalFactory;
+import core.basesyntax.interfaces.Feedable;
 import core.basesyntax.interfaces.Flyable;
 import core.basesyntax.interfaces.Swimable;
 
-import java.util.ArrayList;
-import java.util.List;
+public class Zoo {
+    public static void main(String[] args) {
+        AnimalsHome<Feedable> animalsHome = new AnimalsHome<>();
+        animalsHome.addAnimal(AnimalType.SPARROW);
+        animalsHome.addAnimal(AnimalType.TIGER);
+        animalsHome.addAnimal(AnimalType.PENGUIN);
+        animalsHome.addAnimal(AnimalType.SHARK);
+        animalsHome.feedAll();
 
-public class Zoo<T extends Animal> {
-    private List<T> animalsHome = new ArrayList<>();
+        Aquarium<Swimable> aquarium = new Aquarium<>();
+        Shark shark = new Shark();
+        Penguin penguin = new Penguin();
+        aquarium.addWaterfowl(shark);
+        aquarium.addWaterfowl(penguin);
+        aquarium.feedFish();
 
-    public void addAnimal(AnimalType animalType) {
-        animalsHome.add(AnimalFactory.animalFactory(animalType));
+        BirdsHome<Flyable> birdsHome = new BirdsHome<>();
+        Sparrow sparrow = new Sparrow();
+        birdsHome.addBird(sparrow);
     }
-
-    public void feedAll() {
-        for (T animal : animalsHome) {
-            animal.feed();
-        }
-    }
-
-    private List<T> birdsHome = new ArrayList<>();
-
-    public void addBird(Flyable f) {
-        birdsHome.add((T) f);
-    }
-
-    public void feedBirds() {
-        for (T animal : birdsHome) {
-            animal.feed();
-        }
-    }
-
-    private List<T> fishHome = new ArrayList<>();
-
-    public void addFish(Swimable s) {
-        birdsHome.add((T) s);
-    }
-
-    public void feedFish() {
-        for (T animal : fishHome) {
-            animal.feed();
-        }
-    }
-
 }

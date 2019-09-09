@@ -1,5 +1,5 @@
 package core.basesyntax.interfaces;
 
-public interface Flyable {
+public interface Flyable extends Feedable {
     void fly();
 }
