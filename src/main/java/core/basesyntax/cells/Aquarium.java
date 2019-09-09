@@ -1,9 +1,6 @@
 package core.basesyntax.cells;
 
-import core.basesyntax.enumerate.AnimalType;
-import core.basesyntax.factory.AnimalFactory;
 import core.basesyntax.interfaces.Swimable;
-
 import java.util.ArrayList;
 import java.util.List;
 
