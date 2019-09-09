@@ -1,8 +1,9 @@
 package core.basesyntax.model;
 
-import core.basesyntax.type.Birds;
+import core.basesyntax.type.Bird;
+import core.basesyntax.type.Flying;
 
-public class Sparrow extends Birds {
+public class Sparrow extends Bird implements Flying {
     private String species;
 
     public Sparrow(String species, boolean canFly) {
@@ -17,7 +18,7 @@ public class Sparrow extends Birds {
 
     @Override
     public void fly() {
-        super.fly();
+        System.out.println("I can fly!");
     }
 
     @Override

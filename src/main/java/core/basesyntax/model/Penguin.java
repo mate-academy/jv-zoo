@@ -1,9 +1,9 @@
 package core.basesyntax.model;
 
-import core.basesyntax.type.Birds;
+import core.basesyntax.type.Bird;
 import core.basesyntax.type.Swimming;
 
-public class Penguin extends Birds implements Swimming {
+public class Penguin extends Bird implements Swimming {
     private String species;
 
 
@@ -13,17 +13,19 @@ public class Penguin extends Birds implements Swimming {
     }
 
     @Override
-    public void eat() {
-        System.out.println("I like fish!");
+    public void swim() {
+        System.out.println("I can swim!");
     }
 
     @Override
-    public void fly() {
-        super.fly();
+    public void eat() {
+        System.out.println("I like fish!");
     }
 
     @Override
     public String toString() {
         return species;
     }
+
+
 }

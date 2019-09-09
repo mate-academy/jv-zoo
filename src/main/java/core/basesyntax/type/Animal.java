@@ -1,14 +1,15 @@
 package core.basesyntax.type;
 
-public abstract class Animals {
+public abstract class Animal implements Eating {
     private String breed;
     private boolean isPredator;
 
-    public Animals(String breed, boolean isPredator) {
+    public Animal(String breed, boolean isPredator) {
         this.breed = breed;
         this.isPredator = isPredator;
     }
 
+    @Override
     public void eat() {
         if (isPredator) {
             System.out.println("I like meat!");

@@ -1,8 +1,8 @@
 package core.basesyntax.model;
 
-import core.basesyntax.type.Animals;
+import core.basesyntax.type.Animal;
 
-public class Tiger extends Animals {
+public class Tiger extends Animal {
     private String breed;
 
     public Tiger(String breed, boolean isPredator) {
