@@ -1,13 +1,13 @@
 package core.basesyntax.cages;
 
-public class CageForFlying<Flyable> {
-    private Flyable flyingAnimal;
+public class CageForFlying<T> {
+    private T flyingAnimal;
 
-    public void addAnimal(Flyable animal) {
+    public void addAnimal(T animal) {
         this.flyingAnimal = animal;
     }
 
-    public Flyable getAnimal(){
+    public T getAnimal() {
         return flyingAnimal;
     }
 }

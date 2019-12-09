@@ -1,13 +1,13 @@
 package core.basesyntax.cages;
 
-public class CageForAllAnimal<Animal> {
-    private Animal anyAnimal;
+public class CageForAllAnimal<T> {
+    private T anyAnimal;
 
-    public void addAnimal(Animal animal) {
+    public void addAnimal(T animal) {
         this.anyAnimal = animal;
     }
 
-    public Animal getAnimal(){
+    public T getAnimal() {
         return anyAnimal;
     }
 }

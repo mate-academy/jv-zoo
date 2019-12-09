@@ -4,6 +4,10 @@ public abstract class Animal {
     private boolean isHungry = false;
 
     public void feed() {
-        isHungry = true;
+        this.isHungry = true;
+    }
+
+    public boolean isAnimalHungry() {
+        return this.isHungry;
     }
 }

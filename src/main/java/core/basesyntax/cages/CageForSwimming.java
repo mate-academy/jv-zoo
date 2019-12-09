@@ -1,13 +1,13 @@
 package core.basesyntax.cages;
 
-public class CageForSwimming<Swimable> {
-    private Swimable swimableAnimal;
+public class CageForSwimming<T> {
+    private T swimableAnimal;
 
-    public void addAnimal(Swimable animal) {
+    public void addAnimal(T animal) {
         this.swimableAnimal = animal;
     }
 
-    public Swimable getAnimal(){
+    public T getAnimal() {
         return swimableAnimal;
     }
 }
