@@ -10,6 +10,8 @@ public abstract class Animal {
     public String getName() {
         return name;
     }
+
     public abstract void feed();
+
     public abstract String getHabitat();
 }

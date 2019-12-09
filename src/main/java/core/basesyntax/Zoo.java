@@ -22,7 +22,6 @@ public class Zoo {
                 aviary.add(animal);
             }
         }
-
     }
 
     public Zoo(Animal animal) {
@@ -70,6 +69,4 @@ public class Zoo {
         }
 
     }
-
-
 }

@@ -2,6 +2,7 @@ package core.basesyntax;
 
 public class Sparrow extends Bird {
     private static final String FOOD = "grain";
+
     public Sparrow(String name) {
         super(name);
     }
@@ -10,6 +11,4 @@ public class Sparrow extends Bird {
     public void feed() {
         System.out.println("Sparrow " + this.getName() + " is eating " + FOOD);
     }
-
-
 }

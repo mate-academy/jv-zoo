@@ -21,6 +21,7 @@ public class Penguin extends Bird implements Swim {
     public String getHabitat() {
         return "land";
     }
+
     @Override
     public void feed() {
         System.out.println("Penguin " + this.getName() + " is eating " + FOOD);

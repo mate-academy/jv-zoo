@@ -13,10 +13,8 @@ public class App {
         myZooAnimals.add(new Tiger("Violet"));
         myZooAnimals.add(new Sparrow("King"));
 
-        Zoo myZoo = new Zoo (myZooAnimals);
+        Zoo myZoo = new Zoo(myZooAnimals);
 
         myZoo.feedAnimals();
-
-
     }
 }
