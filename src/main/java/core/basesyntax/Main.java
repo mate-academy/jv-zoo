@@ -1,7 +1,6 @@
 package core.basesyntax;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Ваша задача заключается в том чтобы создать свой зоопарк, разместить животных по вольерам и накромить их.
