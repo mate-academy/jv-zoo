@@ -1,10 +1,10 @@
 package core.basesyntax.animals;
 
 public abstract class Animal {
-    private boolean isHungry = false;
+    private boolean isHungry = true;
 
     public void feed() {
-        this.isHungry = true;
+        this.isHungry = false;
     }
 
     public boolean isAnimalHungry() {

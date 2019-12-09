@@ -1,6 +1,8 @@
 package core.basesyntax.cages;
 
-public class CageForAllAnimal<T> {
+import core.basesyntax.animals.Animal;
+
+public class CageForAllAnimal<T extends Animal> {
     private T anyAnimal;
 
     public void addAnimal(T animal) {

@@ -16,19 +16,21 @@ import core.basesyntax.cages.CageForSwimming;
 public class Main {
     public static void main(String[] args) {
         Penguin penguin = new Penguin();
+        System.out.println(penguin.isAnimalHungry());
         penguin.feed();
+        System.out.println(penguin.isAnimalHungry());
         Animal tiger = new Tiger();
         tiger.feed();
         Fish shark = new Shark();
         shark.feed();
         Bird sparrow = new Sparrow();
         sparrow.feed();
-        CageForAllAnimal<Animal> cage = new CageForAllAnimal<>();
+        CageForAllAnimal<? super Animal> cage = new CageForAllAnimal<>();
         cage.addAnimal(tiger);
         cage.getAnimal();
         CageForFlying<Flyable> cageForFlying = new CageForFlying<>();
         cageForFlying.addAnimal(sparrow);
         CageForSwimming<Swimable> cageForSwimming = new CageForSwimming<>();
-        cageForSwimming.addAnimal(penguin);
+        cageForSwimming.addAnimal(shark);
     }
 }
