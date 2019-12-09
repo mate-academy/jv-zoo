@@ -5,7 +5,7 @@ import core.basesyntax.types.Flyable;
 public abstract class Bird extends Animal implements Flyable {
 
     public Bird(String name) {
-        this.name = name;
+        super(name);
     }
 
     @Override
