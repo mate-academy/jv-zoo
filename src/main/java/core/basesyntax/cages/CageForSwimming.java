@@ -1,6 +1,8 @@
 package core.basesyntax.cages;
 
-public class CageForSwimming<T> {
+import core.basesyntax.behavior.Swimable;
+
+public class CageForSwimming<T extends Swimable> {
     private T swimableAnimal;
 
     public void addAnimal(T animal) {

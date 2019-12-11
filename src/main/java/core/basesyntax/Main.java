@@ -26,11 +26,11 @@ public class Main {
         Bird sparrow = new Sparrow();
         sparrow.feed();
         CageForAllAnimal<? super Animal> cage = new CageForAllAnimal<>();
-        cage.addAnimal(tiger);
+        cage.addAnimal(sparrow);
         cage.getAnimal();
         CageForFlying<Flyable> cageForFlying = new CageForFlying<>();
         cageForFlying.addAnimal(sparrow);
         CageForSwimming<Swimable> cageForSwimming = new CageForSwimming<>();
-        cageForSwimming.addAnimal(shark);
+        cageForSwimming.addAnimal(penguin);
     }
 }

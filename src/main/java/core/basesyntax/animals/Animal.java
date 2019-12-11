@@ -4,7 +4,7 @@ public abstract class Animal {
     private boolean isHungry = true;
 
     public void feed() {
-        this.isHungry = false;
+        System.out.println("Animal is too abstract");
     }
 
     public boolean isAnimalHungry() {
