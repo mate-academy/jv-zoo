@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Penguin extends Bird implements Swimmable {
+public class Penguin extends Animal implements Swimmable {
     public Penguin(String name) {
         super(name);
     }
@@ -13,10 +13,5 @@ public class Penguin extends Bird implements Swimmable {
     @Override
     public void swim() {
         System.out.println(this.getName() + " is swimming.");
-    }
-
-    @Override
-    public void fly() {
-        System.out.println("Penguin can't fly :(");
     }
 }

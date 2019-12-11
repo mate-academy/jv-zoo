@@ -3,11 +3,11 @@ package core.basesyntax;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Zoo {
+public class Zoo<T extends Animal> {
     private String name;
-    private List<Animal> cage = new ArrayList<>();
-    private List<Animal> birdCage = new ArrayList<>();
-    private List<Animal> aquarium = new ArrayList<>();
+    private List<T> cage = new ArrayList<>();
+    private List<T> birdCage = new ArrayList<>();
+    private List<T> aquarium = new ArrayList<>();
 
     public Zoo(String name) {
         this.name = name;
@@ -17,14 +17,14 @@ public class Zoo {
         return name;
     }
 
-    public void addAnimal(Animal animal) {
+    public void addAnimal(T animal) {
         moveToCage(animal);
     }
 
-    private void moveToCage(Animal animal) {
-        if (animal instanceof General) {
+    private void moveToCage(T animal) {
+        if (animal instanceof Walkable) {
             cage.add(animal);
-        } else if (animal instanceof Bird) {
+        } else if (animal instanceof Flyable) {
             birdCage.add(animal);
         } else {
             aquarium.add(animal);
@@ -32,6 +32,7 @@ public class Zoo {
     }
 
     public void feedAnimals() {
+        System.out.println("Feeding animals in " + name);
         for (Animal animal: cage) {
             animal.feed();
         }

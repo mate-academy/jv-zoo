@@ -14,8 +14,9 @@ public class Main {
         cityZoo.addAnimal(sparrow);
         cityZoo.addAnimal(shark);
 
+        System.out.println(cityZoo.getName());
+
         tiger.walk();
-        penguin.fly();
         penguin.swim();
         sparrow.fly();
         shark.swim();
