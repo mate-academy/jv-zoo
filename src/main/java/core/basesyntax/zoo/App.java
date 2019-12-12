@@ -17,7 +17,7 @@ public class App {
             }
         }
         for (Animal animal : zoo.allAnimalAviary) {
-            animal.toFeedAnimal(animal);
+            animal.feed();
         }
 
     }

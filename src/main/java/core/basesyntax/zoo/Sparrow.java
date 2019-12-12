@@ -7,7 +7,9 @@ public class Sparrow extends Bird implements Flyable {
     }
 
     @Override
-    public void toFeedAnimal(Animal animal) {
-        super.toFeedAnimal(this);
+    public void feed() {
+        System.out.println("I am a "
+                + getClass().getSimpleName()
+                + " and I would like to eat bread");
     }
 }
