@@ -1,15 +1,10 @@
 package core.basesyntax;
 
-public class Penguin extends Bird implements Swim {
+public class Penguin extends Bird implements Swimming, Walking {
     private static final String FOOD = "fish";
 
     public Penguin(String name) {
         super(name);
-    }
-
-    @Override
-    public void fly() {
-        System.out.println("Penguins can't fly");
     }
 
     @Override
@@ -18,8 +13,13 @@ public class Penguin extends Bird implements Swim {
     }
 
     @Override
-    public String getHabitat() {
-        return "land";
+    public Habitat getHabitat() {
+        return Habitat.LAND;
+    }
+
+    @Override
+    public void walk() {
+        System.out.println("Penguin" + this.getName() + " is walking!!");
     }
 
     @Override

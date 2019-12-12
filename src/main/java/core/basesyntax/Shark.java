@@ -11,4 +11,5 @@ public class Shark extends Fish {
     public void feed() {
         System.out.println("Shark " + this.getName() + " is eating " + FOOD);
     }
+
 }

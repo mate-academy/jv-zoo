@@ -1,6 +1,7 @@
 package core.basesyntax;
 
-public abstract class Fish extends Animal implements Swim {
+public abstract class Fish extends Animal implements Swimming {
+    protected Habitat fishHabitat = Habitat.WATTER;
 
     public Fish(String name) {
         super(name);
@@ -12,7 +13,7 @@ public abstract class Fish extends Animal implements Swim {
     }
 
     @Override
-    public String getHabitat() {
-        return "water";
+    public Habitat getHabitat() {
+        return fishHabitat;
     }
 }

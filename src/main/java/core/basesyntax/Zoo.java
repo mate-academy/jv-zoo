@@ -12,15 +12,7 @@ public class Zoo {
     public Zoo(List<Animal> inhabitants) {
         this.inhabitants = inhabitants;
         for (Animal animal : inhabitants) {
-            if (animal.getHabitat().equals("air")) {
-                cage.add(animal);
-            }
-            if (animal.getHabitat().equals("water")) {
-                aquarium.add(animal);
-            }
-            if (animal.getHabitat().equals("land")) {
-                aviary.add(animal);
-            }
+            putInCage(animal);
         }
     }
 
@@ -58,14 +50,17 @@ public class Zoo {
     }
 
     private void putInCage(Animal animal) {
-        if (animal.getHabitat().equals("air")) {
-            cage.add(animal);
-        }
-        if (animal.getHabitat().equals("water")) {
-            aquarium.add(animal);
-        }
-        if (animal.getHabitat().equals("land")) {
-            aviary.add(animal);
+        switch (animal.getHabitat()) {
+            case AIR:
+                cage.add(animal);
+                break;
+            case WATTER:
+                aquarium.add(animal);
+                break;
+            case LAND:
+                aviary.add(animal);
+                break;
+            default:
         }
 
     }

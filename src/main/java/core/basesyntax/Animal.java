@@ -13,5 +13,5 @@ public abstract class Animal {
 
     public abstract void feed();
 
-    public abstract String getHabitat();
+    public abstract Habitat getHabitat();
 }
