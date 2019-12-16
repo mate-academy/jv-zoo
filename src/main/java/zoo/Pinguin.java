@@ -1,6 +1,6 @@
 package zoo;
 
-public class Pinguin extends Birds implements Swimmable {
+public class Pinguin extends Bird implements Swimmable {
     public Pinguin() {
     }
 

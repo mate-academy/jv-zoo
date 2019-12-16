@@ -7,18 +7,18 @@ public class Admin {
 
     public static void main(String[] args) {
 
-        Birds pinguin = new Pinguin();
-        Birds sparrow = new Sparrow();
-        List<Birds> cages = new ArrayList<>();
+        Bird pinguin = new Pinguin();
+        Bird sparrow = new Sparrow();
+        List<Bird> cages = new ArrayList<>();
         cages.add(pinguin);
         cages.add(sparrow);
 
-        Mummals tiger = new Tiger();
-        List<Mummals> walliers = new ArrayList<>();
+        Mammal tiger = new Tiger();
+        List<Mammal> walliers = new ArrayList<>();
         walliers.add(tiger);
 
-        Fishes shark = new Shark();
-        List<Fishes> aquariums = new ArrayList<>();
+        Fish shark = new Shark();
+        List<Fish> aquariums = new ArrayList<>();
         aquariums.add(shark);
 
         List<Animal> zoo = new ArrayList<>();

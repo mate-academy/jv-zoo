@@ -1,6 +1,6 @@
 package zoo;
 
-public class Sparrow extends Birds implements Flyable {
+public class Sparrow extends Bird implements Flyable {
     public Sparrow() {
     }
 

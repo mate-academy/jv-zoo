@@ -1,6 +1,6 @@
 package zoo;
 
-public class Tiger extends Mummals {
+public class Tiger extends Mammal {
     public Tiger() {
     }
 
