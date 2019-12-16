@@ -21,12 +21,12 @@ public class Admin {
         List<Fishes> aquariums = new ArrayList<>();
         aquariums.add(shark);
 
-        List<Animals> zoo = new ArrayList<>();
+        List<Animal> zoo = new ArrayList<>();
         zoo.addAll(aquariums);
         zoo.addAll(cages);
         zoo.addAll(walliers);
 
-        for (Animals x : zoo) {
+        for (Animal x : zoo) {
             x.feed();
         }
     }

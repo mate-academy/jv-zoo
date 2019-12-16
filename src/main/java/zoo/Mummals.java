@@ -1,6 +1,6 @@
 package zoo;
 
-public abstract class Mummals extends Animals {
+public abstract class Mummals extends Animal {
     public Mummals() {
     }
 }

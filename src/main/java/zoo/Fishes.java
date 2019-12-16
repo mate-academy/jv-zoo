@@ -1,6 +1,6 @@
 package zoo;
 
-public abstract class Fishes extends Animals implements Swimmable {
+public abstract class Fishes extends Animal implements Swimmable {
     public Fishes() {
     }
 
