@@ -8,7 +8,7 @@ public class Penguin extends Animal implements Swimable {
 
     @Override
     void feed() {
-        super.feed();
+        System.out.println("I love fish!");
     }
 
     @Override

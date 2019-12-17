@@ -7,7 +7,12 @@ public class Shark extends Animal implements Swimable, Predator {
     }
 
     @Override
+    void feed() {
+            System.out.println("i'm shark and i like penguins!");
+    }
+
+    @Override
     public void swim() {
-        System.out.println("i'm shark and i like penguins!");
+        System.out.println("Where is my penguin!");
     }
 }

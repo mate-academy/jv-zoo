@@ -13,7 +13,6 @@ public class App {
         zoo.addAnimal(animal3);
         zoo.addAnimal(animal4);
 
-        zoo.showAllAnimals();
         zoo.feedAll();
         zoo.showAllAnimals();
     }
