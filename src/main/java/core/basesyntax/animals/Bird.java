@@ -18,14 +18,17 @@ public abstract class Bird extends Animal implements Flying {
         return fly();
     }
 
+    @Override
     public int getMinFlyHeight() {
         return minFlightHeight;
     }
 
+    @Override
     public int getMaxFlyHeight() {
         return maxFlightHeight;
     }
 
+    @Override
     public int getFlyPowerConsumption() {
         return flyPowerConsumption;
     }
