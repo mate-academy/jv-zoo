@@ -1,7 +1,6 @@
 package core.basesyntax;
 
 import core.basesyntax.animals.Animal;
-
 import java.util.ArrayList;
 import java.util.List;
 

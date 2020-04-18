@@ -1,6 +1,8 @@
 package core.basesyntax;
 
-import core.basesyntax.animals.*;
+import core.basesyntax.animals.Animal;
+import core.basesyntax.animals.Bird;
+import core.basesyntax.animals.Fish;
 
 public class Zoo {
     private Aviary<Fish> aquarium;
@@ -14,8 +16,8 @@ public class Zoo {
     }
 
     public void feedAllAnimals(int foodAmount) {
-        int foodPerAnimal = foodAmount /
-                totalNumberOfAnimals(aquarium, commonAviary, birdAviary);
+        int foodPerAnimal = foodAmount
+                / totalNumberOfAnimals(aquarium, commonAviary, birdAviary);
         feedAviary(aquarium, foodPerAnimal);
         feedAviary(commonAviary, foodPerAnimal);
         feedAviary(birdAviary, foodPerAnimal);

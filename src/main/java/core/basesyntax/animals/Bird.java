@@ -5,7 +5,8 @@ public abstract class Bird extends Animal implements Flying {
     private int maxFlightHeight;
     private int flyPowerConsumption;
 
-    public Bird(int initialSatiety, int minFlightHeight, int maxFlightHeight, int flyPowerConsumption) {
+    public Bird(int initialSatiety, int minFlightHeight,
+                int maxFlightHeight, int flyPowerConsumption) {
         super(initialSatiety);
         this.minFlightHeight = minFlightHeight;
         this.maxFlightHeight = maxFlightHeight;

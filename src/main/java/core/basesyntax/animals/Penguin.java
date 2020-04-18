@@ -33,10 +33,10 @@ public class Penguin extends Bird implements Waterfowl {
 
     @Override
     public int fly() {
-        throw new UnsupportedOperationException("It looks like your penguin fell " +
-                "from somewhere high. It was flying for a while, but it’s harmful " +
-                "for a penguins to fly. You must pay more attention to the " +
-                "situation and how does it happen that your penguin was flying.");
+        throw new UnsupportedOperationException("It looks like your penguin fell "
+                + "from somewhere high. It was flying for a while, but it’s harmful "
+                + "for a penguins to fly. You must pay more attention to the "
+                + "situation and how does it happen that your penguin was flying.");
     }
 
     @Override

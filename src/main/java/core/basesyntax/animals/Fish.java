@@ -5,7 +5,8 @@ public abstract class Fish extends Animal implements Waterfowl {
     private int maxDivingDepth;
     private int swimPowerConsumption;
 
-    public Fish(int initialSatiety, int minDivingDepth, int maxDivingDepth, int swimPowerConsumption) {
+    public Fish(int initialSatiety, int minDivingDepth,
+                int maxDivingDepth, int swimPowerConsumption) {
         super(initialSatiety);
         this.minDivingDepth = minDivingDepth;
         this.maxDivingDepth = maxDivingDepth;
