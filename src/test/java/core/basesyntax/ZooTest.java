@@ -18,7 +18,9 @@ public class ZooTest {
         zoo.watchAllAnimals();
         zoo.watchAllAnimals();
         zoo.watchAllAnimals();
+
         zoo.feedAllAnimals(150);
+
         zoo.watchAllAnimals();
         zoo.watchAllAnimals();
         zoo.watchAllAnimals();
