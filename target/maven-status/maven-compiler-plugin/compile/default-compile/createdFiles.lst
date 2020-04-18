@@ -1,0 +1,17 @@
+core/basesyntax/animals/interfaces/AbleToEat.class
+core/basesyntax/animals/Animal.class
+core/basesyntax/animals/birds/Bird.class
+core/basesyntax/animals/birds/Swallow.class
+core/basesyntax/animals/birds/Sparrow.class
+core/basesyntax/Main.class
+core/basesyntax/animals/interfaces/Swimmable.class
+core/basesyntax/animals/interfaces/AbleToLayEggs.class
+core/basesyntax/animals/fishes/Shark.class
+core/basesyntax/Zoo.class
+core/basesyntax/animals/birds/Penguin.class
+core/basesyntax/animals/birds/FlyingBird.class
+core/basesyntax/animals/fishes/Fish.class
+core/basesyntax/animals/interfaces/AbleToPurr.class
+core/basesyntax/animals/interfaces/Flyable.class
+core/basesyntax/animals/cats/Tiger.class
+core/basesyntax/animals/cats/Cat.class
