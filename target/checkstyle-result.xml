@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.29">
+<file name="/home/vladyslav/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/Main.java">
+</file>
+<file name="/home/vladyslav/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/Zoo.java">
+</file>
+<file name="/home/vladyslav/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/interfaces/AbleToEat.java">
+</file>
+<file name="/home/vladyslav/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/interfaces/AbleToPurr.java">
+</file>
+<file name="/home/vladyslav/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/interfaces/Flyable.java">
+</file>
+<file name="/home/vladyslav/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/interfaces/AbleToLayEggs.java">
+</file>
+<file name="/home/vladyslav/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/interfaces/Swimmable.java">
+</file>
+<file name="/home/vladyslav/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/cats/Tiger.java">
+</file>
+<file name="/home/vladyslav/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/cats/Cat.java">
+</file>
+<file name="/home/vladyslav/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/fishes/Fish.java">
+</file>
+<file name="/home/vladyslav/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/fishes/Shark.java">
+</file>
+<file name="/home/vladyslav/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/birds/Penguin.java">
+</file>
+<file name="/home/vladyslav/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/birds/Bird.java">
+</file>
+<file name="/home/vladyslav/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/birds/FlyingBird.java">
+</file>
+<file name="/home/vladyslav/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/birds/Swallow.java">
+</file>
+<file name="/home/vladyslav/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/birds/Sparrow.java">
+</file>
+<file name="/home/vladyslav/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/Animal.java">
+</file>
+</checkstyle>
