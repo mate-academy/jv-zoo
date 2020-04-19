@@ -20,16 +20,16 @@ public class Zoo {
         aviary = new PlaceForAnimals<>();
     }
 
-    public void addAnimals(List<? extends Animal> animals) {
-        animals.stream()
-                .filter(animal -> animal instanceof FlyAble)
-                .forEach(cageForFlyingBirds::addAnimal);
-        animals.stream()
-                .filter(animal -> animal instanceof SwimmingAble)
-                .forEach(cageForFlyingBirds::addAnimal);
-        animals.stream()
-                .filter(animal -> animal instanceof WalkAble)
-                .forEach(cageForFlyingBirds::addAnimal);
+    public void addAnimal(SwimmingAble animal) {
+        aquarium.addAnimal(animal);
+    }
+
+    void addAnimal(WalkAble animal) {
+        aviary.addAnimal(animal);
+    }
+
+    public void addAnimal(FlyAble animal) {
+        cageForFlyingBirds.addAnimal(animal);
     }
 
     public void showWhatAnimalsAbleTo() {
@@ -45,22 +45,22 @@ public class Zoo {
     }
 
     private static class PlaceForAnimals<T extends SpecificAbility> {
-        private List<Animal> animals;
+        private List<? super T> animals;
 
         private PlaceForAnimals() {
             animals = new ArrayList<>();
         }
 
-        private <T extends Animal> void addAnimal(T animal) {
+        private void addAnimal(T animal) {
             animals.add(animal);
         }
 
         private void showAnimalsSpecialAbility() {
-            animals.forEach(Animal::showSpecialAbility);
+            animals.stream().map(a -> (Animal) a).forEach(Animal::showSpecialAbility);
         }
 
         private void feedAnimals() {
-            animals.forEach(EatAble::eat);
+            animals.stream().map(a -> (Animal) a).forEach(EatAble::eat);
         }
 
     }
