@@ -2,19 +2,15 @@ package core.basesyntax.controller;
 
 import core.basesyntax.interfaces.Swimmable;
 
-public class Penguin extends Aves implements Swimmable {
+//Pisces(Latin) is a class of fish
 
-    public Penguin(String name) {
+public class Pisces extends Animal implements Swimmable {
+    public Pisces(String name) {
         super(name);
     }
 
     @Override
     public void swim() {
         System.out.println("I like swimming!.....");
-    }
-
-    @Override
-    public void fly() {
-        System.out.println("I like flying!.....");
     }
 }
