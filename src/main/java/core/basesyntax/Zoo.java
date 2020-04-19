@@ -8,11 +8,14 @@ public class Zoo {
     ArrayList<? super Fish> aquarium = new ArrayList<>();
 
     public void feedAll() {
-        ArrayList<? extends Bird> birds = (ArrayList<? extends Bird>) birdsAviary;
+        ArrayList<? extends Bird> birds =
+                (ArrayList<? extends Bird>) birdsAviary;
         birds.forEach(Animal::feed);
-        ArrayList<? extends OtherAnimal> otherAnimals = (ArrayList<? extends OtherAnimal>) animalsAviary;
+        ArrayList<? extends OtherAnimal> otherAnimals =
+                (ArrayList<? extends OtherAnimal>) animalsAviary;
         otherAnimals.forEach(Animal::feed);
-        ArrayList<? extends Fish> fish = (ArrayList<? extends Fish>) aquarium;
+        ArrayList<? extends Fish> fish =
+                (ArrayList<? extends Fish>) aquarium;
         fish.forEach(Animal::feed);
     }
 }

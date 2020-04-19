@@ -8,13 +8,13 @@ public class Main {
     public static void main(String[] args) {
         Zoo zoo = new Zoo();
         Sparrow sparrow = new Sparrow();
-        Penguin penguin = new Penguin();
-        Shark shark = new Shark();
-        Tiger tiger = new Tiger();
-        zoo.aquarium.add(shark);
-        zoo.animalsAviary.add(tiger);
         zoo.birdsAviary.add(sparrow);
+        Penguin penguin = new Penguin();
         zoo.birdsAviary.add(penguin);
+        Shark shark = new Shark();
+        zoo.aquarium.add(shark);
+        Tiger tiger = new Tiger();
+        zoo.animalsAviary.add(tiger);
         zoo.feedAll();
     }
 }
