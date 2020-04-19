@@ -4,7 +4,7 @@ public class Zoo<T1 extends Fish, T2 extends Bird, T3 extends Cat> {
     private static final String AQUARIUM_NAME = "Аквариум";
     private static final String BIRDS_HOME_NAME = "Птичник";
     private static final String CATS_HOME_NAME = "Кошатник";
-
+////
     AnimalsHome<T1> aquarium;
     AnimalsHome<T2> birdsHome;
     CatsHome<T3> catsHome;
