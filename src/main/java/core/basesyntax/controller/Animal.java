@@ -1,13 +1,14 @@
 package core.basesyntax.controller;
 
-public abstract class Animal {
+public class Animal {
     public String name;
 
     public Animal(String name) {
         this.name = name;
     }
 
-    public void eat(){
+    public void eat() {
         System.out.println("I'm eating.....");
     }
+
 }
