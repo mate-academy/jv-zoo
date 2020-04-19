@@ -1,8 +1,8 @@
 package core.basesyntax;
 
-import core.basesyntax.abilitiesOfAnimals.CommonAbilitiesOfAnimals;
-import core.basesyntax.abilitiesOfAnimals.SwimAble;
-import core.basesyntax.classificationByType.Fish;
+import core.basesyntax.abilitiesofanimals.CommonAbilitiesOfAnimals;
+import core.basesyntax.abilitiesofanimals.SwimAble;
+import core.basesyntax.classificationbytype.Fish;
 
 public class Shark extends Animal implements CommonAbilitiesOfAnimals, SwimAble, Fish {
     public Shark(String type) {

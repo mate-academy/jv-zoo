@@ -1,7 +1,7 @@
-package core.basesyntax.abilitiesOfAnimals;
+package core.basesyntax.abilitiesofanimals;
 
 public interface Flyable {
-    static void fly(){
+    static void fly() {
         System.out.println("I can fly");
     }
 }

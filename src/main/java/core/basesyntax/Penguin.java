@@ -1,8 +1,8 @@
 package core.basesyntax;
 
-import core.basesyntax.abilitiesOfAnimals.NonFlyable;
-import core.basesyntax.abilitiesOfAnimals.SwimAble;
-import core.basesyntax.classificationByType.Bird;
+import core.basesyntax.abilitiesofanimals.NonFlyable;
+import core.basesyntax.abilitiesofanimals.SwimAble;
+import core.basesyntax.classificationbytype.Bird;
 
 public class Penguin extends Animal implements NonFlyable, Bird, SwimAble {
 

@@ -1,4 +1,4 @@
-package core.basesyntax.abilitiesOfAnimals;
+package core.basesyntax.abilitiesofanimals;
 
 public interface NonFlyable {
     static void nonFly() {

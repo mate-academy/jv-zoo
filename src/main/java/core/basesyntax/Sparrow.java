@@ -1,7 +1,7 @@
 package core.basesyntax;
 
-import core.basesyntax.abilitiesOfAnimals.CommonAbilitiesOfAnimals;
-import core.basesyntax.abilitiesOfAnimals.Flyable;
+import core.basesyntax.abilitiesofanimals.CommonAbilitiesOfAnimals;
+import core.basesyntax.abilitiesofanimals.Flyable;
 
 public class Sparrow extends Animal implements CommonAbilitiesOfAnimals, Flyable {
     public Sparrow(String type) {
