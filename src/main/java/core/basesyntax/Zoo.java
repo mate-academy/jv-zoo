@@ -3,6 +3,7 @@ package core.basesyntax;
 import core.basesyntax.animals.Animal;
 import core.basesyntax.animals.Bird;
 import core.basesyntax.animals.Fish;
+import core.basesyntax.animals.Tiger;
 
 public class Zoo {
     private Aviary<Fish> aquarium;
@@ -37,8 +38,8 @@ public class Zoo {
         aquarium.addAnimal(fish);
     }
 
-    public void add(Animal animal) {
-        commonAviary.addAnimal(animal);
+    public void add(Tiger tiger) {
+        commonAviary.addAnimal(tiger);
     }
 
     private void feedAviary(Aviary<? extends Animal> aviary, int foodPerAnimal) {
