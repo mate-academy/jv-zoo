@@ -7,11 +7,6 @@ public class Sparrow extends Bird {
     }
 
     @Override
-    void eat(String s) {
-        System.out.println("The sparrow is eating " + s + "!");
-    }
-
-    @Override
     public void fly() {
         System.out.println("Sparrow can fly!");
     }

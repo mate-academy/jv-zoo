@@ -9,28 +9,19 @@ abstract public class Animal {
         this.age = age;
     }
 
+    void feed() {
+        System.out.println(name + " has ate standard food.");
+    }
+
+    void feed(String s) {
+        System.out.println(name + " has ate " + s + "!");
+    }
+
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    void eat(String s) {
-        System.out.println("I am animal and I am ate " + s);
-    }
-
-    @Override
-    public String toString() {
-        return "Имя: " + name + ", Возраст: " + age + "\n";
-    }
+//    public void setName(String name) {
+//        this.name = name;
+//    }
 }

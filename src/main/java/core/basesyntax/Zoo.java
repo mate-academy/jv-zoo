@@ -1,40 +1,60 @@
 package core.basesyntax;
 
-public class Zoo<T1 extends Fish, T2 extends Bird, T3 extends Cat> {
-    private static final String AQUARIUM_NAME = "Аквариум";
-    private static final String BIRDS_HOME_NAME = "Птичник";
-    private static final String CATS_HOME_NAME = "Кошатник";
-////
-    AnimalsHome<T1> aquarium;
-    AnimalsHome<T2> birdsHome;
-    CatsHome<T3> catsHome;
+import java.util.LinkedList;
+
+public class Zoo<T> {
+    private static final String AQUARIUM_NAME = "Aquarium";
+    private static final String BIRDS_HOME_NAME = "Aviar for birds";
+    private static final String CATS_HOME_NAME = "Aviar for cats";
+
+    AnimalsHome aquarium;
+    AnimalsHome birdsHome;
+    AnimalsHome catsHome;
 
     public Zoo() {
-        this.aquarium = new AnimalsHome<>(AQUARIUM_NAME);
-        this.birdsHome = new AnimalsHome<>(BIRDS_HOME_NAME);
-        this.catsHome = new CatsHome<>(CATS_HOME_NAME);
+        this.aquarium = new AnimalsHome<Fish>(AQUARIUM_NAME);
+        this.birdsHome = new AnimalsHome<Bird>(BIRDS_HOME_NAME);
+        this.catsHome = new AnimalsHome<Cat>(CATS_HOME_NAME);
     }
 
-    void addAnimal(T1 t1) {
-        aquarium.animalsList.add(t1);
+    <T extends Cat> void addAnimal(T animal) {
+        catsHome.animalsList.add(animal);
     }
 
-    void addAnimal(T2 bird) {
-        birdsHome.animalsList.add(bird);
+    <T extends Fish> void addAnimal(T animal) {
+        aquarium.animalsList.add(animal);
     }
 
-    void addAnimal(Cat cat) {
-        catsHome.animalsList.add(cat);
+    <T extends Bird> void addAnimal(T animal) {
+        birdsHome.animalsList.add(animal);
+    }
+
+    void feedAllAnimal(){
+        feedAnimals(aquarium.animalsList);
+        feedAnimals(birdsHome.animalsList);
+        feedAnimals(catsHome.animalsList);
+    }
+
+    void feedAnimals(LinkedList<Animal> list){
+        for(Animal animal: list) {
+            animal.feed();
+        }
+    }
+
+    void feedAnimals(LinkedList<Animal> list, String food){
+         for(Animal animal: list) {
+            animal.feed(food);
+        }
     }
 
     @Override
     public String toString() {
-        return "В зоопарке есть отделения для животных: " +
+        return "The zoo has aviaries: " +
                 aquarium.name +
                 ", " + birdsHome.name +
                 ", " + catsHome.name +
-                "\nВ " + aquarium.name + "е живут: " + aquarium +
-                "\nВ " + birdsHome.name + "е живут: " + birdsHome +
-                "\nВ " + catsHome.name + "е живут: " + catsHome;
+                "\nIn the \'" + aquarium.name + "\' lives: " + aquarium +
+                "\nIn the \'" + birdsHome.name + "\' lives: " + birdsHome +
+                "\nIn the \'" + catsHome.name + "\' lives: " + catsHome;
     }
 }

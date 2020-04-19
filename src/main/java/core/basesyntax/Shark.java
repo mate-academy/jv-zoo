@@ -7,11 +7,6 @@ public class Shark extends Fish {
     }
 
     @Override
-    void eat(String s) {
-        super.eat(s);
-    }
-
-    @Override
     public void swim() {
         System.out.println("Shark can swim!");
     }
