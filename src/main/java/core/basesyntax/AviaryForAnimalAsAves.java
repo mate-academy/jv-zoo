@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-import core.basesyntax.controller.Aves;
+import core.basesyntax.impl.Aves;
 
 public class AviaryForAnimalAsAves<T extends Aves> {
     private T aves;

@@ -1,4 +1,4 @@
-package core.basesyntax.controller;
+package core.basesyntax.model;
 
 public class Animal {
     public String name;

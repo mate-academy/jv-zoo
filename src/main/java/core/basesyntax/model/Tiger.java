@@ -1,4 +1,4 @@
-package core.basesyntax.controller;
+package core.basesyntax.model;
 
 public class Tiger extends Animal {
     public Tiger(String name) {

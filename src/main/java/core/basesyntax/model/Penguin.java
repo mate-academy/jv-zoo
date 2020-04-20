@@ -1,8 +1,7 @@
-package core.basesyntax.controller;
+package core.basesyntax.model;
 
+import core.basesyntax.impl.Aves;
 import core.basesyntax.interfaces.Swimmable;
-
-import java.util.List;
 
 public class Penguin extends Aves implements Swimmable {
 
