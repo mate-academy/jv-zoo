@@ -1,6 +1,8 @@
 package core.basesyntax;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Zoo<T> {
     private static final String AQUARIUM_NAME = "Aquarium";
@@ -18,34 +20,61 @@ public class Zoo<T> {
     }
 
     <T extends Cat> void addAnimal(T animal) {
-        catsHome.animalsList.add(animal);
+        catsHome.animalHashMap.put(animal.name, animal);
     }
 
     <T extends Fish> void addAnimal(T animal) {
-        aquarium.animalsList.add(animal);
+        aquarium.animalHashMap.put(animal.name, animal);
     }
 
     <T extends Bird> void addAnimal(T animal) {
-        birdsHome.animalsList.add(animal);
+        birdsHome.animalHashMap.put(animal.name, animal);
     }
 
-    void feedAllAnimal(){
-        feedAnimals(aquarium.animalsList);
-        feedAnimals(birdsHome.animalsList);
-        feedAnimals(catsHome.animalsList);
+    private void feedAnimals(HashMap<String, Animal> animalsList) {
+        animalsList.entrySet().stream()
+                .forEach(a -> a.getValue().feed());
     }
 
-    void feedAnimals(LinkedList<Animal> list){
-        for(Animal animal: list) {
-            animal.feed();
+    void feedAllAnimal() {
+        feedAnimals(aquarium.animalHashMap);
+        feedAnimals(birdsHome.animalHashMap);
+        feedAnimals(catsHome.animalHashMap);
+    }
+
+    void feedAnimalByName(String animalName, String food) {
+
+        // Need refactor with streams
+
+        ArrayList<AnimalsHome> animalsHomeArrayList = new ArrayList<>();
+        animalsHomeArrayList.add(aquarium);
+        animalsHomeArrayList.add(birdsHome);
+        animalsHomeArrayList.add(catsHome);
+
+        animalsHomeArrayList.stream()
+                .map(animalsHome -> animalsHome.animalHashMap.entrySet())
+                .filter(o -> o.
+                .flatMap(animalsHomeArrayList -> animalsHomeArrayList.)
+                .forEach(e -> e.);
+
+        for (AnimalsHome a : animalsHomeArrayList) {
+            HashMap<String, Animal> animalHashMap = a.animalHashMap;
+            for (Map.Entry<String, Animal> m : animalHashMap.entrySet()) {
+                if (m.getValue().name.equals(animalName)) {
+                    m.getValue().feed(food);
+                    return;
+                }
+            }
         }
+        System.out.println("There is no animal with name " + animalName + " in Zoo!");
     }
 
-    void feedAnimals(LinkedList<Animal> list, String food){
-         for(Animal animal: list) {
-            animal.feed(food);
-        }
-    }
+//    void goAnimalsFly(){
+//        HashMap<String, Animal> animalsList = birdsHome.animalHashMap;
+//        for (Map.Entry<String, Animal> m : animalsList.entrySet()) {
+//            m.getValue()
+//        }
+//    }
 
     @Override
     public String toString() {

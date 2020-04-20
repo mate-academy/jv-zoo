@@ -1,21 +1,22 @@
 package core.basesyntax;
 
-import java.util.LinkedList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class AnimalsHome<T extends Animal> {
     String name;
-    LinkedList<T> animalsList;
+    HashMap<String, Animal> animalHashMap;
 
     public AnimalsHome(String name) {
         this.name = name;
-        this.animalsList = new LinkedList<T>();
+        this.animalHashMap = new HashMap<>();
     }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        for (T t : animalsList) {
-            sb.append("\n\t").append(t.name).append(", age: ").append(t.age);
+        for(Map.Entry<String, Animal> m: animalHashMap.entrySet()){
+            sb.append("\n\t").append(m.getValue().name).append(", age: ").append(m.getValue().age);
         }
         return sb.toString();
     }
