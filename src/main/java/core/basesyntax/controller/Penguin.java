@@ -2,6 +2,8 @@ package core.basesyntax.controller;
 
 import core.basesyntax.interfaces.Swimmable;
 
+import java.util.List;
+
 public class Penguin extends Aves implements Swimmable {
 
     public Penguin(String name) {
