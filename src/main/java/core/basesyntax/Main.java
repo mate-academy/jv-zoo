@@ -10,11 +10,9 @@ public class Main {
         sparrow.fly();
         sparrow.feed();
 
-        int gawno = (int) (Math.random() * 100 + 1),
-                flyable = (int) (Math.random() * 100 + 1),
-                swimmable = (int) (Math.random() * 100 + 1),
-                penguins = (int) (Math.random() * 100 + 1),
-                Mammals = (int) (Math.random() * 100 + 1);
+        int gawno = (int) (Math.random() * 100 + 1);
+        int flyable = (int) (Math.random() * 100 + 1);
+        int penguins = (int) (Math.random() * 100 + 1);
         ArrayList<Object> mycorka = new ArrayList<>();
         for (int i = 0; i < gawno; i++) {
             mycorka.add(new Object());
@@ -25,10 +23,12 @@ public class Main {
         for (int i = 0; i < flyable; i++) {
             mycorka.add(new Sparrow());
         }
+        int swimmable = (int) (Math.random() * 100 + 1);
+        int mammals = (int) (Math.random() * 100 + 1);
         for (int i = 0; i < swimmable; i++) {
             mycorka.add(new Shark());
         }
-        for (int i = 0; i < Mammals; i++) {
+        for (int i = 0; i < mammals; i++) {
             mycorka.add(new Tiger());
         }
         List<? super Flyable> birdsAviaryBox = mycorka.stream()
