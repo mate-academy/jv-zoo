@@ -13,7 +13,4 @@ public class AviaryForAllAnimals<T extends Animal> {
         return animal;
     }
 
-    public void setAnimal(T animal) {
-        this.animal = animal;
-    }
 }

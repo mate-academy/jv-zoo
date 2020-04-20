@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-import core.basesyntax.impl.Pisces;
+import core.basesyntax.model.Pisces;
 
 public class AviaryForAnimalAsPisces<T extends Pisces> {
     private T pisces;
@@ -13,7 +13,4 @@ public class AviaryForAnimalAsPisces<T extends Pisces> {
         return pisces;
     }
 
-    public void setPisces(T pisces) {
-        this.pisces = pisces;
-    }
 }

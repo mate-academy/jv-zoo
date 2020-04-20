@@ -1,8 +1,9 @@
-package core.basesyntax.impl;
+package core.basesyntax.model;
 
-import core.basesyntax.model.Animal;
 import core.basesyntax.interfaces.Flyable;
+
 //Aves(Latin) is a class of birds
+
 public class Aves extends Animal implements Flyable {
     public Aves(String name) {
         super(name);

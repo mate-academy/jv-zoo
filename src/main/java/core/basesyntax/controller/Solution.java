@@ -4,7 +4,6 @@ import core.basesyntax.AviaryForAllAnimals;
 import core.basesyntax.AviaryForAnimalAsAves;
 import core.basesyntax.AviaryForAnimalAsPisces;
 import core.basesyntax.model.*;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;

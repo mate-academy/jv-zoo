@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-import core.basesyntax.impl.Aves;
+import core.basesyntax.model.Aves;
 
 public class AviaryForAnimalAsAves<T extends Aves> {
     private T aves;
@@ -13,7 +13,4 @@ public class AviaryForAnimalAsAves<T extends Aves> {
         return aves;
     }
 
-    public void setAves(T aves) {
-        this.aves = aves;
-    }
 }
