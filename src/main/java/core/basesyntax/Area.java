@@ -3,9 +3,10 @@ package core.basesyntax;
 import core.basesyntax.models.Animal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Area<T extends Animal> {
-    List<T> animals;
+    private List<T> animals;
 
     public Area() {
         animals = new ArrayList<>();
@@ -16,6 +17,11 @@ public class Area<T extends Animal> {
     }
 
     public void feedAnimals() {
-        animals.forEach(animal -> System.out.println(animal.getTypeOfAnimal() + " was fed!"));
+        String feeding = animals.stream()
+                .map(Animal::getTypeOfAnimal)
+                .collect(Collectors.joining(", "))
+                + (animals.size() > 1 ? " were" : " was")
+                + " fed.";
+        System.out.println(feeding);
     }
 }

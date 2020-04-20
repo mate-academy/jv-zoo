@@ -39,11 +39,11 @@ public class Zoo {
     }
 
     public void feedAnimals() {
-        System.out.println("Bird area: ");
+        System.out.print("Bird area: ");
         birdArea.feedAnimals();
-        System.out.println("Fish area: ");
+        System.out.print("Fish area: ");
         fishArea.feedAnimals();
-        System.out.println("Other area: ");
+        System.out.print("Other area: ");
         otherArea.feedAnimals();
     }
 }

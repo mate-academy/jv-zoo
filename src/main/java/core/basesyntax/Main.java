@@ -14,7 +14,7 @@ public class Main {
         Zoo zoo = new Zoo(animals);
         zoo.leadToArea();
         zoo.feedAnimals();
-        System.out.println("\nAbilities: ");
+        System.out.println("Abilities: ");
         animals.forEach(Animal::showAbility);
     }
 }
