@@ -1,8 +1,7 @@
 package core.basesyntax;
 
-
 public class MainApp {
-    private final static String LINE = "------------------------------------------";
+    private static final String LINE = "------------------------------------------";
 
     public static void main(String[] args) {
         Zoo zoo = new Zoo();
@@ -17,29 +16,22 @@ public class MainApp {
         zoo.addAnimal(tiger);
         zoo.addAnimal(penguin);
 
-        System.out.println(LINE +
-                "\nWho are living in zoo\n" +
-                LINE);
+        System.out.println(LINE + "\nWho are living in zoo\n" + LINE);
         System.out.println(zoo);
 
-        System.out.println(LINE +
-                "\nWe are feeding animals\n" +
-                LINE);
+        System.out.println(LINE + "\nWe are feeding animals\n" + LINE);
         zoo.feedAllAnimal();
 
-        System.out.println(LINE +
-                "\nTrying to feed animal who is present in zoo\n" +
-                LINE);
+        System.out.println(LINE + "\nTrying to feed animal who is present in zoo\n"
+                + LINE);
         zoo.feedAnimalByName("Sparrow", "Semki from Homka");
 
-        System.out.println(LINE +
-                "\nTrying to feed animal who is absent in zoo\n" +
-                LINE);
+        System.out.println(LINE + "\nTrying to feed animal who is absent in zoo\n"
+                + LINE);
         zoo.feedAnimalByName("Lion", "Meal");
 
-//        zoo.birdsHome.animalHashMap.entrySet().stream()
-//                .;
-//                        filter(p -> penguin.swim())
-
+        tiger.feed("Mc Chicken");
+        sparrow.fly();
+        penguin.swim();
     }
 }

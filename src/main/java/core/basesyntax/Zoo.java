@@ -51,11 +51,11 @@ public class Zoo<T> {
         animalsHomeArrayList.add(birdsHome);
         animalsHomeArrayList.add(catsHome);
 
-        animalsHomeArrayList.stream()
-                .map(animalsHome -> animalsHome.animalHashMap.entrySet())
-                .filter(o -> o.
-                .flatMap(animalsHomeArrayList -> animalsHomeArrayList.)
-                .forEach(e -> e.);
+//        animalsHomeArrayList.stream()
+//                .map(animalsHome -> animalsHome.animalHashMap.entrySet())
+//                .filter(o -> o.
+//                .flatMap(animalsHomeArrayList -> animalsHomeArrayList.)
+//                .forEach(e -> e.);
 
         for (AnimalsHome a : animalsHomeArrayList) {
             HashMap<String, Animal> animalHashMap = a.animalHashMap;

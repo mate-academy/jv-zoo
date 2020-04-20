@@ -15,7 +15,7 @@ public class AnimalsHome<T extends Animal> {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        for(Map.Entry<String, Animal> m: animalHashMap.entrySet()){
+        for (Map.Entry<String, Animal> m : animalHashMap.entrySet()) {
             sb.append("\n\t").append(m.getValue().name).append(", age: ").append(m.getValue().age);
         }
         return sb.toString();

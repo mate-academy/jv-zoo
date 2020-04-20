@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-abstract public class Animal {
+public abstract class Animal {
     String name;
     int age;
 
