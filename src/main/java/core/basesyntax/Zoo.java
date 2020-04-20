@@ -44,18 +44,10 @@ public class Zoo<T> {
 
     void feedAnimalByName(String animalName, String food) {
 
-        // Need refactor with streams
-
         ArrayList<AnimalsHome> animalsHomeArrayList = new ArrayList<>();
         animalsHomeArrayList.add(aquarium);
         animalsHomeArrayList.add(birdsHome);
         animalsHomeArrayList.add(catsHome);
-
-//        animalsHomeArrayList.stream()
-//                .map(animalsHome -> animalsHome.animalHashMap.entrySet())
-//                .filter(o -> o.
-//                .flatMap(animalsHomeArrayList -> animalsHomeArrayList.)
-//                .forEach(e -> e.);
 
         for (AnimalsHome a : animalsHomeArrayList) {
             HashMap<String, Animal> animalHashMap = a.animalHashMap;
@@ -69,21 +61,14 @@ public class Zoo<T> {
         System.out.println("There is no animal with name " + animalName + " in Zoo!");
     }
 
-//    void goAnimalsFly(){
-//        HashMap<String, Animal> animalsList = birdsHome.animalHashMap;
-//        for (Map.Entry<String, Animal> m : animalsList.entrySet()) {
-//            m.getValue()
-//        }
-//    }
-
     @Override
     public String toString() {
-        return "The zoo has aviaries: " +
-                aquarium.name +
-                ", " + birdsHome.name +
-                ", " + catsHome.name +
-                "\nIn the \'" + aquarium.name + "\' lives: " + aquarium +
-                "\nIn the \'" + birdsHome.name + "\' lives: " + birdsHome +
-                "\nIn the \'" + catsHome.name + "\' lives: " + catsHome;
+        return "The zoo has aviaries: "
+                + aquarium.name
+                + ", " + birdsHome.name
+                + ", " + catsHome.name
+                + "\nIn the \'" + aquarium.name + "\' lives: " + aquarium
+                + "\nIn the \'" + birdsHome.name + "\' lives: " + birdsHome
+                + "\nIn the \'" + catsHome.name + "\' lives: " + catsHome;
     }
 }
