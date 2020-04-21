@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.29">
+<file name="/home/lampa/IdeaProjects/MateACAD/jv-zoo/src/main/java/core/basesyntax/Fish.java">
+</file>
+<file name="/home/lampa/IdeaProjects/MateACAD/jv-zoo/src/main/java/core/basesyntax/Sparrow.java">
+</file>
+<file name="/home/lampa/IdeaProjects/MateACAD/jv-zoo/src/main/java/core/basesyntax/Zoo.java">
+</file>
+<file name="/home/lampa/IdeaProjects/MateACAD/jv-zoo/src/main/java/core/basesyntax/Swimmable.java">
+</file>
+<file name="/home/lampa/IdeaProjects/MateACAD/jv-zoo/src/main/java/core/basesyntax/Animal.java">
+</file>
+<file name="/home/lampa/IdeaProjects/MateACAD/jv-zoo/src/main/java/core/basesyntax/Flyable.java">
+</file>
+<file name="/home/lampa/IdeaProjects/MateACAD/jv-zoo/src/main/java/core/basesyntax/Tiger.java">
+</file>
+<file name="/home/lampa/IdeaProjects/MateACAD/jv-zoo/src/main/java/core/basesyntax/App.java">
+</file>
+<file name="/home/lampa/IdeaProjects/MateACAD/jv-zoo/src/main/java/core/basesyntax/Bird.java">
+</file>
+<file name="/home/lampa/IdeaProjects/MateACAD/jv-zoo/src/main/java/core/basesyntax/Shark.java">
+</file>
+<file name="/home/lampa/IdeaProjects/MateACAD/jv-zoo/src/main/java/core/basesyntax/Penguin.java">
+</file>
+</checkstyle>

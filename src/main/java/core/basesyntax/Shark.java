@@ -7,7 +7,8 @@ public class Shark extends Fish {
     }
 
     @Override
-    public void swimable() {
+    public void swim() {
+        super.swim();
         System.out.println("Swimming...");
     }
 
