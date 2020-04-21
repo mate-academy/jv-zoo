@@ -3,43 +3,59 @@ package core.basesyntax;
 import core.basesyntax.animals.Animal;
 import core.basesyntax.animals.Bird;
 import core.basesyntax.animals.Fish;
-import core.basesyntax.animals.Tiger;
+import core.basesyntax.animals.Predator;
 
 public class Zoo {
     private Aviary<Fish> aquarium;
-    private Aviary<Animal> commonAviary;
-    private Aviary<Bird> birdAviary;
+    private Aviary<Predator> aviary;
+    private Aviary<Bird> birdcage;
 
     public Zoo() {
         aquarium = new Aviary<>("Aquarium");
-        commonAviary = new Aviary<>("Aviary");
-        birdAviary = new Aviary<>("Birdcage");
+        aviary = new Aviary<>("Aviary");
+        birdcage = new Aviary<>("Birdcage");
     }
 
     public void feedAllAnimals(int foodAmount) {
         int foodPerAnimal = foodAmount
-                / totalNumberOfAnimals(aquarium, commonAviary, birdAviary);
+                / totalNumberOfAnimals(aquarium, aviary, birdcage);
         feedAviary(aquarium, foodPerAnimal);
-        feedAviary(commonAviary, foodPerAnimal);
-        feedAviary(birdAviary, foodPerAnimal);
+        feedAviary(aviary, foodPerAnimal);
+        feedAviary(birdcage, foodPerAnimal);
     }
 
     public void watchAllAnimals() {
         watchAviary(aquarium);
-        watchAviary(commonAviary);
-        watchAviary(birdAviary);
+        watchAviary(aviary);
+        watchAviary(birdcage);
     }
 
     public void add(Bird bird) {
-        birdAviary.addAnimal(bird);
+        birdcage.addAnimal(bird);
     }
 
     public void add(Fish fish) {
         aquarium.addAnimal(fish);
     }
 
-    public void add(Tiger tiger) {
-        commonAviary.addAnimal(tiger);
+    public void add(Predator tiger) {
+        aviary.addAnimal(tiger);
+    }
+
+    public boolean add(Animal animal) {
+        if (animal instanceof Fish) {
+            add((Fish) animal);
+            return true;
+        }
+        if (animal instanceof Bird) {
+            add((Bird) animal);
+            return true;
+        }
+        if (animal instanceof Predator) {
+            add((Predator) animal);
+            return true;
+        }
+        return false;
     }
 
     private void feedAviary(Aviary<? extends Animal> aviary, int foodPerAnimal) {
