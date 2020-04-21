@@ -11,5 +11,9 @@ public abstract class Animal {
         return typeOfAnimal;
     }
 
+    public void eat() {
+        System.out.println(getTypeOfAnimal() + " ate.");
+    }
+
     public abstract void showAbility();
 }

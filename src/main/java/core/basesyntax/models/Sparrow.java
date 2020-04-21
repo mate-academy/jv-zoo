@@ -5,6 +5,6 @@ import core.basesyntax.interfaces.FlyAbility;
 public class Sparrow extends Bird implements FlyAbility {
 
     public Sparrow() {
-        super("Sparrow", true);
+        super("Sparrow");
     }
 }

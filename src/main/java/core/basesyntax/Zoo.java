@@ -3,47 +3,43 @@ package core.basesyntax;
 import core.basesyntax.models.Animal;
 import core.basesyntax.models.Bird;
 import core.basesyntax.models.Fish;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Zoo {
     private List<Animal> animals;
-    private Area<Fish> fishArea;
-    private Area<Bird> birdArea;
-    private Area<Animal> otherArea;
+    private List<? super Fish> fishArea = new ArrayList<>();
+    private List<? super Bird> birdArea = new ArrayList<>();
+    private List<Animal> otherArea = new ArrayList<>();
 
     public Zoo(List<Animal> animals) {
         this.animals = animals;
-        fishArea = new Area<>();
-        birdArea = new Area<>();
-        otherArea = new Area<>();
     }
 
     public void leadToArea() {
-        animals.forEach(this::chooseArea);
-    }
-
-    private void chooseArea(Animal animal) {
-        int type = animal instanceof Bird
-                ? 1 : animal instanceof Fish
-                ? 2 : 3;
-        switch (type) {
-            case 1:
-                birdArea.add((Bird) animal);
-                break;
-            case 2:
-                fishArea.add((Fish) animal);
-                break;
-            default:
-                otherArea.add(animal);
-        }
+        List<Bird> birds = animals.stream()
+                .filter(animal -> animal instanceof Bird)
+                .map(animal -> (Bird) animal).collect(Collectors.toList());
+        birdArea.addAll(birds);
+        List<Fish> fishes = animals.stream()
+                .filter(animal -> animal instanceof Fish)
+                .map(animal -> (Fish) animal).collect(Collectors.toList());
+        fishArea.addAll(fishes);
+        List<Animal> otherAnimals = new ArrayList<>(animals);
+        otherAnimals.removeAll(fishes);
+        otherAnimals.removeAll(birds);
+        otherArea.addAll(otherAnimals);
     }
 
     public void feedAnimals() {
-        System.out.print("Bird area: ");
-        birdArea.feedAnimals();
-        System.out.print("Fish area: ");
-        fishArea.feedAnimals();
-        System.out.print("Other area: ");
-        otherArea.feedAnimals();
+        System.out.print("Bird area: \n");
+        List<? extends Bird> birds = new ArrayList(birdArea);
+        birds.forEach(Bird::eat);
+        System.out.print("Fish area: \n");
+        List<? extends Fish> fishes = new ArrayList(fishArea);
+        fishes.forEach(Fish::eat);
+        System.out.print("Other area: \n");
+        otherArea.forEach(Animal::eat);
     }
 }
