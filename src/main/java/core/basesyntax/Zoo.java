@@ -42,22 +42,6 @@ public class Zoo {
         aviary.addAnimal(predator);
     }
 
-    public boolean add(Animal animal) {
-        if (animal instanceof Fish) {
-            add((Fish) animal);
-            return true;
-        }
-        if (animal instanceof Bird) {
-            add((Bird) animal);
-            return true;
-        }
-        if (animal instanceof Predator) {
-            add((Predator) animal);
-            return true;
-        }
-        return false;
-    }
-
     private void feedAviary(Aviary<? extends Animal> aviary, int foodPerAnimal) {
         for (Animal animal : aviary.getAnimals()) {
             animal.feed(foodPerAnimal);
