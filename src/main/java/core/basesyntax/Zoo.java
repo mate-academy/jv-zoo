@@ -19,15 +19,15 @@ public class Zoo {
         fish.forEach(Animal::feed);
     }
 
-    public void addAnimal(Animal...animal) {
-        for (Animal thisAnimal : animal) {
-            if (Bird.class.isAssignableFrom(thisAnimal.getClass())) {
-                birdsAviary.add((Bird) thisAnimal);
-            } else if (OtherAnimal.class.isAssignableFrom(thisAnimal.getClass())) {
-                animalsAviary.add((OtherAnimal) thisAnimal);
-            } else {
-                aquarium.add((Fish) thisAnimal);
-            }
-        }
+    public void addAnimal(Bird bird) {
+        birdsAviary.add(bird);
+    }
+
+    public void addAnimal(OtherAnimal otherAnimal) {
+        animalsAviary.add(otherAnimal);
+    }
+
+    public void addAnimal(Fish fish) {
+        aquarium.add(fish);
     }
 }

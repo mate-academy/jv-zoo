@@ -11,7 +11,10 @@ public class Main {
         Penguin penguin = new Penguin();
         Shark shark = new Shark();
         Tiger tiger = new Tiger();
-        zoo.addAnimal(sparrow, penguin, shark, tiger);
+        zoo.addAnimal(sparrow);
+        zoo.addAnimal(penguin);
+        zoo.addAnimal(shark);
+        zoo.addAnimal(tiger);
         zoo.feedAll();
     }
 }
