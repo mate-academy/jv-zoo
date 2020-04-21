@@ -9,7 +9,6 @@ public class Pisces extends Animal implements Swimmable {
         super(name);
     }
 
-
     @Override
     public void swim() {
         System.out.println("I like swimming!.....");

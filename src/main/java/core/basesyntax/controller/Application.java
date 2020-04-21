@@ -1,10 +1,19 @@
 package core.basesyntax.controller;
 
-//https://github.com/mate-academy/jv-zoo/pull/24
+import core.basesyntax.model.Animal;
+import core.basesyntax.model.Aves;
+import core.basesyntax.model.Penguin;
+import core.basesyntax.model.Pisces;
+import core.basesyntax.model.Shark;
+import core.basesyntax.model.Sparrow;
+import core.basesyntax.model.Tiger;
 
-import core.basesyntax.model.*;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
 
 import static core.basesyntax.controller.Solution.infoAboutAnimals;
 
@@ -13,10 +22,10 @@ public class Application {
     public static void main(String[] args) {
 
         System.out.println("Welcome to the Virtual Zoo:");
-        List<? extends Animal> animalList = listAllAnimals();
-        List<? extends Aves> avesList;
-       // List<Pisces> piscesList = listAllAnimals();
+        List<Animal> animalList = listAllAnimals();
         iterateAnimals(animalList);
+        List<? extends Aves> listAves;
+        //iterateAnimalsAves();
         startMenu();
 
     }
@@ -38,6 +47,35 @@ public class Application {
         return animals;
     }
 
+    public void addPenguin() {
+        List<Penguin> penguinList = new ArrayList<>();
+        penguinList.add(new Penguin("Skipper"));
+        penguinList.add(new Penguin("Rico"));
+        penguinList.add(new Penguin("Private"));
+    }
+
+    public void addShark() {
+        List<Shark> sharkList = new ArrayList<>();
+        sharkList.add(new Shark("Goblin"));
+        sharkList.add(new Shark("Great White"));
+        sharkList.add(new Shark("Mako"));
+
+    }
+
+    public void addSparrow() {
+        List<Sparrow> sparrowList = new ArrayList<>();
+        sparrowList.add(new Sparrow("Spock"));
+        sparrowList.add(new Sparrow("Mance"));
+        sparrowList.add(new Sparrow("Yashee"));
+    }
+
+    public void addTiger() {
+        List<Tiger> tigerList = new ArrayList<>();
+        tigerList.add(new Tiger("Amber"));
+        tigerList.add(new Tiger("Cosimia"));
+        tigerList.add(new Tiger("Cuddles"));
+    }
+
     public static void findAnimalByName(List<? extends Animal> animals, String inputName) {
         animals.stream()
                 .filter(animal -> animal.getName().equals(inputName))
@@ -45,20 +83,20 @@ public class Application {
                 .orElseThrow();
     }
 
-    public static void iterateAnimals(List<? extends Animal> animals) {
+    public static void iterateAnimals(Collection<? extends Animal> animals) {
         for (Animal animal : animals) {
             System.out.println("My nam's " + animal.name + ".  " + animal.toString());
         }
     }
-    public static void iterateAnimalsAves(List<? extends Aves> animals) {
-        List<Animal> list = new ArrayList<>();
-        for (Animal animal : animals) {
-            list.add(animal);
+
+    public static void iterateAnimalsAves(Collection<? extends Aves> animals) {
+        for (Aves animal : animals) {
             System.out.println("My nam's " + animal.name + ".  " + animal.toString());
         }
     }
-    public static void iterateAnimalsPisces(List<? extends Pisces> animals) {
-        for (Animal animal : animals) {
+
+    public static void iterateAnimalsPisces(Collection<? extends Pisces> animals) {
+        for (Pisces animal : animals) {
             System.out.println("My nam's " + animal.name + ".  " + animal.toString());
         }
     }
@@ -84,7 +122,6 @@ public class Application {
             for (Map.Entry<Integer, String> entry : map.entrySet()) {
                 System.out.println(entry.getKey() + entry.getValue());
             }
-
             chosenItem = scan.nextLine();
             isExitChosen = processUserSelection(chosenItem);
         }
@@ -99,8 +136,8 @@ public class Application {
                 break;
             case "2":
                 System.out.println("You chose: " + "Who are 'Aves'(as Bird)");
-//                List<Aves> animalList = iterateAnimalsAves();
-//                iterateAnimalsAves(avesList);
+                //iterateAnimalsAves();
+
                 break;
             case "3":
                 System.out.println("You chose: " + "Who are 'Pisces'(as Fish )");

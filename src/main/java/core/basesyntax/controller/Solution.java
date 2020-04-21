@@ -3,7 +3,10 @@ package core.basesyntax.controller;
 import core.basesyntax.AviaryForAllAnimals;
 import core.basesyntax.AviaryForAnimalAsAves;
 import core.basesyntax.AviaryForAnimalAsPisces;
-import core.basesyntax.model.*;
+import core.basesyntax.model.Penguin;
+import core.basesyntax.model.Shark;
+import core.basesyntax.model.Sparrow;
+import core.basesyntax.model.Tiger;
 
 public class Solution {
     public static void infoAboutAnimals() {
@@ -21,18 +24,14 @@ public class Solution {
         sharkAviary.getPisces().swim();
         System.out.println("-----------------------------------------------------");
 
-        //Penguin penguin = new Penguin("Skipper");
-        //List<Animal> list = new ArrayList<>();
-//        List<Animal> animalList = listAllAnimals();
-//        for (Animal animal : animalList) {
-//
-//            AviaryForAllAnimals<? extends Aves> penguinAviary = new AviaryForAllAnimals<Penguin>(animal);
-//            System.out.println("I'm penguin " + penguinAviary.getAnimal().name + " and");
-//            penguinAviary.getAnimal().swim();
-//            penguinAviary.getAnimal().fly();
-//            penguinAviary.getAnimal().eat();
-//            System.out.println("-----------------------------------------------------");
-//        }
+        Penguin penguin = new Penguin("Skipper");
+        AviaryForAllAnimals<Penguin> penguinAviary = new AviaryForAllAnimals<>(penguin);
+        System.out.println("I'm penguin " + penguinAviary.getAnimal().name + " and");
+        penguinAviary.getAnimal().swim();
+        penguinAviary.getAnimal().fly();
+        penguinAviary.getAnimal().eat();
+        System.out.println("-----------------------------------------------------");
+        // }
 
         Tiger tiger = new Tiger("Amber");
         AviaryForAllAnimals<Tiger> tigerAviary = new AviaryForAllAnimals<>(tiger);

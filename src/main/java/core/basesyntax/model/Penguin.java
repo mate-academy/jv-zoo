@@ -1,22 +1,13 @@
 package core.basesyntax.model;
 
-import core.basesyntax.interfaces.Swimmable;
+import core.basesyntax.interfaces.Flyable;
 
-import java.util.List;
-
-public class Penguin extends Aves implements Swimmable {
-    List<Penguin> list;
-
-    public Penguin(String name, List<Penguin> list) {
-        super(name);
-        this.list = list;
-    }
+public class Penguin extends Aves implements Flyable {
 
     public Penguin(String name) {
         super(name);
     }
 
-    @Override
     public void swim() {
         System.out.println("I like swimming!.....");
     }
