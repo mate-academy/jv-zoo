@@ -3,23 +3,15 @@ package core.basesyntax.controller;
 import core.basesyntax.AviaryForAllAnimals;
 import core.basesyntax.AviaryForAnimalAsAves;
 import core.basesyntax.AviaryForAnimalAsPisces;
-import core.basesyntax.model.*;
-import java.util.ArrayList;
+import core.basesyntax.model.Animal;
+import core.basesyntax.model.Penguin;
+import core.basesyntax.model.Shark;
+import core.basesyntax.model.Sparrow;
+import core.basesyntax.model.Tiger;
 import java.util.Collection;
-import java.util.List;
 
 public class Solution {
     public void addAnimalToZoo() {
-        List<Penguin> penguinList = new ArrayList<>();
-        penguinList.add(new Penguin("Skipper"));
-        penguinList.add(new Penguin("Rico"));
-        penguinList.add(new Penguin("Private"));
-
-        List<Shark> sharkList = new ArrayList<>();
-        sharkList.add(new Shark("GOBLIN"));
-        sharkList.add(new Shark("GREAT WHITE"));
-        sharkList.add(new Shark("MAKO"));
-
         Sparrow sparrow = new Sparrow("MAKO");
         AviaryForAnimalAsAves<Sparrow> sparrowAviary = new AviaryForAnimalAsAves<>(sparrow);
         System.out.println("I'm sparrow " + sparrowAviary.getAves().name + " and ");
@@ -38,7 +30,6 @@ public class Solution {
         AviaryForAllAnimals<Penguin> penguinAviary = new AviaryForAllAnimals<>(penguin);
         System.out.println("I'm penguin " + penguinAviary.getAnimal().name + " and");
         penguinAviary.getAnimal().swim();
-        penguinAviary.getAnimal().fly();
         penguinAviary.getAnimal().eat();
         System.out.println("-----------------------------------------------------");
 
