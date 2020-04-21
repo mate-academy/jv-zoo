@@ -17,8 +17,8 @@ public class Zoo {
         fishAquarium.add(fish);
     }
 
-    public void addAnimals(Tiger tiger) {
-        mammalsAviary.add(tiger);
+    public void addAnimals(Animal animal) {
+        mammalsAviary.add(animal);
     }
 
     public void feedAnimals(Animal animal) {
