@@ -1,4 +1,6 @@
-package core.basesyntax;
+package core.basesyntax.cages;
+
+import core.basesyntax.types.Animal;
 
 public abstract class Zoo {
 

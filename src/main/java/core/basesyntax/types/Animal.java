@@ -1,4 +1,4 @@
-package core.basesyntax;
+package core.basesyntax.types;
 
 public abstract class Animal {
 

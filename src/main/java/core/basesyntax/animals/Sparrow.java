@@ -1,6 +1,9 @@
-package core.basesyntax;
+package core.basesyntax.animals;
 
-public class Sparrow extends Bird {
+import core.basesyntax.types.Bird;
+import core.basesyntax.types.Flyable;
+
+public class Sparrow extends Bird implements Flyable {
     @Override
     public void fly() {
         System.out.println("Sparrow is flying");

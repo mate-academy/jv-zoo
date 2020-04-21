@@ -1,5 +1,6 @@
-package core.basesyntax;
+package core.basesyntax.cages;
 
+import core.basesyntax.types.Animal;
 import java.util.ArrayList;
 import java.util.List;
 

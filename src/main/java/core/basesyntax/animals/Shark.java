@@ -1,4 +1,6 @@
-package core.basesyntax;
+package core.basesyntax.animals;
+
+import core.basesyntax.types.Fish;
 
 public class Shark extends Fish {
     @Override
