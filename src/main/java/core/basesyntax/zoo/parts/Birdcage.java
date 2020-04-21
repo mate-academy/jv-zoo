@@ -1,8 +1,6 @@
 package core.basesyntax.zoo.parts;
 
 import core.basesyntax.animals.birds.Bird;
-import core.basesyntax.animals.birds.Penguin;
-import core.basesyntax.animals.birds.Sparrow;
 import java.util.ArrayList;
 
 public class Birdcage {
@@ -10,13 +8,13 @@ public class Birdcage {
 
     public Birdcage() {
         list = new ArrayList<>();
-        Sparrow sparrow = new Sparrow();
-        Penguin penguin = new Penguin();
-        list.add(sparrow);
-        list.add(penguin);
     }
 
-    public ArrayList<? super Bird> getAllAnimal() {
-        return list;
+    public ArrayList<? extends Bird> getAllAnimal() {
+        return (ArrayList<? extends Bird>)list;
+    }
+
+    public void putAnimal(Bird bird) {
+        list.add(bird);
     }
 }

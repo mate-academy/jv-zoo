@@ -13,7 +13,11 @@ public class SwimmingPool {
         list.add(shark);
     }
 
-    public ArrayList<? super Fish> getAllAnimal() {
-        return list;
+    public ArrayList<? extends Fish> getAllAnimal() {
+        return (ArrayList<? extends Fish>) list;
+    }
+
+    public void putAnimal(Fish fish) {
+        list.add(fish);
     }
 }

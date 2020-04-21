@@ -1,7 +1,6 @@
 package core.basesyntax.zoo.parts;
 
 import core.basesyntax.animals.Animal;
-import core.basesyntax.animals.other.animals.Tiger;
 import java.util.ArrayList;
 
 public class Aviary {
@@ -9,11 +8,13 @@ public class Aviary {
 
     public Aviary() {
         list = new ArrayList<>();
-        Animal tiger = new Tiger();
-        list.add(tiger);
     }
 
     public ArrayList<Animal> getAllAnimal() {
         return list;
+    }
+
+    public void putAnimal(Animal animal) {
+        list.add(animal);
     }
 }

@@ -1,6 +1,8 @@
 package core.basesyntax;
 
 import core.basesyntax.animals.Animal;
+import core.basesyntax.animals.birds.Bird;
+import core.basesyntax.animals.fishes.Fish;
 import core.basesyntax.zoo.parts.Aviary;
 import core.basesyntax.zoo.parts.Birdcage;
 import core.basesyntax.zoo.parts.SwimmingPool;
@@ -10,24 +12,22 @@ public class ZooPark extends SwimmingPool {
     private SwimmingPool swimmingPool;
     private Birdcage birdcage;
 
-    public ZooPark() {
-        aviary = new Aviary();
-        swimmingPool = new SwimmingPool();
-        birdcage = new Birdcage();
+    public ZooPark(Aviary aviary, SwimmingPool swimmingPool, Birdcage birdcage) {
+        this.aviary = aviary;
+        this.swimmingPool = swimmingPool;
+        this.birdcage = birdcage;
     }
 
     public void feedAll() {
-        for (Object animal : aviary.getAllAnimal()) {
-            Animal animal1 = (Animal)animal;
+        for (Animal animal : aviary.getAllAnimal()) {
+            animal.eat();
+        }
+        for (Bird bird : birdcage.getAllAnimal()) {
+            Animal animal1 = bird;
             animal1.eat();
         }
-        for (Object animal : birdcage.getAllAnimal()) {
-            Animal animal1 = (Animal)animal;
-            animal1.eat();
-        }
-        for (Object animal : swimmingPool.getAllAnimal()) {
-            Animal animal1 = (Animal)animal;
-            animal1.eat();
+        for (Fish fish : swimmingPool.getAllAnimal()) {
+            fish.eat();
         }
     }
 }
