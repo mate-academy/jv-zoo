@@ -22,24 +22,9 @@ public class Zoo {
         generalAviary = new Aviary<>();
         aquarium = new Aviary<>();
 
-        aquarium.addAll(animals.stream()
-                .filter(Swimable.class::isInstance)
-                .map(Swimable.class::cast)
-                .collect(Collectors.toList()));
-
-        this.animals.removeAll(aquarium.getAnimals());
-
-        birdsAviary.addAll(this.animals.stream()
-                .filter(Flyable.class::isInstance)
-                .map(Flyable.class::cast)
-                .collect(Collectors.toList()));
-
-        this.animals.removeAll(birdsAviary.getAnimals());
-
-        generalAviary.addAll(this.animals.stream()
-                .filter(AbleToMoveOnTheLand.class::isInstance)
-                .map(AbleToMoveOnTheLand.class::cast)
-                .collect(Collectors.toList()));
+        addAnimalsToAquarium(this.animals);
+        addAnimalsToBirdsAviary(this.animals);
+        addAnimalsToGeneralAviary(this.animals);
     }
 
     public void feed(List<? extends Animal> list) {
@@ -50,5 +35,29 @@ public class Zoo {
         System.out.format("%18s:   %5s\n", "In birds aviary", birdsAviary.toString());
         System.out.format("%18s:   %5s\n", "In general aviary", generalAviary.toString());
         System.out.format("%18s:   %5s\n\n", "In aquarium", aquarium.toString());
+    }
+
+    public void addAnimalsToBirdsAviary(List<? extends Animal> list) {
+        birdsAviary.addAll(list.stream()
+                .filter(Flyable.class::isInstance)
+                .map(Flyable.class::cast)
+                .collect(Collectors.toList()));
+        this.animals.removeAll(birdsAviary.getAnimals());
+    }
+
+    public void addAnimalsToAquarium(List<? extends Animal> list) {
+        aquarium.addAll(list.stream()
+                .filter(Swimable.class::isInstance)
+                .map(Swimable.class::cast)
+                .collect(Collectors.toList()));
+        this.animals.removeAll(aquarium.getAnimals());
+    }
+
+    public void addAnimalsToGeneralAviary(List<? extends Animal> list) {
+        generalAviary.addAll(list.stream()
+                .filter(AbleToMoveOnTheLand.class::isInstance)
+                .map(AbleToMoveOnTheLand.class::cast)
+                .collect(Collectors.toList()));
+        this.animals.removeAll(generalAviary.getAnimals());
     }
 }
