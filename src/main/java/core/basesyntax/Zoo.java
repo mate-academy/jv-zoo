@@ -18,4 +18,14 @@ public class Zoo {
                 (ArrayList<? extends Fish>) aquarium;
         fish.forEach(Animal::feed);
     }
+
+    public void addAnimal(Animal animal) {
+        if (Bird.class.isAssignableFrom(animal.getClass())) {
+            birdsAviary.add((Bird) animal);
+        } else if (OtherAnimal.class.isAssignableFrom(animal.getClass())) {
+            animalsAviary.add((OtherAnimal) animal);
+        } else {
+            aquarium.add((Fish) animal);
+        }
+    }
 }
