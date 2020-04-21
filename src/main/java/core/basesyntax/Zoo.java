@@ -38,8 +38,8 @@ public class Zoo {
         aquarium.addAnimal(fish);
     }
 
-    public void add(Predator tiger) {
-        aviary.addAnimal(tiger);
+    public void add(Predator predator) {
+        aviary.addAnimal(predator);
     }
 
     public boolean add(Animal animal) {
