@@ -7,7 +7,7 @@ import core.basesyntax.animals.mammals.Tiger;
 
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Zoo<Animal> zoo = new Zoo<>();
         zoo.addFish(new Shark("white shark", 9, 1));
         zoo.addBird(new Sparrow("usual", 1,9));
