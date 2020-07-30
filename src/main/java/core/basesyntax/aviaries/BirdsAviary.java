@@ -8,4 +8,7 @@ public class BirdsAviary<T> {
     public void addToBirdsAviary(T animal) {
         birdsAviary.add(animal);
     }
+    public void removeFromBirdsAviary(T animal) {
+        birdsAviary.remove(animal);
+    }
 }

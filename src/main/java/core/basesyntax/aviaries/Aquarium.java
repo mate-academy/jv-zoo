@@ -8,4 +8,7 @@ public class Aquarium<T> {
     public void addToAquarium(T animal) {
         aquarium.add(animal);
     }
+    public void removeFromAquarium(T animal) {
+        aquarium.remove(animal);
+    }
 }
