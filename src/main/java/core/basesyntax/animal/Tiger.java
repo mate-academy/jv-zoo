@@ -7,8 +7,8 @@ public class Tiger extends Animal {
     }
 
     @Override
-    void feed() {
-        System.out.println("Give tiger some meat");
+    public void feed() {
+        System.out.println("Give " + getName() + " some meat");
     }
 
     @Override

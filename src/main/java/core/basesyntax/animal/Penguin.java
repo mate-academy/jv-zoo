@@ -14,9 +14,10 @@ public class Penguin extends Animal implements Swimmable {
     }
 
     @Override
-    void feed() {
-        System.out.println("Give penguin a fish");
+    public void feed() {
+        System.out.println("Give " + getName() + " fish");
     }
+
     private void feedItself() {
         System.out.println("Penguin can hunt fish buy himself. But be aware of sharks :)");
     }

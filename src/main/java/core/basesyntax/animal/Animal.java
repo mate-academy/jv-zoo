@@ -1,11 +1,17 @@
 package core.basesyntax.animal;
 
 public abstract class Animal {
-   private String name;
-   private int age;
-   private boolean isRare;
+    private String name;
+    private int age;
+    private boolean isRare;
 
-   abstract void feed();
+    public Animal(String name, int age, boolean isRare) {
+        this.name = name;
+        this.age = age;
+        this.isRare = isRare;
+    }
+
+    public abstract void feed();
 
     public String getName() {
         return name;
@@ -29,11 +35,5 @@ public abstract class Animal {
 
     public void setRare(boolean rare) {
         isRare = rare;
-    }
-
-    public Animal(String name, int age, boolean isRare) {
-        this.name = name;
-        this.age = age;
-        this.isRare = isRare;
     }
 }

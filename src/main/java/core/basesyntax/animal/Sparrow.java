@@ -2,7 +2,7 @@ package core.basesyntax.animal;
 
 import core.basesyntax.interfaces.Flyable;
 
-public class Sparrow extends Animal implements Flyable  {
+public class Sparrow extends Animal implements Flyable {
     public Sparrow(String name, int age, boolean isRare) {
         super(name, age, isRare);
     }
@@ -13,8 +13,8 @@ public class Sparrow extends Animal implements Flyable  {
     }
 
     @Override
-    void feed() {
-        System.out.println("Give sparrow some seeds");
+    public void feed() {
+        System.out.println("Give " + getName() + " some seeds");
     }
 
     @Override
