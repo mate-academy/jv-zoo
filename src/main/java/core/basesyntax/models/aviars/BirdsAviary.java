@@ -10,7 +10,6 @@ public class BirdsAviary {
         this.birds = animals;
     }
 
-
     public void feedAllBirds() {
         birds.forEach(a -> a.feed());
     }

@@ -1,12 +1,15 @@
 package core.basesyntax;
 
-import core.basesyntax.models.animals.*;
+import core.basesyntax.models.animals.Animal;
+import core.basesyntax.models.animals.Penguin;
+import core.basesyntax.models.animals.Shark;
+import core.basesyntax.models.animals.Sparrow;
+import core.basesyntax.models.animals.Tiger;
 import core.basesyntax.models.aviars.AnimalsAviary;
 import core.basesyntax.models.aviars.Aquarium;
 import core.basesyntax.models.aviars.BirdsAviary;
 import core.basesyntax.models.interfaces.Flyable;
 import core.basesyntax.models.interfaces.Swimable;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,8 +27,10 @@ public class Main {
 
     private static void howAnimalsMove(Zoo zoo) {
         zoo.getAquarium().getFishes().forEach(f -> ((Swimable) f).swim());
-        zoo.getBirdsAviary().getBirds().stream().filter(b -> (b instanceof Penguin)).forEach(f -> ((Swimable) f).swim());
-        zoo.getBirdsAviary().getBirds().stream().filter(b -> !(b instanceof Penguin)).forEach(f -> ((Flyable) f).fly());
+        zoo.getBirdsAviary().getBirds().stream().filter(b -> (b instanceof Penguin))
+                .forEach(f -> ((Swimable) f).swim());
+        zoo.getBirdsAviary().getBirds().stream().filter(b -> !(b instanceof Penguin))
+                .forEach(f -> ((Flyable) f).fly());
         zoo.getAnimalsAviary().getAnimals().forEach(a -> a.doSomething());
     }
 
