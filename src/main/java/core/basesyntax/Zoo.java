@@ -21,21 +21,21 @@ public class Zoo {
     }
 
     public void feedAnimals() {
-        List<Animal> animals = new ArrayList(this.cellAnimals);
+        List<Animal> animals = new ArrayList(cellAnimals);
         for (Animal animal : animals) {
             animal.feed();
         }
     }
 
     public void feedBirds() {
-        List<Bird> birdsWhoFlying = new ArrayList(this.cellBirds);
+        List<Bird> birdsWhoFlying = new ArrayList(cellBirds);
         for (Bird birdWhoFlying : birdsWhoFlying) {
             birdWhoFlying.feed();
         }
     }
 
     public void feedFishes() {
-        List<Fish> fishes = new ArrayList(this.cellFishes);
+        List<Fish> fishes = new ArrayList(cellFishes);
         for (Fish fish : fishes) {
             fish.feed();
         }
