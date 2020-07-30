@@ -11,7 +11,6 @@ public abstract class Animal implements IAnimal {
 
     @Override
     public void move() throws HungryAnimalException {
-
     }
 
     protected int getEnergy() {

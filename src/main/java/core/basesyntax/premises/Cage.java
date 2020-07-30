@@ -3,9 +3,7 @@ package core.basesyntax.premises;
 import core.basesyntax.animals.Animal;
 import core.basesyntax.animals.Penguin;
 import core.basesyntax.animals.Sparrow;
-import core.basesyntax.animals.Tiger;
 import core.basesyntax.exception.WrongAnimalException;
-
 import java.util.ArrayList;
 import java.util.List;
 
