@@ -9,7 +9,6 @@ import core.basesyntax.animal.Tiger;
 import core.basesyntax.aviary.Aquarium;
 import core.basesyntax.aviary.AviaryForBirds;
 import core.basesyntax.aviary.AviaryForLandAnimal;
-
 import java.util.List;
 
 public class ZooApp {

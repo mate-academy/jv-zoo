@@ -2,7 +2,6 @@ package core.basesyntax;
 
 import core.basesyntax.abstracts.Animal;
 import core.basesyntax.abstracts.Aviary;
-
 import java.util.List;
 
 public class Zoo {
