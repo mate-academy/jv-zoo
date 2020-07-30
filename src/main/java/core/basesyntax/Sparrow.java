@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Sparrow extends Bird implements Flyable{
+public class Sparrow extends Bird implements Flyable {
 
     @Override
     public void fly() {

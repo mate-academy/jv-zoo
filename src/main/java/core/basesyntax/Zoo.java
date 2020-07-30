@@ -5,33 +5,26 @@ import java.util.List;
 
 /**
  * Feel free to remove this class and create your own.
- * В зоопарке должны быть вольер для птиц, для всех животных и аквариум
- * Создать классы тигр, пингвин, воробей и акула и добавить в соответствующие среды обитания (см. п.2)
- * Птицы должны уметь летать, рыбы должны уметь плавать. Обратите внимание на пингвина,
- * там не все так просто: он может плавать, но не может летать, при єтом является птицей
- * Должна быть возможность накормить всех животных
- * Для решения задачи воспользоваться Дженериками
  */
 public class Zoo {
     public static void main(String[] args) {
 
-        List<Bird> aviaryАorИirds = new ArrayList<>();
-        List<WaterAnimals> aquarium = new ArrayList<>();
-        List<Animal> animals = new ArrayList<>();
-
+        List<Bird> aviaryForBirds = new ArrayList<>();
         Animal sparrow = new Sparrow();
+        aviaryForBirds.add((Bird) sparrow);
+
+        List<WaterAnimals> aquarium = new ArrayList<>();
         Animal shark = new Shark();
         Animal penguin = new Penguin();
-        Animal tiger = new Tiger();
+        aquarium.add((WaterAnimals) shark);
+        aquarium.add((WaterAnimals) penguin);
 
+        List<Animal> animals = new ArrayList<>();
+        Animal tiger = new Tiger();
         animals.add(tiger);
         animals.add(sparrow);
         animals.add(penguin);
         animals.add(shark);
-
-        aviaryАorИirds.add((Bird) sparrow);
-        aquarium.add((WaterAnimals) shark);
-        aquarium.add((WaterAnimals) penguin);
 
         toFeedAnimal(animals);
         animalIsMove(animals);

@@ -9,6 +9,6 @@ public class Penguin extends WaterAnimals implements Swimmable {
 
     @Override
     public void feed() {
-      System.out.println("The penguin is eating");
+        System.out.println("The penguin is eating");
     }
 }

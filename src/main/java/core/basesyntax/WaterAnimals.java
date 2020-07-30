@@ -1,8 +1,8 @@
 package core.basesyntax;
 
-public class WaterAnimals extends Animal{
+public class WaterAnimals extends Animal {
     @Override
     public void feed() {
-      System.out.println("The water animal is eating");
+        System.out.println("The water animal is eating");
     }
 }
