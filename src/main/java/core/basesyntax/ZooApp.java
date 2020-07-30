@@ -1,0 +1,35 @@
+package core.basesyntax;
+
+import core.basesyntax.animal.Fish;
+import core.basesyntax.animal.Flyable;
+import core.basesyntax.animal.Penguin;
+import core.basesyntax.animal.Shark;
+import core.basesyntax.animal.Sparrow;
+import core.basesyntax.animal.Swimmable;
+import core.basesyntax.animal.Tiger;
+
+public class ZooApp {
+    public static void main(String[] args) {
+        Zoo zoo = new Zoo();
+        zoo.getLandAnimalAviary().addAnimal(new Tiger());
+        zoo.getBirdAviary().addAnimal(new Penguin());
+        zoo.getBirdAviary().addAnimal(new Sparrow());
+        zoo.getFishAviary().addAnimal(new Shark());
+
+        zoo.feedAllAnimals();
+
+        System.out.println();
+        zoo.getFishAviary().getAnimals().forEach(Fish::swim);
+
+        System.out.println();
+        zoo.getBirdAviary().getAnimals()
+                .forEach(bird -> {
+                    if (bird instanceof Flyable) {
+                        ((Flyable) bird).fly();
+                    }
+                    if (bird instanceof Swimmable) {
+                        ((Swimmable) bird).swim();
+                    }
+                });
+    }
+}
