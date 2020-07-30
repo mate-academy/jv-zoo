@@ -13,6 +13,7 @@ public class Sparrow extends Bird implements Flying {
 
     @Override
     public void fly() {
+        super.fly();
         System.out.println("Sparrow is flying");
     }
 }
