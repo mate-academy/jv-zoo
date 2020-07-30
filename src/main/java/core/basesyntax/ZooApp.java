@@ -18,18 +18,6 @@ public class ZooApp {
 
         zoo.feedAllAnimals();
 
-        System.out.println();
-        zoo.getFishAviary().getAnimals().forEach(Fish::swim);
-
-        System.out.println();
-        zoo.getBirdAviary().getAnimals()
-                .forEach(bird -> {
-                    if (bird instanceof Flyable) {
-                        ((Flyable) bird).fly();
-                    }
-                    if (bird instanceof Swimmable) {
-                        ((Swimmable) bird).swim();
-                    }
-                });
+        zoo.entertain();
     }
 }
