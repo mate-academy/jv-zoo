@@ -5,15 +5,22 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Класс описывает вольер для животных. Он может быть параметризован
+ * определенным типом животных. Интерфейс класса содержит три метода:
+ * - добавить животное в вольер
+ * - удалить животное из вольера
+ * - получить сет животных (для просмотра, без права изменения содержимого вольера)
+ */
 public class Aviary<T extends Animal> {
-    private Set<T> animals = new HashSet<>();
+    private final Set<T> animals = new HashSet<>();
 
-    public boolean addAnimal(T animal) {
-        return animals.add(animal);
+    public void addAnimal(T animal) {
+        animals.add(animal);
     }
 
-    public boolean removeAnimal(T animal) {
-        return animals.remove(animal);
+    public void removeAnimal(T animal) {
+        animals.remove(animal);
     }
 
     public Set<T> getAnimals() {
