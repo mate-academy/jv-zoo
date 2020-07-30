@@ -4,9 +4,10 @@ import core.basesyntax.models.animals.*;
 import core.basesyntax.models.aviars.AnimalsAviary;
 import core.basesyntax.models.aviars.Aquarium;
 import core.basesyntax.models.aviars.BirdsAviary;
+import core.basesyntax.models.interfaces.Flyable;
+import core.basesyntax.models.interfaces.Swimable;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -17,12 +18,19 @@ public class Main {
         Zoo zoo = new Zoo(animalsAviary, aquarium, birdsAviary);
 
         zoo.feedAllAnimals();
+        System.out.println("-----------------");
+        howAnimalsMove(zoo);
+    }
 
-        //zoo.getAquarium().getFishes().stream().forEach(f -> f.swim());
+    private static void howAnimalsMove(Zoo zoo) {
+        zoo.getAquarium().getFishes().forEach(f -> ((Swimable) f).swim());
+        zoo.getBirdsAviary().getBirds().stream().filter(b -> (b instanceof Penguin)).forEach(f -> ((Swimable) f).swim());
+        zoo.getBirdsAviary().getBirds().stream().filter(b -> !(b instanceof Penguin)).forEach(f -> ((Flyable) f).fly());
+        zoo.getAnimalsAviary().getAnimals().forEach(a -> a.doSomething());
     }
 
     private static List<Animal> getAnimals() {
-        List <Animal> list = new ArrayList<>();
+        List<Animal> list = new ArrayList<>();
         Tiger tiger = new Tiger("Lex", 2);
         Tiger tiger2 = new Tiger("Robby", 3);
         list.add(tiger);
@@ -31,7 +39,7 @@ public class Main {
     }
 
     private static List<Animal> getFishes() {
-        List <Animal> list = new ArrayList<>();
+        List<Animal> list = new ArrayList<>();
         Shark shark = new Shark("Linda", 5);
         Shark shark2 = new Shark("Joe", 7);
         list.add(shark);
@@ -39,8 +47,8 @@ public class Main {
         return list;
     }
 
-    private static List<Animal> getBirds(){
-        List <Animal> list = new ArrayList<>();
+    private static List<Animal> getBirds() {
+        List<Animal> list = new ArrayList<>();
         Sparrow sparrow = new Sparrow("Jack", 1);
         Sparrow sparrow2 = new Sparrow("Jane", 1);
         Penguin penguin = new Penguin("Christopher", 8);

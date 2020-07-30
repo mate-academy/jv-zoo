@@ -1,6 +1,5 @@
 package core.basesyntax.models.animals;
 
-import core.basesyntax.models.interfaces.Flyable;
 import core.basesyntax.models.interfaces.Swimable;
 
 public class Penguin extends Animal implements Swimable {

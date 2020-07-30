@@ -15,7 +15,7 @@ public class Zoo {
         this.birdsAviary = birdsAviary;
     }
 
-    public void feedAllAnimals(){
+    public void feedAllAnimals() {
         animalsAviary.feedAnimals();
         aquarium.feedAllFishes();
         birdsAviary.feedAllBirds();

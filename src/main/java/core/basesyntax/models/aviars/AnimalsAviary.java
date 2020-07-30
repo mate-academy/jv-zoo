@@ -1,8 +1,6 @@
 package core.basesyntax.models.aviars;
 
 import core.basesyntax.models.animals.Animal;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class AnimalsAviary {
@@ -12,7 +10,7 @@ public class AnimalsAviary {
         this.animals = animals;
     }
 
-    public void feedAnimals(){
+    public void feedAnimals() {
         animals.forEach(a -> a.feed());
     }
 

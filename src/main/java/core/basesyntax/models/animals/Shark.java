@@ -18,7 +18,7 @@ public class Shark extends Animal implements Swimable {
 
     @Override
     public void swim() {
-        System.out.printf("Tiger %s is swimming now\n", name);
+        System.out.printf("Shark %s is swimming now\n", name);
     }
 
     public String getName() {

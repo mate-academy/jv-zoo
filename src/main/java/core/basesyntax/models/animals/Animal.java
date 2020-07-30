@@ -1,7 +1,9 @@
 package core.basesyntax.models.animals;
 
-public abstract class Animal{
-    public void feed() {
-        System.out.println("This animal is eating now");
+public abstract class Animal {
+    public abstract void feed();
+
+    public void doSomething() {
+        System.out.printf("%s is chilling now...", this.getClass().getSimpleName());
     }
 }

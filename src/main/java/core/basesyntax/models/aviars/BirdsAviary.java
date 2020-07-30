@@ -1,9 +1,6 @@
 package core.basesyntax.models.aviars;
 
 import core.basesyntax.models.animals.Animal;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class BirdsAviary {
