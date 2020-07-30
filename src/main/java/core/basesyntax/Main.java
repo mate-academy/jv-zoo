@@ -24,5 +24,8 @@ public class Main {
             a.feedMe();
             a.moveMe();
         }
+        System.out.println("\nBirds in the cage = " + Zoo.airCage.size());
+        System.out.println("Predators in the animalCages = " + Zoo.animalCages.size());
+        System.out.println("Fihes in the aquarium = " + Zoo.aquariumList.size());
     }
 }

@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Zoo implements Placeable {
 
-    List<Birds> airCage = new ArrayList<>();
-    List<Fish> aquariumList = new ArrayList<>();
-    List<Predators> animalCages = new ArrayList<>();
+    public static List<Birds> airCage = new ArrayList<>();
+    public static List<Fish> aquariumList = new ArrayList<>();
+    public static List<Predators> animalCages = new ArrayList<>();
 
     public void addArea() {
     }
