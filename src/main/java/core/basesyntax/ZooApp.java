@@ -1,11 +1,8 @@
 package core.basesyntax;
 
-import core.basesyntax.animal.Fish;
-import core.basesyntax.animal.Flyable;
 import core.basesyntax.animal.Penguin;
 import core.basesyntax.animal.Shark;
 import core.basesyntax.animal.Sparrow;
-import core.basesyntax.animal.Swimmable;
 import core.basesyntax.animal.Tiger;
 
 public class ZooApp {

@@ -1,6 +1,11 @@
 package core.basesyntax;
 
-import core.basesyntax.animal.*;
+import core.basesyntax.animal.Animal;
+import core.basesyntax.animal.Bird;
+import core.basesyntax.animal.Fish;
+import core.basesyntax.animal.Flyable;
+import core.basesyntax.animal.LandAnimal;
+import core.basesyntax.animal.Swimmable;
 
 public class Zoo {
     /**
