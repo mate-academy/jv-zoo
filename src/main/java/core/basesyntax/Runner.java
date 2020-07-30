@@ -11,6 +11,7 @@ public class Runner {
         Animal tiger = new Tiger("Kasatik");
         Animal tigerBrother = new Tiger("And I am the brother of the Kasatic");
         Fish shark = new Shark("Hunter");
+        Fish sisterShark = new Shark("And i am sister of the Hunter");
         Bird sparrow = new Sparrow("Johnny");
         Bird penguin = new Penguin("Kovalskyi");
         zoo.addAnimal(tiger);
@@ -18,6 +19,7 @@ public class Runner {
         zoo.addBird(sparrow);
         zoo.addBird(penguin);
         zoo.addFish(shark);
+        zoo.addFish(sisterShark);
         zoo.feedAnimals();
         zoo.feedBirds();
         zoo.feedFishes();
