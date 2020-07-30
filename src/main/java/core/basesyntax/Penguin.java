@@ -1,0 +1,13 @@
+package core.basesyntax;
+
+public class Penguin extends Bird implements Swimmable {
+    @Override
+    public void swim() {
+        System.out.println("The penguin has swum away");
+    }
+
+    @Override
+    public void feed() {
+        System.out.println("The penguin is eating...");
+    }
+}
