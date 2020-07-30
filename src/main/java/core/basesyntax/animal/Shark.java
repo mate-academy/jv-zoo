@@ -16,4 +16,9 @@ public class Shark extends Animal implements Swimmable {
     void feed() {
         System.out.println("Give shark inter TV");
     }
+
+    @Override
+    public String toString() {
+        return "Shark: " + getName() + ", age: " + getAge();
+    }
 }

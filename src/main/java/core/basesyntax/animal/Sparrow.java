@@ -16,4 +16,9 @@ public class Sparrow extends Animal implements Flyable  {
     void feed() {
         System.out.println("Give sparrow some seeds");
     }
+
+    @Override
+    public String toString() {
+        return "Sparrow: " + getName() + ", age: " + getAge();
+    }
 }
