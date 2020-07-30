@@ -16,6 +16,4 @@ public class Shark extends Fish implements Swimming {
     public void act() {
         swim();
     }
-
-
 }
