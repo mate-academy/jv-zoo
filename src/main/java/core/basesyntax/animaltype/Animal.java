@@ -1,14 +1,14 @@
 package core.basesyntax.animaltype;
 
-import core.basesyntax.Zoo;
+public abstract class Animal {
+    public static String name;
+    public static int age;
+    public static boolean isFed;
 
-public abstract class Animal extends Zoo {
-    String name;
-    int age;
-
-    public Animal(String name, int age) {
+    public Animal(String name, int age, boolean isFed) {
         this.name = name;
         this.age = age;
+        this.isFed = false;
     }
 
     public String getName() {
@@ -17,5 +17,6 @@ public abstract class Animal extends Zoo {
 
     public static void feed(Animal animal) {
         System.out.println(animal.name + " have been fed :)");
+        animal.isFed = true;
     }
 }

@@ -3,7 +3,6 @@ package core.basesyntax.animals;
 import core.basesyntax.animaltype.OtherAnimals;
 
 public class Tiger extends OtherAnimals {
-    private boolean isFed = false;
 
     public Tiger(String name, int age) {
         super(name, age);

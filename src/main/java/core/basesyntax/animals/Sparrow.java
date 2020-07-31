@@ -3,7 +3,6 @@ package core.basesyntax.animals;
 import core.basesyntax.animaltype.Bird;
 
 public class Sparrow extends Bird {
-    private boolean isFed = false;
 
     public Sparrow(String name, int age) {
         super(name, age);

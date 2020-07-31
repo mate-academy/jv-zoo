@@ -6,7 +6,7 @@ import core.basesyntax.interfaces.Walkable;
 public abstract class Bird extends Animal implements Flyable, Walkable {
 
     public Bird(String name, int age) {
-        super(name, age);
+        super(name, age, isFed);
     }
 
     @Override

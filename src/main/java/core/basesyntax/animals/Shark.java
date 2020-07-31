@@ -3,7 +3,6 @@ package core.basesyntax.animals;
 import core.basesyntax.animaltype.Fish;
 
 public class Shark extends Fish {
-    private boolean isFed = false;
 
     public Shark(String name, int age) {
         super(name, age);
