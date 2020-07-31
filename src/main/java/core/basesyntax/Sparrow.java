@@ -4,7 +4,7 @@ public class Sparrow extends Bird {
 
     @Override
     public void feed() {
-        System.out.println("I'm Sparrow and i eat seeds.");
+        System.out.println("I'm Sparrow and i'm eating");
     }
 
     @Override
