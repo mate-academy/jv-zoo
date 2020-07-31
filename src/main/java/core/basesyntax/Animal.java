@@ -1,9 +1,13 @@
 package core.basesyntax;
 
 public abstract class Animal {
+    public String name;
 
     public Animal(String name) {
+        this.name = name;
     }
 
-    abstract void feed();
+    public void feed() {
+        System.out.println("I'm eating");
+    }
 }

@@ -8,6 +8,6 @@ public abstract class Fish extends Animal implements Floating {
 
     @Override
     public void swim() {
-        System.out.println("Fish is swimming");
+        System.out.println("Look at me I'm swimming");
     }
 }

@@ -6,13 +6,13 @@ public class Penguin extends Bird implements Floating {
         super(name);
     }
 
-    @Override
-    public void swim() {
-        System.out.println("Bird that can swim");
+    @Deprecated
+    public void fly() {
+        System.out.println("I can't flying");
     }
 
     @Override
-    void feed() {
-        System.out.println("Penguin is eating");
+    public void swim() {
+        System.out.println("I'm bird, but i can swimming");
     }
 }

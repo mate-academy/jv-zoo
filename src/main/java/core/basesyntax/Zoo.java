@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Zoo {
     private List<Bird> cellBirds = new ArrayList<>();
-    private List<Fish> cellFishes = new ArrayList<>();
+    private List<Fish> cellFish = new ArrayList<>();
     private List<Animal> cellAnimals = new ArrayList<>();
 
     public void addAnimal(Animal animal) {
@@ -17,7 +17,7 @@ public class Zoo {
     }
 
     public void addFish(Fish fish) {
-        cellFishes.add(fish);
+        cellFish.add(fish);
     }
 
     public void feedAnimals() {
@@ -34,10 +34,10 @@ public class Zoo {
         }
     }
 
-    public void feedFishes() {
-        List<Fish> fishes = new ArrayList(cellFishes);
-        for (Fish fish : fishes) {
-            fish.feed();
+    public void feedFish() {
+        List<Fish> fish = new ArrayList(cellFish);
+        for (Fish fishes : fish) {
+            fishes.feed();
         }
     }
 }

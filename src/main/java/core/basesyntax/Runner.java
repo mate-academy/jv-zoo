@@ -9,19 +9,19 @@ public class Runner {
 
         Zoo zoo = new Zoo();
         Animal tiger = new Tiger("Kasatik");
-        Animal tigerBrother = new Tiger("And I am the brother of the Kasatic");
+        System.out.println(tiger.name);
         Fish shark = new Shark("Hunter");
-        Fish sisterShark = new Shark("And i am sister of the Hunter");
+        System.out.println(shark.name);
         Bird sparrow = new Sparrow("Johnny");
+        System.out.println(sparrow.name);
         Bird penguin = new Penguin("Kovalskyi");
+        System.out.println(penguin.name);
         zoo.addAnimal(tiger);
-        zoo.addAnimal(tigerBrother);
         zoo.addBird(sparrow);
         zoo.addBird(penguin);
         zoo.addFish(shark);
-        zoo.addFish(sisterShark);
         zoo.feedAnimals();
         zoo.feedBirds();
-        zoo.feedFishes();
+        zoo.feedFish();
     }
 }
