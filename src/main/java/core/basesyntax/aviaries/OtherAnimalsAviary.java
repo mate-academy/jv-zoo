@@ -8,6 +8,7 @@ public class OtherAnimalsAviary extends Aviary {
         this.animalList = new ArrayList<>();
     }
 
+    @Override
     public void addAnimal(Animal animal) {
         this.animalList.add(animal);
     }
