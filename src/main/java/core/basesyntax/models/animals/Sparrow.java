@@ -3,8 +3,6 @@ package core.basesyntax.models.animals;
 import core.basesyntax.models.interfaces.Flyable;
 
 public class Sparrow extends Animal implements Flyable {
-    private String name;
-    private int age;
 
     public Sparrow(String name, int age) {
         this.name = name;
@@ -14,6 +12,11 @@ public class Sparrow extends Animal implements Flyable {
     @Override
     public void feed() {
         System.out.printf("Sparrow %s is eating now\n", name);
+    }
+
+    @Override
+    public void doSomething() {
+        System.out.printf("%s is sitting on the stick now...", this.getClass().getSimpleName());
     }
 
     @Override

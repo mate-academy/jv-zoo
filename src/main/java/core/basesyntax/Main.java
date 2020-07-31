@@ -36,32 +36,32 @@ public class Main {
 
     private static List<Animal> getAnimals() {
         List<Animal> list = new ArrayList<>();
-        Tiger tiger = new Tiger("Lex", 2);
-        Tiger tiger2 = new Tiger("Robby", 3);
-        list.add(tiger);
-        list.add(tiger2);
+        Tiger tigerLex = new Tiger("Lex", 2);
+        Tiger tigerRobby = new Tiger("Robby", 3);
+        list.add(tigerLex);
+        list.add(tigerRobby);
         return list;
     }
 
     private static List<Animal> getFishes() {
         List<Animal> list = new ArrayList<>();
-        Shark shark = new Shark("Linda", 5);
-        Shark shark2 = new Shark("Joe", 7);
-        list.add(shark);
-        list.add(shark2);
+        Shark sharkLinda = new Shark("Linda", 5);
+        Shark sharkJoe = new Shark("Joe", 7);
+        list.add(sharkLinda);
+        list.add(sharkJoe);
         return list;
     }
 
     private static List<Animal> getBirds() {
         List<Animal> list = new ArrayList<>();
-        Sparrow sparrow = new Sparrow("Jack", 1);
-        Sparrow sparrow2 = new Sparrow("Jane", 1);
-        Penguin penguin = new Penguin("Christopher", 8);
-        Penguin penguin2 = new Penguin("Margarita", 4);
-        list.add(sparrow);
-        list.add(sparrow2);
-        list.add(penguin);
-        list.add(penguin2);
+        Sparrow sparrowJack = new Sparrow("Jack", 1);
+        Sparrow sparrowJane = new Sparrow("Jane", 1);
+        Penguin penguinChristopher = new Penguin("Christopher", 8);
+        Penguin penguinMargarita = new Penguin("Margarita", 4);
+        list.add(sparrowJack);
+        list.add(sparrowJane);
+        list.add(penguinChristopher);
+        list.add(penguinMargarita);
         return list;
     }
 

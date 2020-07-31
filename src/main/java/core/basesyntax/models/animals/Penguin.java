@@ -3,8 +3,6 @@ package core.basesyntax.models.animals;
 import core.basesyntax.models.interfaces.Swimable;
 
 public class Penguin extends Animal implements Swimable {
-    private String name;
-    private int age;
 
     public Penguin(String name, int age) {
         this.name = name;
@@ -19,6 +17,11 @@ public class Penguin extends Animal implements Swimable {
     @Override
     public void feed() {
         System.out.printf("Penguin %s is eating now\n", name);
+    }
+
+    @Override
+    public void doSomething() {
+        System.out.printf("%s is running now...", this.getClass().getSimpleName());
     }
 
     public String getName() {

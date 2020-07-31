@@ -1,8 +1,6 @@
 package core.basesyntax.models.animals;
 
 public class Tiger extends Animal {
-    private String name;
-    private int age;
 
     public Tiger(String name, int age) {
         this.name = name;
@@ -12,6 +10,11 @@ public class Tiger extends Animal {
     @Override
     public void feed() {
         System.out.printf("Tiger %s is eating now\n", name);
+    }
+
+    @Override
+    public void doSomething() {
+        System.out.printf("%s is chilling now...", this.getClass().getSimpleName());
     }
 
     public String getName() {
