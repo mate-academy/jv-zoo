@@ -1,14 +1,13 @@
 package core.basesyntax.animalkind;
 
 import core.basesyntax.animaltype.Bird;
-import core.basesyntax.interfaces.ISwimmable;
-import core.basesyntax.interfaces.IWalkable;
+import core.basesyntax.interfaces.Swimmable;
+import core.basesyntax.interfaces.Walkable;
 
-public class Penguin extends Bird implements ISwimmable, IWalkable {
-    private String name;
+public class Penguin extends Bird implements Swimmable, Walkable {
 
-    public Penguin(String name) {
-        this.name = name;
+    public Penguin(String name, int age) {
+        super(name, age);
     }
 
     public String getName() {

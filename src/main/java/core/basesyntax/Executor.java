@@ -14,11 +14,11 @@ public class Executor {
         Aviary<Terrestrial> terrestrialAviary = new Aviary<>();
         Aviary<Bird> birdAviary = new Aviary<>();
         Aviary<Fish> fishAviary = new Aviary<>();
-        fishAviary.placeAnimal(new Shark("Bobby"));
-        terrestrialAviary.placeAnimal(new Tiger("Tommy"));
-        birdAviary.placeAnimal(new Sparrow("Jack"));
-        birdAviary.placeAnimal(new Penguin("Skipper"));
-        birdAviary.placeAnimal(new Penguin("Kovalski"));
+        fishAviary.addAnimal(new Shark("Bobby", 1));
+        terrestrialAviary.addAnimal(new Tiger("Tommy", 2));
+        birdAviary.addAnimal(new Sparrow("Jack", 1));
+        birdAviary.addAnimal(new Penguin("Skipper", 2));
+        birdAviary.addAnimal(new Penguin("Kovalski", 2));
         var aviaries = new Aviary[]{terrestrialAviary, birdAviary, fishAviary};
         for (var aviary : aviaries) {
             myZoo.addAviary(aviary);

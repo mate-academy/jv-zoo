@@ -1,5 +1,5 @@
 package core.basesyntax.interfaces;
 
-public interface ISwimmable {
+public interface Swimmable {
     void swim();
 }

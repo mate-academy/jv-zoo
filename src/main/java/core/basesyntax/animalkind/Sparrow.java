@@ -1,13 +1,12 @@
 package core.basesyntax.animalkind;
 
 import core.basesyntax.animaltype.Bird;
-import core.basesyntax.interfaces.IFlyable;
+import core.basesyntax.interfaces.Flyable;
 
-public class Sparrow extends Bird implements IFlyable {
-    private String name;
+public class Sparrow extends Bird implements Flyable {
 
-    public Sparrow(String name) {
-        this.name = name;
+    public Sparrow(String name, int age) {
+        super(name, age);
     }
 
     public String getName() {

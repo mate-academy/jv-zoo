@@ -1,5 +1,5 @@
 package core.basesyntax.interfaces;
 
-public interface IWalkable {
+public interface Walkable {
     void walk();
 }

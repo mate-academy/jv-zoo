@@ -1,13 +1,12 @@
 package core.basesyntax.animalkind;
 
 import core.basesyntax.animaltype.Fish;
-import core.basesyntax.interfaces.ISwimmable;
+import core.basesyntax.interfaces.Swimmable;
 
-public class Shark extends Fish implements ISwimmable {
-    private String name;
+public class Shark extends Fish implements Swimmable {
 
-    public Shark(String name) {
-        this.name = name;
+    public Shark(String name, int age) {
+        super(name, age);
     }
 
     public String getName() {

@@ -1,8 +1,8 @@
 package core.basesyntax;
 
-import core.basesyntax.interfaces.IFlyable;
-import core.basesyntax.interfaces.ISwimmable;
-import core.basesyntax.interfaces.IWalkable;
+import core.basesyntax.interfaces.Flyable;
+import core.basesyntax.interfaces.Swimmable;
+import core.basesyntax.interfaces.Walkable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,11 +13,11 @@ public class Aviary<T extends Animal> {
         this.animalsInAviary = new ArrayList<>();
     }
 
-    public List<T> getAnimalsInAviary() {
+    public List<T> getAnimals() {
         return animalsInAviary;
     }
 
-    public void placeAnimal(T animal) {
+    public void addAnimal(T animal) {
         animalsInAviary.add(animal);
     }
 
@@ -34,14 +34,14 @@ public class Aviary<T extends Animal> {
 
     public void bringAnimalsActivity() {
         for (T animal : animalsInAviary) {
-            if (animal instanceof IFlyable) {
-                ((IFlyable) animal).fly();
+            if (animal instanceof Flyable) {
+                ((Flyable) animal).fly();
             }
-            if (animal instanceof ISwimmable) {
-                ((ISwimmable) animal).swim();
+            if (animal instanceof Swimmable) {
+                ((Swimmable) animal).swim();
             }
-            if (animal instanceof IWalkable) {
-                ((IWalkable) animal).walk();
+            if (animal instanceof Walkable) {
+                ((Walkable) animal).walk();
             }
         }
     }

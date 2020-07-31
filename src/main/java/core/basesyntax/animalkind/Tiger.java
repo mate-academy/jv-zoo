@@ -1,13 +1,12 @@
 package core.basesyntax.animalkind;
 
 import core.basesyntax.animaltype.Terrestrial;
-import core.basesyntax.interfaces.IWalkable;
+import core.basesyntax.interfaces.Walkable;
 
-public class Tiger extends Terrestrial implements IWalkable {
-    private String name;
+public class Tiger extends Terrestrial implements Walkable {
 
-    public Tiger(String name) {
-        this.name = name;
+    public Tiger(String name, int age) {
+        super(name, age);
     }
 
     public String getName() {

@@ -1,5 +1,5 @@
 package core.basesyntax.interfaces;
 
-public interface IFlyable {
+public interface Flyable {
     void fly();
 }
