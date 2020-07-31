@@ -19,25 +19,4 @@ public class Zoo {
     public void addFish(Fish fish) {
         cellFish.add(fish);
     }
-
-    public void feedAnimals() {
-        List<Animal> animals = new ArrayList(cellAnimals);
-        for (Animal animal : animals) {
-            animal.feed();
-        }
-    }
-
-    public void feedBirds() {
-        List<Bird> birdsWhoFlying = new ArrayList(cellBirds);
-        for (Bird birdWhoFlying : birdsWhoFlying) {
-            birdWhoFlying.feed();
-        }
-    }
-
-    public void feedFish() {
-        List<Fish> fish = new ArrayList(cellFish);
-        for (Fish fishes : fish) {
-            fishes.feed();
-        }
-    }
 }
