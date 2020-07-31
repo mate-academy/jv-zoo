@@ -10,7 +10,7 @@ import core.basesyntax.animaltype.OtherAnimals;
 
 public class Main {
     public static void main(String[] args) {
-        Bird penguin = new Penguin("Harry the Penguin", 3);
+        Penguin penguin = new Penguin("Harry the Penguin", 3);
         Zoo.aquarium.add(penguin);
         System.out.println(penguin.getName() + " was placed to the aquarium");
         Animal.feed(penguin);
