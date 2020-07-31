@@ -5,7 +5,7 @@ import areas.Aviary;
 public class Tiger extends Animal implements Aviary {
     private String name;
 
-    public Tiger(String name){
+    public Tiger(String name) {
         this.name = name;
     }
 

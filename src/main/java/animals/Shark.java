@@ -6,12 +6,12 @@ import interfaces.Swimmable;
 public class Shark extends Animal implements Swimmable, Oceanarium {
     private String name;
 
-    private String getName() {
-        return name;
-    }
-
     public Shark(String name) {
         this.name = name;
+    }
+
+    private String getName() {
+        return name;
     }
 
     @Override

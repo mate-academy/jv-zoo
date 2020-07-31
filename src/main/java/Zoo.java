@@ -4,7 +4,6 @@ import areas.BirdAviary;
 import areas.Oceanarium;
 import interfaces.Flyable;
 import interfaces.Swimmable;
-
 import java.util.ArrayList;
 
 public class Zoo {
@@ -24,12 +23,12 @@ public class Zoo {
                 ((Aviary) animal).doILiveInAviary();
             }
             if (animal instanceof BirdAviary) {
-                    ((BirdAviary) animal).doILiveInBirdAviary();
-                }
-            if (animal instanceof Oceanarium) {
-                    ((Oceanarium) animal).doILiveInOceanarium();
-                }
+                ((BirdAviary) animal).doILiveInBirdAviary();
             }
+            if (animal instanceof Oceanarium) {
+                ((Oceanarium) animal).doILiveInOceanarium();
+            }
+        }
         for (Animal animal : zoo) {
             if (animal instanceof Swimmable) {
                 ((Swimmable) animal).doSwim();
@@ -38,7 +37,7 @@ public class Zoo {
                 ((Flyable) animal).doFly();
             }
         }
-        }
-
     }
+
+}
 
