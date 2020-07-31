@@ -16,7 +16,7 @@ public class Main {
         Penguin penguin = new Penguin("Harry the Penguin", 3);
         Zoo.aquarium.add(penguin);
         System.out.println(penguin.getName() + " was placed to the aquarium");
-        Animal.feed(penguin);
+        penguin.feed();
         if (penguin.isFed == true) {
             System.out.println(penguin.getName() + " is fed now");
         } else {
@@ -30,7 +30,7 @@ public class Main {
         Fish shark = new Shark("Eve the Shark", 7);
         Zoo.aquarium.add(shark);
         System.out.println(shark.getName() + " was placed to aquarium");
-        Animal.feed(shark);
+        shark.feed();
         if (shark.isFed == true) {
             System.out.println(shark.getName() + " is fed now");
         } else {
@@ -42,7 +42,7 @@ public class Main {
         Bird sparrow = new Sparrow("Mini the Sparrow", 1);
         Zoo.birdsCage.add(sparrow);
         System.out.println(sparrow.getName() + " was placed to the birds cage");
-        Animal.feed(sparrow);
+        sparrow.feed();
         if (sparrow.isFed == true) {
             System.out.println(sparrow.getName() + " is fed now");
         } else {
@@ -55,7 +55,7 @@ public class Main {
         OtherAnimals tiger = new Tiger("Alice the Tiger", 10);
         Zoo.cage.add(tiger);
         System.out.println(tiger.getName() + " was placed to the ground cage");
-        Animal.feed(tiger);
+        tiger.feed();
         if (tiger.isFed == true) {
             System.out.println(tiger.getName() + " is fed now");
         } else {

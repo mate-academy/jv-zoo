@@ -12,11 +12,11 @@ public abstract class Animal {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
-    public static void feed(Animal animal) {
-        System.out.println(animal.name + " have been fed :)");
-        animal.isFed = true;
+    public void feed() {
+        System.out.println(this.getName() + " have been fed :)");
+        isFed = true;
     }
 }
