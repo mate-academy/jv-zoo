@@ -1,35 +1,12 @@
 package core.basesyntax.animals;
 
-import core.basesyntax.enums.AnimalClass;
+import core.basesyntax.interfaces.Foodable;
 
-public class Animal implements Eating {
-
-    private final AnimalClass animalClass;
-    private final Enum genus;
-
-    public Animal(AnimalClass animalClass, Enum genus) {
-        this.animalClass = animalClass;
-        this.genus = genus;
-    }
-
-    public AnimalClass getAnimalClass() {
-        return animalClass;
-    }
-
-    public Enum getGenus() {
-        return genus;
-    }
+public abstract class Animal implements Foodable {
 
     @Override
-    public void eat() {
-        System.out.println("eats...");
+    public String eat() {
+        return "eats...";
     }
 
-    @Override
-    public String toString() {
-        return "Animal{"
-                + "animalClass=" + animalClass
-                + ", genus=" + genus
-                + '}';
-    }
 }
