@@ -3,37 +3,21 @@ import animals.Penguin;
 import animals.Shark;
 import animals.Sparrow;
 import animals.Tiger;
-import areas.Aviary;
-import areas.BirdAviary;
-import areas.Oceanarium;
 import interfaces.Flyable;
 import interfaces.Swimmable;
 import java.util.ArrayList;
 
 public class Zoo {
-    public static void main(String[] args) {
+    public void createZoo() {
         ArrayList<Animal> zoo = new ArrayList<>();
-        zoo.add(new Tiger("Аркадий"));
-        zoo.add(new Penguin("Валерчик"));
-        zoo.add(new Sparrow("Джек"));
-        zoo.add(new Shark("Геннадий"));
+        zoo.add(new Tiger("Arcadiy"));
+        zoo.add(new Penguin("Valerio"));
+        zoo.add(new Sparrow("Jack"));
+        zoo.add(new Shark("Gennadiy"));
 
         for (Animal animal : zoo) {
-            animal.doEat();
-        }
-
-        for (Animal animal : zoo) {
-            if (animal instanceof Aviary) {
-                ((Aviary) animal).doILiveInAviary();
-            }
-            if (animal instanceof BirdAviary) {
-                ((BirdAviary) animal).doILiveInBirdAviary();
-            }
-            if (animal instanceof Oceanarium) {
-                ((Oceanarium) animal).doILiveInOceanarium();
-            }
-        }
-        for (Animal animal : zoo) {
+            animal.eat();
+            animal.whereDoILive();
             if (animal instanceof Swimmable) {
                 ((Swimmable) animal).doSwim();
             }
@@ -41,6 +25,7 @@ public class Zoo {
                 ((Flyable) animal).doFly();
             }
         }
+
     }
 
 }

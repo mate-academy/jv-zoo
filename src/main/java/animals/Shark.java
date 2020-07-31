@@ -1,9 +1,8 @@
 package animals;
 
-import areas.Oceanarium;
 import interfaces.Swimmable;
 
-public class Shark extends Animal implements Swimmable, Oceanarium {
+public class Shark extends Animal implements Swimmable {
     private String name;
 
     public Shark(String name) {
@@ -15,17 +14,17 @@ public class Shark extends Animal implements Swimmable, Oceanarium {
     }
 
     @Override
-    public void doEat() {
-        System.out.println("Акула " + getName() + " кушает мясо. Много мяса");
+    public void eat() {
+        System.out.println("Shark " + getName() + " is eating a lot of meat");
     }
 
     @Override
     public void doSwim() {
-        System.out.println("Акула плавает по океанариуму. Все напряглись, особенно пингвин");
+        System.out.println("Shark is swimming in oceanarium");
     }
 
     @Override
-    public void doILiveInOceanarium() {
-        System.out.println(getName() + " живет в океанариуме и кайфует.");
+    public void whereDoILive() {
+        System.out.println(getName() + " lives in oceanarium");
     }
 }

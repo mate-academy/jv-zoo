@@ -1,8 +1,6 @@
 package animals;
 
-import areas.Aviary;
-
-public class Tiger extends Animal implements Aviary {
+public class Tiger extends Animal {
     private String name;
 
     public Tiger(String name) {
@@ -14,12 +12,12 @@ public class Tiger extends Animal implements Aviary {
     }
 
     @Override
-    public void doEat() {
-        System.out.println("Тигр " + getName() + " кушает свежее мясо.");
+    public void eat() {
+        System.out.println("Tiger " + getName() + " is eating fresh meat");
     }
 
     @Override
-    public void doILiveInAviary() {
-        System.out.println(getName() + " живет в общем вольере и, кажется, он здесь совсем один");
+    public void whereDoILive() {
+        System.out.println(getName() + " lives in aviary");
     }
 }

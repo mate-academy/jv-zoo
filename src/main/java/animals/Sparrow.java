@@ -1,9 +1,8 @@
 package animals;
 
-import areas.BirdAviary;
 import interfaces.Flyable;
 
-public class Sparrow extends Animal implements Flyable, BirdAviary {
+public class Sparrow extends Animal implements Flyable {
     private String name;
 
     public Sparrow(String name) {
@@ -16,16 +15,16 @@ public class Sparrow extends Animal implements Flyable, BirdAviary {
 
     @Override
     public void doFly() {
-        System.out.println("Воробей " + getName() + " летает. Чирик чирик");
+        System.out.println("Sparrow " + getName() + " is flying");
     }
 
     @Override
-    public void doEat() {
-        System.out.println("Воробей " + getName() + " кушает пшено. А лучше бы кушал мясо");
+    public void eat() {
+        System.out.println("Sparrow " + getName() + " is eating corn");
     }
 
     @Override
-    public void doILiveInBirdAviary() {
-        System.out.println(getName() + " живет в вольере для птиц и ему норм");
+    public void whereDoILive() {
+        System.out.println(getName() + " lives in bird aviary");
     }
 }

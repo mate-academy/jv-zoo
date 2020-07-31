@@ -1,9 +1,8 @@
 package animals;
 
-import areas.Oceanarium;
 import interfaces.Swimmable;
 
-public class Penguin extends Animal implements Swimmable, Oceanarium {
+public class Penguin extends Animal implements Swimmable {
     private String name;
 
     public Penguin(String name) {
@@ -15,17 +14,17 @@ public class Penguin extends Animal implements Swimmable, Oceanarium {
     }
 
     @Override
-    public void doEat() {
-        System.out.println("Пингвинчик " + getName() + " кушает рыбку");
+    public void eat() {
+        System.out.println("Penguin " + getName() + " is eating small fish");
     }
 
     @Override
     public void doSwim() {
-        System.out.println("Пингвинчик " + getName() + " плавает по океанариуму. Буль-буль");
+        System.out.println("Penguin " + getName() + " is swimming in oceanarium");
     }
 
     @Override
-    public void doILiveInOceanarium() {
-        System.out.println(getName() + " живет в океанариуме и немножко очкует акулы");
+    public void whereDoILive() {
+        System.out.println(getName() + " is swimming in oceanarium and bewares of sharks");
     }
 }
