@@ -1,18 +1,14 @@
 package core.basesyntax;
 
-public class Penguin extends Bird implements Floating {
+public class Penguin extends Animal implements Floating {
 
-    public Penguin(String name) {
-        super(name);
-    }
-
-    @Deprecated
-    public void fly() {
-        System.out.println("I can't flying");
+    @Override
+    public void feed() {
+        System.out.println("I'm penguin and i'm eating");
     }
 
     @Override
     public void swim() {
-        System.out.println("I'm bird, but i can swimming");
+        System.out.println("I'm penguin and i can swim");
     }
 }

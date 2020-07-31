@@ -8,20 +8,21 @@ public class Runner {
     public static void main(String[] args) {
 
         Zoo zoo = new Zoo();
-        Animal tiger = new Tiger("Kasatik");
-        System.out.println(tiger.name);
-        Fish shark = new Shark("Hunter");
-        System.out.println(shark.name);
-        Bird sparrow = new Sparrow("Johnny");
-        System.out.println(sparrow.name);
-        Bird penguin = new Penguin("Kovalskyi");
-        System.out.println(penguin.name);
+
+        Animal tiger = new Tiger();
         zoo.addAnimal(tiger);
-        zoo.addBird(sparrow);
-        zoo.addBird(penguin);
+        tiger.feed();
+
+        Fish shark = new Shark();
         zoo.addFish(shark);
-        zoo.feedAnimals();
-        zoo.feedBirds();
-        zoo.feedFish();
+        shark.feed();
+
+        Bird sparrow = new Sparrow();
+        zoo.addBird(sparrow);
+        sparrow.feed();
+
+        Penguin penguin = new Penguin();
+        zoo.addAnimal(penguin);
+        penguin.feed();
     }
 }
