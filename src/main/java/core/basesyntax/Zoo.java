@@ -3,7 +3,6 @@ package core.basesyntax;
 import core.basesyntax.animaltype.Bird;
 import core.basesyntax.animaltype.OtherAnimals;
 import core.basesyntax.interfaces.Swimable;
-
 import java.util.ArrayList;
 import java.util.List;
 
