@@ -54,8 +54,8 @@ public class Main {
 
     private static List<Animal> getBirds() {
         List<Animal> list = new ArrayList<>();
-        Sparrow sparrow = new Sparrow("Jack", 1);
-        Sparrow sparrow2 = new Sparrow("Jane", 1);
+        Sparrow sparrowJack = new Sparrow("Jack", 1);
+        Sparrow sparrowJane = new Sparrow("Jane", 1);
         Penguin penguin = new Penguin("Christopher", 8);
         Penguin penguin2 = new Penguin("Margarita", 4);
         list.add(sparrow);
