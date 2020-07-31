@@ -12,10 +12,6 @@ public class Aviary {
         animals.add(animal);
     }
 
-    public void removeAnimal(Animal animal) {
-        animals.remove(animal);
-    }
-
     public void outputListAnimalsInAviary() {
         for (Animal animal : animals) {
             System.out.println(animal.toString());

@@ -10,6 +10,6 @@ public class FlyingBird extends Animal {
     }
 
     public String fly() {
-        return getGenus() + "летает.";
+        return getGenus() + "flies...";
     }
 }

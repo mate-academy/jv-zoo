@@ -20,9 +20,8 @@ public class App {
         Aviary common = new Aviary();
 
         for (Animal animal : animals) {
-            while (!animal.isSatiety()) {
-                animal.eat(10);
-            }
+            animal.eat();
+
             switch (animal.getAnimalClass()) {
                 case FISH:
                 case FLOATING_BIRD:

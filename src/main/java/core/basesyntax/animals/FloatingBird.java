@@ -9,6 +9,6 @@ public class FloatingBird extends Animal {
     }
 
     public String swim() {
-        return getGenus() + "плавает.";
+        return getGenus() + "floats...";
     }
 }
