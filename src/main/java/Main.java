@@ -3,13 +3,9 @@ import core.basesyntax.animals.Penguin;
 import core.basesyntax.animals.Shark;
 import core.basesyntax.animals.Sparrow;
 import core.basesyntax.animals.Tiger;
-import core.basesyntax.animaltype.Animal;
 import core.basesyntax.animaltype.Bird;
 import core.basesyntax.animaltype.Fish;
 import core.basesyntax.animaltype.OtherAnimals;
-import org.w3c.dom.ls.LSOutput;
-
-import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,10 +13,8 @@ public class Main {
         Zoo.aquarium.add(penguin);
         System.out.println(penguin.getName() + " was placed to the aquarium");
         penguin.feed();
-        if (penguin.isFed == true) {
+        if (penguin.isFed) {
             System.out.println(penguin.getName() + " is fed now");
-        } else {
-            System.out.println(penguin.getName() + " is not yet fed");
         }
         System.out.print(penguin.getName() + " says: ");
         penguin.fly();
@@ -31,10 +25,8 @@ public class Main {
         Zoo.aquarium.add(shark);
         System.out.println(shark.getName() + " was placed to aquarium");
         shark.feed();
-        if (shark.isFed == true) {
+        if (shark.isFed) {
             System.out.println(shark.getName() + " is fed now");
-        } else {
-            System.out.println(shark.getName() + " is not yet fed");
         }
         System.out.print(shark.getName() + " says: ");
         shark.swim();
@@ -43,10 +35,8 @@ public class Main {
         Zoo.birdsCage.add(sparrow);
         System.out.println(sparrow.getName() + " was placed to the birds cage");
         sparrow.feed();
-        if (sparrow.isFed == true) {
+        if (sparrow.isFed) {
             System.out.println(sparrow.getName() + " is fed now");
-        } else {
-            System.out.println(sparrow.getName() + " is not yet fed");
         }
         System.out.print(sparrow.getName() + " says: ");
         sparrow.fly();
@@ -56,10 +46,8 @@ public class Main {
         Zoo.cage.add(tiger);
         System.out.println(tiger.getName() + " was placed to the ground cage");
         tiger.feed();
-        if (tiger.isFed == true) {
+        if (tiger.isFed) {
             System.out.println(tiger.getName() + " is fed now");
-        } else {
-            System.out.println(tiger.getName() + " is not yet fed");
         }
         System.out.print(tiger.getName() + " says: ");
         tiger.walk();
