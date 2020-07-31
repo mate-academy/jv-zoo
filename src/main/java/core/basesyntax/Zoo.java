@@ -2,7 +2,6 @@ package core.basesyntax;
 
 import core.basesyntax.animal.Animal;
 import core.basesyntax.animal.Bird;
-import core.basesyntax.animal.Fish;
 import core.basesyntax.animal.Flyable;
 import core.basesyntax.animal.LandAnimal;
 import core.basesyntax.animal.Swimmable;
@@ -17,9 +16,9 @@ public class Zoo {
      */
     private final Aviary<Bird> birdAviary = new Aviary<>();
     /**
-     * Вольер для рыб (аквариум)
+     * Вольер для плавающих (аквариум)
      */
-    private final Aviary<Fish> fishAviary = new Aviary<>();
+    private final Aviary<Swimmable> aquarium = new Aviary<>();
 
     public Aviary<LandAnimal> getLandAnimalAviary() {
         return landAnimalAviary;
@@ -29,8 +28,8 @@ public class Zoo {
         return birdAviary;
     }
 
-    public Aviary<Fish> getFishAviary() {
-        return fishAviary;
+    public Aviary<Swimmable> getAquarium() {
+        return aquarium;
     }
 
     /**
@@ -39,7 +38,7 @@ public class Zoo {
     public void feedAllAnimals() {
         landAnimalAviary.getAnimals().forEach(Animal::feed);
         birdAviary.getAnimals().forEach(Animal::feed);
-        fishAviary.getAnimals().forEach(Animal::feed);
+        aquarium.getAnimals().forEach(swimmable -> ((Animal) swimmable).feed());
     }
 
     /**
@@ -49,7 +48,7 @@ public class Zoo {
      */
     public void entertain() {
         System.out.println();
-        fishAviary.getAnimals().forEach(Fish::swim);
+        aquarium.getAnimals().forEach(Swimmable::swim);
         System.out.println();
         birdAviary.getAnimals()
                 .forEach(bird -> {

@@ -1,6 +1,5 @@
 package core.basesyntax;
 
-import core.basesyntax.animal.Animal;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -12,7 +11,7 @@ import java.util.Set;
  * - удалить животное из вольера
  * - получить сет животных (для просмотра, без права изменения содержимого вольера)
  */
-public class Aviary<T extends Animal> {
+public class Aviary<T> {
     private final Set<T> animals = new HashSet<>();
 
     public void addAnimal(T animal) {

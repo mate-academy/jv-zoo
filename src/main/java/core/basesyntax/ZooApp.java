@@ -11,7 +11,7 @@ public class ZooApp {
         zoo.getLandAnimalAviary().addAnimal(new Tiger());
         zoo.getBirdAviary().addAnimal(new Penguin());
         zoo.getBirdAviary().addAnimal(new Sparrow());
-        zoo.getFishAviary().addAnimal(new Shark());
+        zoo.getAquarium().addAnimal(new Shark());
 
         zoo.feedAllAnimals();
 
