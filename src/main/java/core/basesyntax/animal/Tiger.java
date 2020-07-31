@@ -10,11 +10,11 @@ public class Tiger extends LandAnimal {
 
     @Override
     public void eating() {
-        System.out.println("Тигр " + name + " накормлен");
+        System.out.println("Tiger " + name + " is eating");
     }
 
     @Override
     public String toString() {
-        return "Тигр " + name + " возраст " + age + " лет.";
+        return "Tiger " + name + ". He is " + age + " years old.";
     }
 }

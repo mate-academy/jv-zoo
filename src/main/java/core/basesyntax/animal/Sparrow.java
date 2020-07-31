@@ -11,16 +11,16 @@ public class Sparrow extends Bird implements Flyable {
 
     @Override
     public void fly() {
-        System.out.println("Воробей летает!");
+        System.out.println("Sparrow is fly");
     }
 
     @Override
     public void eating() {
-        System.out.println("Воробей " + name + " накормлен");
+        System.out.println("Sparrow " + name + " is eating");
     }
 
     @Override
     public String toString() {
-        return "Воробей " + name + " возраст " + age + " лет.";
+        return "Sparrow " + name + ". He is " + age + " years old.";
     }
 }

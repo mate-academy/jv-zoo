@@ -11,16 +11,16 @@ public class Penguin extends Bird implements Swimable {
 
     @Override
     public void swim() {
-        System.out.println("Пингвин плавает");
+        System.out.println("Penguin is swiming");
     }
 
     @Override
     public void eating() {
-        System.out.println("Пингвин " + name + " накормлен");
+        System.out.println("Penguin " + name + " is eating");
     }
 
     @Override
     public String toString() {
-        return "Пингвин " + name + " его возраст " + age + " лет.";
+        return "Penguin " + name + ". He is " + age + " years old.";
     }
 }

@@ -14,10 +14,10 @@ import java.util.List;
 public class ZooApp {
 
     public static void main(String[] args) {
-        AviaryForBirds birdAviary = new AviaryForBirds(new Sparrow("Джек", 5));
-        Aquarium aquariumForSharks = new Aquarium(new Shark("Джони", 45));
-        Aquarium aquariumForPenguin = new Aquarium(new Penguin("Ковальский", 10));
-        AviaryForLandAnimal aviaryTiger = new AviaryForLandAnimal(new Tiger("Тигруля", 7));
+        AviaryForBirds birdAviary = new AviaryForBirds(new Sparrow("Jeck", 5));
+        Aquarium<Shark> aquariumForSharks = new Aquarium<>(new Shark("Johny", 45));
+        Aquarium<Penguin> aquariumForPenguin = new Aquarium<>(new Penguin("Kovalsky", 10));
+        AviaryForLandAnimal aviaryTiger = new AviaryForLandAnimal(new Tiger("Sher-Hun", 7));
         Zoo zoo = new Zoo();
         zoo.setAviaries(List.of(birdAviary, aquariumForSharks, aquariumForPenguin, aviaryTiger));
         for (Aviary<? extends Animal> aviary : zoo.getAviaries()) {

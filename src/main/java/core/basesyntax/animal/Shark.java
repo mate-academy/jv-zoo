@@ -10,16 +10,16 @@ public class Shark extends Fish {
 
     @Override
     public void swim() {
-        System.out.println("Акула плавает");
+        System.out.println("Shark is swimming");
     }
 
     @Override
     public void eating() {
-        System.out.println("Акула " + name + " накормлена");
+        System.out.println("Shark " + name + " is eating");
     }
 
     @Override
     public String toString() {
-        return "Акула " + name + " возраст " + age + " лет.";
+        return "Shark " + name + ". He is " + age + " years old.";
     }
 }
