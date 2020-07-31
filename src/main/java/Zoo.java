@@ -1,4 +1,8 @@
-import animals.*;
+import animals.Animal;
+import animals.Penguin;
+import animals.Shark;
+import animals.Sparrow;
+import animals.Tiger;
 import areas.Aviary;
 import areas.BirdAviary;
 import areas.Oceanarium;
