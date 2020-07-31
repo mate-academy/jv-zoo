@@ -7,10 +7,10 @@ public class Main {
     public static void main(String[] args) {
         Zoo zoo = new Zoo();
 
-        zoo.addBird(new Sparrow());
-        zoo.addBird(new Penguin());
-        zoo.addFish(new Shark());
-        zoo.addLandAnimals(new Tiger());
+        zoo.addBird(new Sparrow("Jack"));
+        zoo.addBird(new Penguin("Kovalskiy"));
+        zoo.addFish(new Shark("Zubastik"));
+        zoo.addLandAnimals(new Tiger("Polosatik"));
 
         zoo.feedAllAnimals();
         System.out.println();

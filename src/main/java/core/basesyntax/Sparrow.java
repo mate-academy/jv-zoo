@@ -1,10 +1,13 @@
 package core.basesyntax;
 
 public class Sparrow extends Bird implements Flying{
+    public Sparrow (String name) {
+        this.name = name;
+    }
 
     @Override
     public void feed() {
-        System.out.println("Sparrow is eating");
+        System.out.println("Sparrow " + name + " is eating");
     }
 
     @Override
@@ -14,6 +17,6 @@ public class Sparrow extends Bird implements Flying{
 
     @Override
     public void fly() {
-        System.out.println("Sparrow is flying");
+        System.out.println("Sparrow " + name + " is flying");
     }
 }
