@@ -2,7 +2,7 @@ package core.basesyntax.animals;
 
 import core.basesyntax.exception.HungryAnimalException;
 
-public class Shark extends Animal {
+public class Shark extends Waterfowl {
     private static final int ENERGY = 70;
     private static final int EXPENDITURE = 70;
 

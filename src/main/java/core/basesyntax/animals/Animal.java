@@ -12,12 +12,4 @@ public abstract class Animal implements IAnimal {
     @Override
     public void move() throws HungryAnimalException {
     }
-
-    protected int getEnergy() {
-        return energy;
-    }
-
-    protected void setEnergy(int energy) {
-        this.energy = energy;
-    }
 }

@@ -1,0 +1,17 @@
+/home/mix/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/premises/Aquarium.java
+/home/mix/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/Penguin.java
+/home/mix/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/Animal.java
+/home/mix/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/Zoo.java
+/home/mix/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/Shark.java
+/home/mix/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/Main.java
+/home/mix/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/premises/Premises.java
+/home/mix/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/exception/HungryAnimalException.java
+/home/mix/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/IAnimal.java
+/home/mix/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/Tiger.java
+/home/mix/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/premises/Cage.java
+/home/mix/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/Waterfowl.java
+/home/mix/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/Sparrow.java
+/home/mix/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/Predator.java
+/home/mix/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/animals/Bird.java
+/home/mix/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/premises/Aviary.java
+/home/mix/IdeaProjects/jv-zoo/src/main/java/core/basesyntax/exception/WrongAnimalException.java

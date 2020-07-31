@@ -1,7 +1,7 @@
 package core.basesyntax.premises;
 
 import core.basesyntax.animals.Animal;
-import core.basesyntax.animals.Tiger;
+import core.basesyntax.animals.Predator;
 import core.basesyntax.exception.WrongAnimalException;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ public class Aviary extends Premises {
 
     @Override
     public void goToPremises(Animal animal) throws WrongAnimalException {
-        if (!(animal instanceof Tiger)) {
+        if (!(animal instanceof Predator)) {
             throw new WrongAnimalException("Вход рыбам и птицам запрещен запрещен!!!");
         }
         this.aviary.add(animal);

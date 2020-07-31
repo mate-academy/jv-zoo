@@ -1,0 +1,17 @@
+core/basesyntax/animals/Tiger.class
+core/basesyntax/premises/Aquarium.class
+core/basesyntax/animals/Animal.class
+core/basesyntax/animals/Penguin.class
+core/basesyntax/animals/Waterfowl.class
+core/basesyntax/Main.class
+core/basesyntax/animals/Sparrow.class
+core/basesyntax/animals/IAnimal.class
+core/basesyntax/animals/Shark.class
+core/basesyntax/premises/Premises.class
+core/basesyntax/Zoo.class
+core/basesyntax/premises/Aviary.class
+core/basesyntax/exception/WrongAnimalException.class
+core/basesyntax/animals/Bird.class
+core/basesyntax/exception/HungryAnimalException.class
+core/basesyntax/animals/Predator.class
+core/basesyntax/premises/Cage.class

@@ -11,7 +11,7 @@ public class Tiger extends Animal {
     }
 
     @Override
-    public void move()  {
+    public void move() {
         try {
             loseEnergy();
             System.out.println("Tiger is hunting and lose energy");

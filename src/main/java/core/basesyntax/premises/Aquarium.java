@@ -2,6 +2,7 @@ package core.basesyntax.premises;
 
 import core.basesyntax.animals.Animal;
 import core.basesyntax.animals.Shark;
+import core.basesyntax.animals.Waterfowl;
 import core.basesyntax.exception.WrongAnimalException;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,10 +12,10 @@ public class Aquarium extends Premises {
 
     @Override
     public void goToPremises(Animal animal) throws WrongAnimalException {
-        if (!(animal instanceof Shark)) {
+        if (!(animal instanceof Waterfowl)) {
             throw new WrongAnimalException("Вход неводоплавающим запрещен!!!");
         }
-            this.aquarium.add(animal);
+        this.aquarium.add(animal);
     }
 
     public String getInmatesCount() {

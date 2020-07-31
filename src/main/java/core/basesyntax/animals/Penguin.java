@@ -2,7 +2,7 @@ package core.basesyntax.animals;
 
 import core.basesyntax.exception.HungryAnimalException;
 
-public class Penguin extends Animal {
+public class Penguin extends Bird {
     private static final int ENERGY = 60;
     private static final int EXPENDITURE = 60;
 
@@ -33,5 +33,10 @@ public class Penguin extends Animal {
     @Override
     public void receiveEnergy() {
         this.energy += 50;
+    }
+
+    @Override
+    void fly() {
+        System.out.println("Sorry! I can't fly");
     }
 }
