@@ -1,7 +1,6 @@
 package core.basesyntax;
 
 import java.util.ArrayList;
-import java.util.concurrent.atomic.LongAccumulator;
 
 public class Location {
 
@@ -11,6 +10,10 @@ public class Location {
         GENERALSAVIARY,
         AQUARIUM;
     }
+
+    private Locations location;
+
+    private ArrayList<Animal> animalsInLocation = new ArrayList<Animal>();
 
     public Location(Locations location) {
         this.location = location;
@@ -39,6 +42,8 @@ public class Location {
                         case 3:
                             addAnimal(new Pinguin());
                             break;
+                        default:
+                            break;
                     }
                 }
                 break;
@@ -62,12 +67,10 @@ public class Location {
                     }
                 }
                 break;
+            default:
+                break;
         }
     }
-
-    private Locations location;
-
-    private ArrayList<Animal> animalsInLocation = new ArrayList<Animal>();
 
     private void addAnimal(Animal animal) {
         animalsInLocation.add(animal);
@@ -82,10 +85,10 @@ public class Location {
     }
 
     public void feederComing() {
-        animalsInLocation.forEach(Animal::Moving);
+        animalsInLocation.forEach(Animal::move);
     }
 
-    public void Feeding() {
-        animalsInLocation.forEach(Animal::Feeding);
+    public void feed() {
+        animalsInLocation.forEach(Animal::feed);
     }
 }
