@@ -2,8 +2,13 @@ package core.basesyntax;
 
 public class Aviary {
 
-    private Animal tiger = new Tiger();
-    private Animal penguin = new Penguin();
+    private Animal tiger;
+    private Animal penguin;
+
+    public Aviary(Tiger tiger, Penguin penguin) {
+        setPenguin(penguin);
+        setTiger(tiger);
+    }
 
     public Animal getTiger() {
         return this.tiger;
@@ -13,4 +18,11 @@ public class Aviary {
         return this.penguin;
     }
 
+    public void setTiger(Tiger tiger) {
+        this.tiger = tiger;
+    }
+
+    public void setPenguin(Penguin penguin) {
+        this.penguin = penguin;
+    }
 }

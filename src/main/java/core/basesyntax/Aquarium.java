@@ -2,9 +2,17 @@ package core.basesyntax;
 
 public class Aquarium {
 
-    private Animal shark = new Shark();
+    private Animal shark;
+
+    public Aquarium(Shark shark) {
+        setShark(shark);
+    }
 
     public Animal getShark() {
         return this.shark;
+    }
+
+    public void setShark(Shark shark) {
+        this.shark = shark;
     }
 }

@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Shark extends Animal implements ToSwim {
+public class Shark extends Animal implements Swimmable {
     @Override
     public void eat() {
         System.out.println("Shark is eating...");
