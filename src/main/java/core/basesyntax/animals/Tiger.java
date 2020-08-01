@@ -1,21 +1,21 @@
 package core.basesyntax.animals;
 
 import core.basesyntax.abstractclasses.Animal;
-import core.basesyntax.interfaces.Walks;
+import core.basesyntax.interfaces.Walking;
 
-public class Tiger extends Animal implements Walks {
+public class Tiger extends Animal implements Walking {
 
-    public Tiger() {
-        this.name = "Tiger";
+    public Tiger(String name) {
+        super(name);
     }
 
     @Override
     public void feed() {
-        System.out.println(name + " eats");
+        System.out.println(this.getName() + " eats");
     }
 
     @Override
     public void walk() {
-        System.out.println(name + " WAAAAAAAAAAAAAALKS");
+        System.out.println(this.getName() + " WAAAAAAAAAAAAAALKS");
     }
 }

@@ -8,10 +8,10 @@ import core.basesyntax.animals.Tiger;
 public class MainClass {
     public static void main(String[] args) {
         Zoo zoo = new Zoo();
-        zoo.addToWaterHabitat(new Shark());
-        zoo.addToAirHabitat(new Sparrow());
-        zoo.addToWaterHabitat(new Penguin());
-        zoo.addToLandHabitat(new Tiger());
+        zoo.addToWaterHabitat(new Shark("Jaws"));
+        zoo.addToAirHabitat(new Sparrow("Jack"));
+        zoo.addToWaterHabitat(new Penguin("Kovalski"));
+        zoo.addToLandHabitat(new Tiger("Tigger"));
 
         zoo.printAllAnimals();
         zoo.feedAllAnimals();

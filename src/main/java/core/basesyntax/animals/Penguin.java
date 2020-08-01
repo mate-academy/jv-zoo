@@ -1,21 +1,21 @@
 package core.basesyntax.animals;
 
-import core.basesyntax.abstractclasses.AbstractBird;
-import core.basesyntax.interfaces.Swims;
+import core.basesyntax.abstractclasses.Bird;
+import core.basesyntax.interfaces.Swimming;
 
-public class Penguin extends AbstractBird implements Swims {
+public class Penguin extends Bird implements Swimming {
 
-    public Penguin() {
-        this.name = "Penguin";
+    public Penguin(String name) {
+        super(name);
     }
 
     @Override
     public void feed() {
-        System.out.println(name + " eats");
+        System.out.println(this.getName() + " eats");
     }
 
     @Override
     public void swim() {
-        System.out.println(name + " SWIIIIIIIIIIIIIMS");
+        System.out.println(this.getName() + " SWIIIIIIIIIIIIIMS");
     }
 }

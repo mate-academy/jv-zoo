@@ -1,43 +1,43 @@
 package core.basesyntax;
 
 import core.basesyntax.abstractclasses.Animal;
-import core.basesyntax.interfaces.Flies;
-import core.basesyntax.interfaces.Swims;
-import core.basesyntax.interfaces.Walks;
+import core.basesyntax.interfaces.Flying;
+import core.basesyntax.interfaces.Swimming;
+import core.basesyntax.interfaces.Walking;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Zoo {
-    private List<Flies> airHabitat = new ArrayList<>();
-    private List<Swims> waterHabitat = new ArrayList<>();
-    private List<Walks> landHabitat = new ArrayList<>();
+    private List<Flying> airHabitat = new ArrayList<>();
+    private List<Swimming> waterHabitat = new ArrayList<>();
+    private List<Walking> landHabitat = new ArrayList<>();
 
-    public void addToWaterHabitat(Swims animal) {
+    public void addToWaterHabitat(Swimming animal) {
         waterHabitat.add(animal);
     }
 
-    public void addToAirHabitat(Flies animal) {
+    public void addToAirHabitat(Flying animal) {
         airHabitat.add(animal);
     }
 
-    public void addToLandHabitat(Walks animal) {
+    public void addToLandHabitat(Walking animal) {
         landHabitat.add(animal);
     }
 
     private void walkersWalk() {
-        for (Walks walker : landHabitat) {
+        for (Walking walker : landHabitat) {
             walker.walk();
         }
     }
 
     private void swimmersSwim() {
-        for (Swims swimmer : waterHabitat) {
+        for (Swimming swimmer : waterHabitat) {
             swimmer.swim();
         }
     }
 
     private void fliersFly() {
-        for (Flies flier : airHabitat) {
+        for (Flying flier : airHabitat) {
             flier.fly();
         }
     }
@@ -45,7 +45,7 @@ public class Zoo {
     private <E> void printAnimals(List<E> animals) {
         for (E animal : animals) {
             if (animal instanceof Animal) {
-                System.out.println(((Animal) animal).name);
+                System.out.println(((Animal) animal).getName());
             }
         }
     }

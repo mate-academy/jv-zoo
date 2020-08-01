@@ -1,21 +1,21 @@
 package core.basesyntax.animals;
 
-import core.basesyntax.abstractclasses.AbstractBird;
-import core.basesyntax.interfaces.Flies;
+import core.basesyntax.abstractclasses.Bird;
+import core.basesyntax.interfaces.Flying;
 
-public class Sparrow extends AbstractBird implements Flies {
+public class Sparrow extends Bird implements Flying {
 
-    public Sparrow() {
-        this.name = "Sparrow";
+    public Sparrow(String name) {
+        super(name);
     }
 
     @Override
     public void feed() {
-        System.out.println(name + " eats");
+        System.out.println(this.getName() + " eats");
     }
 
     @Override
     public void fly() {
-        System.out.println(name + " FLIIIIIIIES");
+        System.out.println(this.getName() + " FLIIIIIIIES");
     }
 }
