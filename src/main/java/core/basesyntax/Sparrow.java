@@ -9,4 +9,9 @@ public class Sparrow extends Animal {
             System.out.println("Воробей купается в пыли. К дождю.");
         }
     }
+
+    @Override
+    public void Feeding() {
+        System.out.println("Вот еще, буду я тратить еду на воробьев...");
+    }
 }

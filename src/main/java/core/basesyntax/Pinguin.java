@@ -10,4 +10,11 @@ public class Pinguin extends Animal {
             System.out.println("Пингвин сидит в своем гнезде и не собирается выходить");
         }
     }
+
+    @Override
+    public void Feeding() {
+        if (isHunger()) {
+            System.out.println("Пингвин ловит на лету мелкую рыбу и сразу глотает");
+        }
+    }
 }

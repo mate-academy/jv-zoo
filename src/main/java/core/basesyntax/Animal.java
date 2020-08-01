@@ -14,4 +14,6 @@ public abstract class Animal {
         int num = (int) (Math.random() + 1);
         hunger = num == 1 ? true : false;
     }
+
+    public abstract void Feeding();
 }

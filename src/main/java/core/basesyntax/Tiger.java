@@ -9,4 +9,11 @@ public class Tiger extends Animal{
             System.out.println("Тигр лениво приподнимает морду. По всей видимости он не голоден.");
         }
     }
+
+    @Override
+    public void Feeding() {
+        if(isHunger()) {
+            System.out.println("Тигр хватает кусок мяса и уносит в кусты");
+        }
+    }
 }
