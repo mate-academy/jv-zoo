@@ -1,6 +1,6 @@
 package core.basesyntax.animals.interfaces;
 
-public interface IFish {
+public interface Swimmable {
 
     void swim();
 }

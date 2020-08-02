@@ -1,6 +1,6 @@
 package core.basesyntax.animals.interfaces;
 
-public interface IBird {
+public interface Flyable {
 
     void fly();
 }

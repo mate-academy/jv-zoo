@@ -6,7 +6,7 @@ import core.basesyntax.animals.Mammal;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Zoo<T> {
+public class Zoo {
     private List<Bird> cell = new ArrayList<>();
     private List<Mammal> aviary = new ArrayList<>();
     private List<Fish> aquarium = new ArrayList<>();
