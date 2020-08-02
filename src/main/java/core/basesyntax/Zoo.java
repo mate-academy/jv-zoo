@@ -6,14 +6,14 @@ import java.util.List;
 public class Zoo {
 
     private final List<LandAnimals> cellForLandAnimals = new ArrayList<>();
-    private final List<Bird> cellForBirds = new ArrayList<>();
+    private final List<Flyable> cellForBirds = new ArrayList<>();
     private final List<Fish> aquarium = new ArrayList<>();
 
     public List<LandAnimals> getCellForLandAnimals() {
         return cellForLandAnimals;
     }
 
-    public List<Bird> getCellForBirds() {
+    public List<Flyable> getCellForBirds() {
         return cellForBirds;
     }
 
@@ -25,7 +25,7 @@ public class Zoo {
         cellForLandAnimals.add(landAnimal);
     }
 
-    public void addBird(Bird bird) {
+    public void addBird(Flyable bird) {
         cellForBirds.add(bird);
     }
 
@@ -35,13 +35,13 @@ public class Zoo {
 
     public void feedAnimals() {
         getCellForLandAnimals().forEach(Animal::feed);
-        getCellForBirds().forEach(Bird::feed);
+        getCellForBirds().forEach(Flyable::feed);
         getAquarium().forEach(Fish::feed);
     }
 
     public void doAction() {
         getCellForLandAnimals().forEach(Animal::act);
-        getCellForBirds().forEach(Bird::act);
+        getCellForBirds().forEach(Flyable::act);
         getAquarium().forEach(Fish::act);
     }
 }

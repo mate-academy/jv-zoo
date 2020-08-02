@@ -1,5 +1,5 @@
 package core.basesyntax;
 
-public abstract class LandAnimals extends Animal {
+public abstract class Flyable extends Animal {
     private int yearOfBirth;
 }
