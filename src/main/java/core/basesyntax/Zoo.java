@@ -7,7 +7,7 @@ public class Zoo {
 
     private final List<LandAnimals> cellForLandAnimals = new ArrayList<>();
     private final List<Flyable> cellForBirds = new ArrayList<>();
-    private final List<Fish> aquarium = new ArrayList<>();
+    private final List<Swimmable> aquarium = new ArrayList<>();
 
     public List<LandAnimals> getCellForLandAnimals() {
         return cellForLandAnimals;
@@ -17,7 +17,7 @@ public class Zoo {
         return cellForBirds;
     }
 
-    public List<Fish> getAquarium() {
+    public List<Swimmable> getAquarium() {
         return aquarium;
     }
 
@@ -29,19 +29,19 @@ public class Zoo {
         cellForBirds.add(bird);
     }
 
-    public void addFish(Fish fish) {
+    public void addFish(Swimmable fish) {
         aquarium.add(fish);
     }
 
     public void feedAnimals() {
         getCellForLandAnimals().forEach(Animal::feed);
         getCellForBirds().forEach(Flyable::feed);
-        getAquarium().forEach(Fish::feed);
+        getAquarium().forEach(Swimmable::feed);
     }
 
     public void doAction() {
         getCellForLandAnimals().forEach(Animal::act);
         getCellForBirds().forEach(Flyable::act);
-        getAquarium().forEach(Fish::act);
+        getAquarium().forEach(Swimmable::act);
     }
 }

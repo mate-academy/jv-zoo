@@ -1,5 +1,5 @@
 package core.basesyntax;
 
-public abstract class Fish extends Animal {
+public abstract class Swimmable extends Animal {
     private int yearOfBirth;
 }
