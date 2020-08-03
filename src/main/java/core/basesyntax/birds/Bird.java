@@ -2,9 +2,9 @@ package core.basesyntax.birds;
 
 import core.basesyntax.ResidentsOfTheZoo;
 
-public abstract class Birds extends ResidentsOfTheZoo {
+public abstract class Bird extends ResidentsOfTheZoo {
 
-    public Birds(String name, int age) {
+    public Bird(String name, int age) {
         super(name, age);
     }
 }

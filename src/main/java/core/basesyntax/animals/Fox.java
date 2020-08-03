@@ -1,18 +1,26 @@
 package core.basesyntax.animals;
 
-import core.basesyntax.implementation.CanSwim;
-import core.basesyntax.implementation.FlyNoWay;
+import core.basesyntax.interfaces.Swimable;
 
-public class Fox extends Animals {
+public class Fox extends Animal implements Swimable {
 
     public Fox(String name, int age) {
         super(name, age);
-        swimable = new CanSwim();
-        flyBehavior = new FlyNoWay();
     }
 
     @Override
     public void eat() {
         System.out.println(String.format("%s like to eat meat", getName()));
+    }
+
+    @Override
+    public void displayInfo() {
+        System.out.println("ResidentsOfTheZoo {name = " + getName() + " , age = " + getAge() + "}");
+        swim();
+    }
+
+    @Override
+    public void swim() {
+        System.out.println("I can swim!");
     }
 }

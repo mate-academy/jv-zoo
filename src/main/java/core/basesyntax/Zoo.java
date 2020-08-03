@@ -1,8 +1,8 @@
 package core.basesyntax;
 
-import core.basesyntax.animals.Animals;
-import core.basesyntax.birds.Birds;
-import core.basesyntax.fishes.Fishes;
+import core.basesyntax.animals.Animal;
+import core.basesyntax.birds.Bird;
+import core.basesyntax.fishes.Fish;
 import java.util.ArrayList;
 
 public class Zoo {
@@ -15,13 +15,13 @@ public class Zoo {
     }
 
     public <T extends ResidentsOfTheZoo> void addResidentToHabitat(T resident) {
-        if (resident instanceof Animals) {
+        if (resident instanceof Animal) {
             aviaryForAnimals.add(resident);
         }
-        if (resident instanceof Birds) {
+        if (resident instanceof Bird) {
             aviaryForBirds.add(resident);
         }
-        if (resident instanceof Fishes) {
+        if (resident instanceof Fish) {
             aquariumForFishes.add(resident);
         }
     }

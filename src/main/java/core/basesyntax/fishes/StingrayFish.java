@@ -1,18 +1,19 @@
 package core.basesyntax.fishes;
 
-import core.basesyntax.implementation.CanSwim;
-import core.basesyntax.implementation.FlyNoWay;
-
-public class StingrayFish extends Fishes {
+public class StingrayFish extends Fish {
 
     public StingrayFish(String name, int age) {
         super(name, age);
-        swimable = new CanSwim();
-        flyBehavior = new FlyNoWay();
     }
 
     @Override
     public void eat() {
         System.out.println(String.format("%s like to eat a little fish", getName()));
+    }
+
+    @Override
+    public void displayInfo() {
+        System.out.println("ResidentsOfTheZoo {name = " + getName() + " , age = " + getAge() + "}");
+        swim();
     }
 }
