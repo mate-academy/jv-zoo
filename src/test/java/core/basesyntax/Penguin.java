@@ -1,27 +1,19 @@
 package core.basesyntax;
 
-public class Penguin implements Swimmable extends Zoo {
-
+public abstract class Penguin extends Animal {
 
     public Penguin(String color, int age) {
         super(color, age);
     }
 
-
-    public String getColor() {
-        return "Black";
-    }
-    public int getAge() {
-        return 5;
+    @Override
+    public void swim() {
+        System.out.println("Plyuh-plyuh");
     }
 
     @Override
     public void feed() {
-        System.out.println("Vjyk-vjyk");
-    }
-
-    @Override
-    public void swim() {
-
+        System.out.println("Cklyu-Cklyu");
     }
 }
+

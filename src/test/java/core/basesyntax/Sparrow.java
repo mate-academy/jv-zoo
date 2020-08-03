@@ -1,25 +1,19 @@
 package core.basesyntax;
 
-public class Sparrow implements Flyble extends Sparrow {
+public abstract class Sparrow extends Animal {
 
     public Sparrow(String color, int age) {
         super(color, age);
     }
 
-    public String getColor() {
-        return "Brown";
-    }
-    public int getAge() {
-        return 2;
+    @Override
+    public void fly() {
+        System.out.println("Pur-pur");
     }
 
     @Override
     public void feed() {
-        System.out.println("Tick-tick");
-    }
-
-    @Override
-    public void fly() {
-
+        System.out.println("Pi-pi");
     }
 }
+

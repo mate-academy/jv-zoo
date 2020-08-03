@@ -1,20 +1,17 @@
 package core.basesyntax;
 
-public class Tiger extends Zoo {
+public abstract class Tiger extends Animal {
 
     public Tiger(String color, int age) {
         super(color, age);
     }
-
-    public String getColor() {
-        return "Orange and White";
-    }
-    public int getAge() {
-        return 10;
+    @Override
+    public void walk() {
+        System.out.println("Jump-jump");
     }
 
     @Override
     public void feed() {
-        System.out.println("Hhrrmmm");
+        System.out.println("Hrrr");
     }
 }
