@@ -12,7 +12,7 @@ public abstract class ResidentsOfTheZoo {
 
     public abstract void eat();
 
-    public  abstract void displayInfo();
+    public abstract void displayInfo();
 
     protected String getName() {
         return name;
