@@ -1,9 +1,15 @@
 package core.basesyntax;
 
-import core.basesyntax.animals.*;
+import core.basesyntax.animals.Animal;
+import core.basesyntax.animals.Bird;
+import core.basesyntax.animals.Fish;
+import core.basesyntax.animals.Mammal;
+import core.basesyntax.animals.Penguin;
+import core.basesyntax.animals.Shark;
+import core.basesyntax.animals.Sparrow;
+import core.basesyntax.animals.Tiger;
 import core.basesyntax.interfaces.Flyable;
 import core.basesyntax.interfaces.Swimmable;
-
 import java.util.ArrayList;
 import java.util.List;
 

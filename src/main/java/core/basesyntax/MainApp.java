@@ -1,10 +1,9 @@
 package core.basesyntax;
 
-import core.basesyntax.animals.*;
-import core.basesyntax.interfaces.Flyable;
-import core.basesyntax.interfaces.Swimmable;
-
-import java.util.ArrayList;
+import core.basesyntax.animals.Penguin;
+import core.basesyntax.animals.Shark;
+import core.basesyntax.animals.Sparrow;
+import core.basesyntax.animals.Tiger;
 
 public class MainApp {
     public static void main(String[] args) {
