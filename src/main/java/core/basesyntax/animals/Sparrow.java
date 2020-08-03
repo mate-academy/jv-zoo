@@ -1,8 +1,10 @@
 package core.basesyntax.animals;
 
 import core.basesyntax.animaltype.Bird;
+import core.basesyntax.interfaces.Flyable;
+import core.basesyntax.interfaces.Walkable;
 
-public class Sparrow extends Bird {
+public class Sparrow extends Bird implements Flyable, Walkable {
 
     public Sparrow(String name, int age) {
         super(name, age);
