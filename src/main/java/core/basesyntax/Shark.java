@@ -2,7 +2,7 @@ package core.basesyntax;
 
 public class Shark extends Fish implements Swimming {
 
-    public Shark (String name) {
+    public Shark(String name) {
         this.name = name;
     }
 

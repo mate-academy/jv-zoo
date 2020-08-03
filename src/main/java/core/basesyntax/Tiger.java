@@ -1,7 +1,7 @@
 package core.basesyntax;
 
-public class Tiger extends LandAnimals{
-    public Tiger (String name) {
+public class Tiger extends LandAnimals {
+    public Tiger(String name) {
         this.name = name;
     }
 

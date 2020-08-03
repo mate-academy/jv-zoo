@@ -1,13 +1,12 @@
 package core.basesyntax;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Zoo {
     private List<Bird> cellBirds = new ArrayList<>();
     private List<Fish> cellFishes = new ArrayList<>();
     private List<LandAnimals> cellLandAnimals = new ArrayList<>();
-
 
     public List<Bird> getCellBirds() {
         return cellBirds;
@@ -21,7 +20,7 @@ public class Zoo {
         return cellLandAnimals;
     }
 
-    public void addBird (Bird bird) {
+    public void addBird(Bird bird) {
         cellBirds.add(bird);
     }
 
