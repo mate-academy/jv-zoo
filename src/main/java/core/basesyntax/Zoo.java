@@ -19,6 +19,5 @@ public class Zoo {
                 ((Flying) animal).fly();
             }
         }
-
     }
 }
