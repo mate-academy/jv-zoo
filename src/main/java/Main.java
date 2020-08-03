@@ -9,7 +9,7 @@ import core.basesyntax.animaltype.OtherAnimals;
 public class Main {
     public static void main(String[] args) {
         Penguin penguin = new Penguin("Harry the Penguin", 3);
-        Zoo.aquarium.add(penguin);
+        Zoo.penguinAquarium.add(penguin);
         System.out.println(penguin.getName() + " was placed to the aquarium");
         penguin.feed();
         if (penguin.isFed) {
@@ -20,7 +20,7 @@ public class Main {
         penguin.swim();
 
         Fish shark = new Shark("Eve the Shark", 7);
-        Zoo.aquarium2.add(shark);
+        Zoo.sharkAquarium.add(shark);
         System.out.println(shark.getName() + " was placed to aquarium");
         shark.feed();
         if (shark.isFed) {

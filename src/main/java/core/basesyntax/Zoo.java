@@ -10,6 +10,6 @@ import java.util.List;
 public class Zoo {
     public static List<Bird> birdsCage = new ArrayList<>();
     public static List<OtherAnimals> cage = new ArrayList<>();
-    public static List<Penguin> aquarium = new ArrayList<>();
-    public static List<Fish> aquarium2 = new ArrayList<>();
+    public static List<Penguin> penguinAquarium = new ArrayList<>();
+    public static List<Fish> sharkAquarium = new ArrayList<>();
 }
