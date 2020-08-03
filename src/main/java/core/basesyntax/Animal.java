@@ -3,9 +3,9 @@ package core.basesyntax;
 import java.util.Objects;
 
 public abstract class Animal {
-    private final String type;
-    private final int age;
-    private final long id;
+    private String type;
+    private int age;
+    private long id;
     private boolean isFool;
 
     public Animal(String type, int age, long id) {
