@@ -2,21 +2,13 @@ package core.basesyntax;
 
 import core.basesyntax.interfaces.Swimmable;
 
-public class Tiger extends Animal implements Runnable, Swimmable {
+public class Tiger extends Mammal implements Runnable, Swimmable {
 
     public Tiger(String name, int age, String habitat) {
         this.name = name;
         this.age = age;
         this.habitat = habitat;
         allAnimals.add(Tiger.this);
-    }
-
-    public static String typeOfTheAnimal() {
-        return "Tiger";
-    }
-
-    public static String habitat() {
-        return "I live in enclosure";
     }
 
     @Override
@@ -37,5 +29,9 @@ public class Tiger extends Animal implements Runnable, Swimmable {
     @Override
     public String toString() {
         return typeOfTheAnimal();
+    }
+
+    public static String habitat() {
+        return "Enclosure";
     }
 }

@@ -2,7 +2,7 @@ package core.basesyntax;
 
 import core.basesyntax.interfaces.Swimmable;
 
-public class Penguin extends Animal implements Swimmable, Runnable {
+public class Penguin extends Bird implements Swimmable, Runnable {
 
     public Penguin(String name, int age, String habitat) {
         this.name = name;
@@ -11,17 +11,18 @@ public class Penguin extends Animal implements Swimmable, Runnable {
         allAnimals.add(Penguin.this);
     }
 
-    public static String habitat() {
-        return "I live in aquarium";
-    }
-
-    public static String typeOfTheAnimal() {
-        return "Penguin";
+    @Override
+    public String toString() {
+        return typeOfTheAnimal();
     }
 
     @Override
     public void swim() {
         System.out.println("I like swimming.");
+    }
+
+    public static String habitat() {
+        return "Aquarium";
     }
 
     @Override
@@ -33,10 +34,4 @@ public class Penguin extends Animal implements Swimmable, Runnable {
     public void eat() {
         System.out.println("Mmmm... Yummy fish.");
     }
-
-    @Override
-    public String toString() {
-        return typeOfTheAnimal();
-    }
-
 }

@@ -5,14 +5,15 @@ import java.util.ArrayList;
 public class Zoo {
 
     public static void main(String[] args) {
-        Penguin penguin1 = new Penguin("Mo-mo", 2, "Aquarium");
-        Shark shark1 = new Shark("Paulo", 7, "Aquarium");
-        Tiger tiger1 = new Tiger("Diego", 14, "Enclosure");
-        Sparrow sparrow1 = new Sparrow("Jack", 1, "Aviary");
-        Penguin penguin2 = new Penguin("Kiko", 8, "Aquarium");
-        Shark shark2 = new Shark("Dori", 3, "Aquarium");
-        Tiger tiger2 = new Tiger("Charla", 4, "Enclosure");
-        Sparrow sparrow2 = new Sparrow("Blacky", 3, "Aviary");
+
+        Animal penguin1 = new Penguin("Mo-mo", 2, "Aquarium");
+        Animal shark1 = new Shark("Paulo", 7, "Aquarium");
+        Animal tiger1 = new Tiger("Diego", 14, "Enclosure");
+        Animal sparrow1 = new Sparrow("Jack", 1, "Aviary");
+        Animal penguin2 = new Penguin("Kiko", 8, "Aquarium");
+        Animal shark2 = new Shark("Dori", 3, "Aquarium");
+        Animal tiger2 = new Tiger("Charla", 4, "Enclosure");
+        Animal sparrow2 = new Sparrow("Blacky", 3, "Aviary");
 
         ArrayList<Animal> aquariumAnimals = new ArrayList();
         ArrayList<Animal> enclosureAnimals = new ArrayList();
@@ -27,10 +28,6 @@ public class Zoo {
                 aviaryAnimals.add(Animal.allAnimals.get(i));
             }
         }
-
-        print(enclosureAnimals);
-        print(aviaryAnimals);
-        print(aquariumAnimals);
     }
 
     public static void print(ArrayList<Animal> animals) {

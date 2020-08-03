@@ -1,19 +1,16 @@
 package core.basesyntax;
 
-import java.util.ArrayList;
-
-public abstract class Animal {
-    static ArrayList<Animal> allAnimals = new ArrayList();
+public class Bird extends Animal {
     protected String name;
     protected int age;
     protected String habitat;
 
     public static String typeOfTheAnimal() {
-        return "Type of the animal";
+        return "Bird";
     }
 
     public static String habitat() {
-        return "Area of living";
+        return "Aviary";
     }
 
     @Override
@@ -21,5 +18,7 @@ public abstract class Animal {
         return typeOfTheAnimal();
     }
 
-    public abstract void eat();
+    @Override
+    public void eat() {
+    }
 }
