@@ -9,6 +9,30 @@ public class Zoo {
     private static List<Bird> birdHouse = new ArrayList<>();
     private static List<Swimmable> aquarium = new ArrayList<>();
 
+    public static void addAnimal(Animal animal) {
+        animalHouse.add(animal);
+    }
+
+    public static void addBird(Bird bird) {
+        animalHouse.add(bird);
+    }
+
+    public static void addSwimmable(Swimmable swimmable) {
+        animalHouse.add((Animal) swimmable);
+    }
+
+    public static List<Animal> getAnimalHouse() {
+        return animalHouse;
+    }
+
+    public static List<Bird> getBirdHouse() {
+        return birdHouse;
+    }
+
+    public static List<Swimmable> getAquarium() {
+        return aquarium;
+    }
+
     public static void feedAnimals(List listOfAnimals) {
         for (Object animal: listOfAnimals) {
             if (animal instanceof Animal) {
@@ -31,23 +55,4 @@ public class Zoo {
         }
     }
 
-    public static void main(String[] args) {
-        Animal shark = new Shark();
-        Animal tiger = new Tiger();
-        Animal penguin = new Penguin();
-        Bird sparrow = new Sparrow();
-
-        animalHouse.add(tiger);
-        animalHouse.add(shark);
-        animalHouse.add(sparrow);
-        animalHouse.add(penguin);
-
-        birdHouse.add(sparrow);
-
-        aquarium.add((Swimmable) shark);
-        aquarium.add((Swimmable) penguin);
-
-        feedAnimals(animalHouse);
-        moveAnimals(animalHouse);
-    }
 }
