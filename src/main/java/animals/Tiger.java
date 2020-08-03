@@ -1,14 +1,9 @@
 package animals;
 
 public class Tiger extends Animal {
-    private String name;
 
     public Tiger(String name) {
-        this.name = name;
-    }
-
-    private String getName() {
-        return name;
+        super(name);
     }
 
     @Override

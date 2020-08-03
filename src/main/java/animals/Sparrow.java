@@ -3,14 +3,9 @@ package animals;
 import interfaces.Flyable;
 
 public class Sparrow extends Animal implements Flyable {
-    private String name;
 
     public Sparrow(String name) {
-        this.name = name;
-    }
-
-    private String getName() {
-        return name;
+        super(name);
     }
 
     @Override

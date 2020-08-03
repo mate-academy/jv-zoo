@@ -3,14 +3,9 @@ package animals;
 import interfaces.Swimmable;
 
 public class Shark extends Animal implements Swimmable {
-    private String name;
 
     public Shark(String name) {
-        this.name = name;
-    }
-
-    private String getName() {
-        return name;
+        super(name);
     }
 
     @Override
