@@ -5,6 +5,7 @@ import core.basesyntax.interfaces.Flying;
 
 public abstract class FlyingBird extends Animal implements Flying {
 
+    @Override
     public String fly() {
         return "flies...";
     }
