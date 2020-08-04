@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Penguin extends Animal implements Floating {
+public class Penguin extends Bird implements Floating {
 
     @Override
     public void feed() {
