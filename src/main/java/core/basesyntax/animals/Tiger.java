@@ -5,6 +5,7 @@ import core.basesyntax.exception.HungryAnimalException;
 public class Tiger extends Animal {
     private static final int ENERGY = 200;
     private static final int EXPENDITURE = 100;
+    private static final int CALORIES = 100;
 
     public Tiger() {
         this.energy = ENERGY;
@@ -28,14 +29,14 @@ public class Tiger extends Animal {
 
     @Override
     public void loseEnergy() throws HungryAnimalException {
-        if (this.energy < EXPENDITURE) {
+        if (energy < EXPENDITURE) {
             throw new HungryAnimalException("I'm hungry! Feed mi!");
         }
-        this.energy -= EXPENDITURE;
+        energy -= EXPENDITURE;
     }
 
     @Override
     public void receiveEnergy() {
-        this.energy += 50;
+        energy += CALORIES;
     }
 }

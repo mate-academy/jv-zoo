@@ -12,9 +12,9 @@ public class Aviary extends Premises {
     @Override
     public void goToPremises(Animal animal) throws WrongAnimalException {
         if (!(animal instanceof Predator)) {
-            throw new WrongAnimalException("Вход рыбам и птицам запрещен запрещен!!!");
+            throw new WrongAnimalException("Вход рыбам и птицам запрещен!!!");
         }
-        this.aviary.add(animal);
+        aviary.add(animal);
     }
 
     public String getInmatesCount() {

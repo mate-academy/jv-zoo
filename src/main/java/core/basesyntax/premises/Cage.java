@@ -14,7 +14,7 @@ public class Cage extends Premises {
         if (!(animal instanceof Bird)) {
             throw new WrongAnimalException("Only for birds!!!");
         }
-        this.cage.add(animal);
+        cage.add(animal);
     }
 
     public String getInmatesCount() {

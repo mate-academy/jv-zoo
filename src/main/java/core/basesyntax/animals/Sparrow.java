@@ -5,6 +5,7 @@ import core.basesyntax.exception.HungryAnimalException;
 public class Sparrow extends Bird {
     private static final int ENERGY = 70;
     private static final int EXPENDITURE = 20;
+    private static final int CALORIES = 20;
 
     public Sparrow() {
         this.energy = ENERGY;
@@ -24,19 +25,19 @@ public class Sparrow extends Bird {
 
     @Override
     public void loseEnergy() throws HungryAnimalException {
-        if (this.energy < EXPENDITURE) {
+        if (energy < EXPENDITURE) {
             throw new HungryAnimalException("I'm hungry! Feed mi!");
         }
-        this.energy -= EXPENDITURE;
+        energy -= EXPENDITURE;
     }
 
     @Override
     public void receiveEnergy() {
-        this.energy += 50;
+        energy += CALORIES;
     }
 
     @Override
-    void fly() {
+    public void fly() {
         System.out.println("I can fly!!!");
     }
 }

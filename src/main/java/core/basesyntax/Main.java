@@ -10,19 +10,19 @@ import core.basesyntax.premises.Aquarium;
 public class Main {
     public static void main(String[] args) throws HungryAnimalException {
         Zoo myZoo = new Zoo();
-        myZoo.aquarium = new Aquarium();
+        myZoo.setAquarium(new Aquarium());
         Animal shark = new Shark();
         Animal shark2 = new Shark();
         Animal tiger = new Tiger();
 
         try {
-            myZoo.aquarium.goToPremises(shark);
-            myZoo.aquarium.goToPremises(shark2);
-            myZoo.aquarium.goToPremises(tiger);
+            myZoo.getAquarium().goToPremises(shark);
+            myZoo.getAquarium().goToPremises(shark2);
+            myZoo.getAquarium().goToPremises(tiger);
         } catch (WrongAnimalException e) {
             System.out.println(e.getMessage());
         }
-        System.out.println(myZoo.aquarium.getInmatesCount());
+        System.out.println(myZoo.getAquarium().getInmatesCount());
         tiger.move();
         tiger.move();
         tiger.move();

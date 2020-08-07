@@ -8,8 +8,4 @@ public abstract class Animal implements IAnimal {
     public abstract void loseEnergy() throws HungryAnimalException;
 
     public abstract void receiveEnergy();
-
-    @Override
-    public void move() throws HungryAnimalException {
-    }
 }
