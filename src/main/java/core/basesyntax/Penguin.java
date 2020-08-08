@@ -2,8 +2,6 @@ package core.basesyntax;
 
 public class Penguin extends Fish implements Swimmable {
 
-    private String subSpecies = "Penguin";
-
     public Penguin(Name name, int age) {
         super(name, age);
     }

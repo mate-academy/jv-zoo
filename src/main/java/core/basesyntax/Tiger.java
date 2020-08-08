@@ -2,8 +2,6 @@ package core.basesyntax;
 
 public class Tiger extends Mammal implements Runnable {
 
-    private String subSpecies = "Tiger";
-
     public Tiger(Name name, int age) {
         super(name, age);
     }

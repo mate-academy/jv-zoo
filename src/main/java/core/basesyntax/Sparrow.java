@@ -2,8 +2,6 @@ package core.basesyntax;
 
 public class Sparrow extends Bird implements Flyable{
 
-    private String subSpecies = "Sparrow";
-
     public Sparrow(Name name, int age) {
         super(name, age);
     }
