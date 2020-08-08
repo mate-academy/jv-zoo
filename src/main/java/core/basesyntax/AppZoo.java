@@ -1,8 +1,11 @@
 package core.basesyntax;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class AppZoo {
     public static void main(String[] args) {
-        java.util.List<ZooAnimals> zoo = new java.util.ArrayList<>();
+        List<ZooAnimals> zoo = new ArrayList<>();
 
         ZooAnimals tigerDan = new Tiger("Tiger Dan");
         tigerDan.addToZoo(tigerDan, zoo);

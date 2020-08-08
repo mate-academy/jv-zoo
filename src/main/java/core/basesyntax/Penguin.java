@@ -21,5 +21,4 @@ public class Penguin extends Birds implements Walkable, Swimmable {
     public void toFeed() {
         System.out.println("Penguin is full, thank you");
     }
-
 }

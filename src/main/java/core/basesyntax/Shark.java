@@ -16,5 +16,4 @@ public class Shark extends ZooAnimals implements Swimmable {
     public void toSwim() {
         System.out.println("Shark can swim");
     }
-
 }
