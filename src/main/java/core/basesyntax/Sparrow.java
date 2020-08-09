@@ -3,11 +3,14 @@ package core.basesyntax;
 import core.basesyntax.interfaces.Flyable;
 
 public class Sparrow extends Bird implements Flyable {
-    public Sparrow(String name, int age, String habitat) {
+    public Sparrow(String name, int age) {
         this.name = name;
         this.age = age;
-        this.habitat = habitat;
         allAnimals.add(Sparrow.this);
+    }
+
+    public String habitat() {
+        return "Aviary";
     }
 
     @Override
@@ -22,10 +25,6 @@ public class Sparrow extends Bird implements Flyable {
 
     @Override
     public String toString() {
-        return typeOfTheAnimal();
-    }
-
-    public static String habitat() {
-        return "Aviary";
+        return "Hi! I'm " + name + ". I live in aviary";
     }
 }

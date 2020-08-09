@@ -1,9 +1,9 @@
 package core.basesyntax;
 
-public class Fish extends Animal {
+public abstract class LandAnimal extends Animal {
 
     public String typeOfTheAnimal() {
-        return "Fish";
+        return "Land animal";
     }
 
     @Override

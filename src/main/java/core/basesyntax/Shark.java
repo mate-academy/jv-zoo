@@ -4,11 +4,14 @@ import core.basesyntax.interfaces.Swimmable;
 
 public class Shark extends Fish implements Swimmable {
 
-    public Shark(String name, int age, String habitat) {
+    public Shark(String name, int age) {
         this.name = name;
         this.age = age;
-        this.habitat = habitat;
         allAnimals.add(Shark.this);
+    }
+
+    public String habitat() {
+        return "Aquarium";
     }
 
     @Override
@@ -23,10 +26,6 @@ public class Shark extends Fish implements Swimmable {
 
     @Override
     public String toString() {
-        return typeOfTheAnimal();
-    }
-
-    public static String habitat() {
-        return "Aquarium";
+        return "Hi! I'm " + name + ". I live in aquarium";
     }
 }

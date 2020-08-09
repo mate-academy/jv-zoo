@@ -1,19 +1,19 @@
 package core.basesyntax;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public abstract class Animal {
-    static ArrayList<Animal> allAnimals = new ArrayList();
+    static List<Animal> allAnimals = new ArrayList();
     protected String name;
     protected int age;
-    protected String habitat;
 
-    public static String typeOfTheAnimal() {
+    public String typeOfTheAnimal() {
         return "Type of the animal";
     }
 
-    public static String habitat() {
-        return "Area of living";
+    public String habitat() {
+        return "Habitat of the animal";
     }
 
     @Override
