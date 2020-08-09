@@ -12,7 +12,7 @@ public class AnimalsGenerator {
             int randomNumber = randomizer.nextInt(4);
             int randomName = randomizer.nextInt(names.length);
             int randomAge = randomizer.nextInt(10);
-            switch(randomNumber) {
+            switch (randomNumber) {
                 case 0:
                     newAnimal = new Shark(names[randomName], randomAge);
                     break;
@@ -25,6 +25,8 @@ public class AnimalsGenerator {
                 case 3:
                     newAnimal = new Sparrow(names[randomName], randomAge);
                     break;
+                default:
+                    System.out.println("Animals without appropriate interface are not allowed ");
             }
             randomAnimals[i] = newAnimal;
         }

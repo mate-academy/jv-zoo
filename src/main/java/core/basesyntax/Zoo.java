@@ -7,7 +7,7 @@ public class Zoo {
     private Aviary<Flyable> forBirds;
 
     public Zoo() {
-        aquarium  = new Aviary<>("swimming");
+        aquarium = new Aviary<>("swimming");
         forMammals = new Aviary<>("walking and running");
         forBirds = new Aviary<>("flying");
     }
@@ -24,12 +24,12 @@ public class Zoo {
         }
         System.out.println(String.format("The aviary for swimming was filled with %d animals",
                 aquarium.aviaryFullness()));
-        System.out.println(String.format("The aviary for walking and running was filled with %d animals",
+        System.out.println(String.format(
+                "The aviary for walking and running was filled with %d animals",
                 forMammals.aviaryFullness()));
         System.out.println(String.format("The aviary for flying was filled with %d animals\n",
                 forBirds.aviaryFullness()));
     }
-
 
     public Aviary<Runnable> getJungleAviary() {
         return forMammals;

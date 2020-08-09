@@ -2,11 +2,11 @@ package core.basesyntax;
 
 public abstract class Animal implements Feedable {
 
+    private static int nextId = 1;
+
     private Name name;
     private int age;
     private int id;
-
-    private static int nextId = 1;
 
     public Animal(Name name, int age) {
         this.name = name;

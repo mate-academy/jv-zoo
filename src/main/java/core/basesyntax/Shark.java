@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Shark extends Fish implements Swimmable{
+public class Shark extends Fish implements Swimmable {
 
     public Shark(Name name, int age) {
         super(name, age);

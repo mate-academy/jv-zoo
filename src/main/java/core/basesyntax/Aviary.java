@@ -1,4 +1,5 @@
 package core.basesyntax;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,7 +22,8 @@ public class Aviary<T> {
     }
 
     public void feedAnimals() {
-        System.out.println(String.format("The food was delivered to the aviary for %s animals. Time to eat", aviaryType));
+        System.out.println(String.format(
+                "The food was delivered to the aviary for %s animals. Time to eat", aviaryType));
         for (T animal : this.specificAviary) {
             System.out.println(((Animal) animal).eat());
         }
