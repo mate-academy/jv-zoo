@@ -1,6 +1,16 @@
 package core.basesyntax;
 
-public class Fish extends Animal {
+public abstract class Fish extends Animal implements Swimming {
+
+    public Fish(String name, int age, String enclosure) {
+        super(name, age, enclosure);
+    }
+
+    @Override
+    public String getEnclosure() {
+        return super.getEnclosure();
+    }
+
     @Override
     public void feed() {
 
