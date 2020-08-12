@@ -14,6 +14,7 @@ public class Zoo {
 
     public void addToWaterHabitat(Swimming animal) {
         waterHabitat.add(animal);
+
     }
 
     public void addToAirHabitat(Flying animal) {
