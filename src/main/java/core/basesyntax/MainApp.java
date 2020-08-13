@@ -17,11 +17,14 @@ public class MainApp {
 
         Birds sparrow = new Sparrow("Kesha", 7);
         Aviaries.birdsAviary.add(sparrow);
+        sparrow.eating();
 
         Fishes shark = new Shark("Reggae-shark", 6);
         Aviaries.fishesAquarium.add(shark);
+        shark.eating();
 
         LandAnimal tiger = new Tiger("Varfolomei", 4);
         Aviaries.landAnimalAviary.add(tiger);
+        tiger.eating();
     }
 }
