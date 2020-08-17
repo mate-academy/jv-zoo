@@ -1,6 +1,6 @@
 package core.basesyntax;
 
-public class Penguin extends Animal implements Landy, Swimmable {
+public class Penguin extends Bird implements Landy, Swimmable {
     @Override
     public void eat() {
         System.out.println("Penguin is eating");
