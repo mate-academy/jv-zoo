@@ -1,30 +1,30 @@
 package core.basesyntax;
 
-import core.basesyntax.animals.Aviaries;
+import core.basesyntax.animals.Aviary;
 import core.basesyntax.animals.Penguin;
 import core.basesyntax.animals.Shark;
 import core.basesyntax.animals.Sparrow;
 import core.basesyntax.animals.Tiger;
-import core.basesyntax.kind.Birds;
+import core.basesyntax.kind.Bird;
 import core.basesyntax.kind.Fishes;
 import core.basesyntax.kind.LandAnimal;
 
 public class MainApp {
     public static void main(String[] args) {
-        Birds penguin = new Penguin("Afanasii", 11);
-        Aviaries.penguinAquarium.add(penguin);
-        penguin.eating();
+        Bird penguin = new Penguin("Afanasii", 11);
+        Aviary.penguinAquarium.add(penguin);
+        penguin.eat();
 
-        Birds sparrow = new Sparrow("Kesha", 7);
-        Aviaries.birdsAviary.add(sparrow);
-        sparrow.eating();
+        Bird sparrow = new Sparrow("Kesha", 7);
+        Aviary.birdsAviary.add(sparrow);
+        sparrow.eat();
 
         Fishes shark = new Shark("Reggae-shark", 6);
-        Aviaries.fishesAquarium.add(shark);
-        shark.eating();
+        Aviary.fishesAquarium.add(shark);
+        shark.eat();
 
         LandAnimal tiger = new Tiger("Varfolomei", 4);
-        Aviaries.landAnimalAviary.add(tiger);
-        tiger.eating();
+        Aviary.landAnimalAviary.add(tiger);
+        tiger.eat();
     }
 }

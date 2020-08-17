@@ -9,8 +9,8 @@ public abstract class Animal {
         this.age = age;
     }
 
-    public void eating() {
-        System.out.println(name + " is eating...");
+    public void eat() {
+        System.out.println(name + " is eat...");
     }
 
     @Override

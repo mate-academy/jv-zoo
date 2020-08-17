@@ -1,9 +1,9 @@
 package core.basesyntax.animals;
 
-import core.basesyntax.kind.Birds;
+import core.basesyntax.kind.Bird;
 import core.basesyntax.properties.Swimable;
 
-public class Penguin extends Birds implements Swimable {
+public class Penguin extends Bird implements Swimable {
 
     public Penguin(String name, int age) {
         super(name, age);
