@@ -11,18 +11,21 @@ public class Zoo {
     private List<Flying> airHabitat = new ArrayList<>();
     private List<Swimming> waterHabitat = new ArrayList<>();
     private List<Walking> landHabitat = new ArrayList<>();
+    private List<Animal> allAnimals = new ArrayList<>();
 
-    public void addToWaterHabitat(Swimming animal) {
+    public <T extends Animal & Swimming> void addToWaterHabitat(T animal) {
         waterHabitat.add(animal);
-
+        allAnimals.add(animal);
     }
 
-    public void addToAirHabitat(Flying animal) {
+    public <T extends Animal & Flying> void addToAirHabitat(T animal) {
         airHabitat.add(animal);
+        allAnimals.add(animal);
     }
 
-    public void addToLandHabitat(Walking animal) {
+    public <T extends Animal & Walking> void addToLandHabitat(T animal) {
         landHabitat.add(animal);
+        allAnimals.add(animal);
     }
 
     private void walkersWalk() {
@@ -43,32 +46,20 @@ public class Zoo {
         }
     }
 
-    private <E> void printAnimals(List<E> animals) {
-        for (E animal : animals) {
-            if (animal instanceof Animal) {
-                System.out.println(((Animal) animal).getName());
-            }
+    public <T extends Animal> void printAnimals(List<T> animals) {
+        for (T animal : animals) {
+            System.out.println(animal.getName());
         }
     }
 
-    private <E> void feedAnimals(List<E> animals) {
-        for (E animal : animals) {
-            if (animal instanceof Animal) {
-                ((Animal) animal).feed();
-            }
+    public <T extends Animal> void feedAnimals(List<T> animals) {
+        for (T animal : animals) {
+            animal.feed();
         }
     }
 
-    public void feedAllAnimals() {
-        feedAnimals(waterHabitat);
-        feedAnimals(landHabitat);
-        feedAnimals(airHabitat);
-    }
-
-    public void printAllAnimals() {
-        printAnimals(waterHabitat);
-        printAnimals(landHabitat);
-        printAnimals(airHabitat);
+    public List<Animal> getAllAnimals() {
+        return allAnimals;
     }
 
     public void allDoSomething() {

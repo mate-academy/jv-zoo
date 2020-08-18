@@ -13,8 +13,8 @@ public class MainClass {
         zoo.addToWaterHabitat(new Penguin("Kovalski"));
         zoo.addToLandHabitat(new Tiger("Tigger"));
 
-        zoo.printAllAnimals();
-        zoo.feedAllAnimals();
+        zoo.printAnimals(zoo.getAllAnimals());
+        zoo.feedAnimals(zoo.getAllAnimals());
         zoo.allDoSomething();
     }
 }
