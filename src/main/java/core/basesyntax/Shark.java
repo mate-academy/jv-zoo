@@ -15,9 +15,4 @@ public class Shark extends Fish {
     public void feed() {
         System.out.println("Some small fishes for " + getName() + " the shark");
     }
-
-    @Override
-    public void goHome() {
-        System.out.println("Sharky, returns to " + getEnclosure());
-    }
 }

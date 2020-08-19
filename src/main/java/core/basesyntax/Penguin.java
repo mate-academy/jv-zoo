@@ -15,9 +15,4 @@ public class Penguin extends Bird implements Swimming {
     public void feed() {
         System.out.println("Penguin " + getName() + " is eating");
     }
-
-    @Override
-    public void goHome() {
-        System.out.println("Penguin, return to your " + getEnclosure() + " !");
-    }
 }

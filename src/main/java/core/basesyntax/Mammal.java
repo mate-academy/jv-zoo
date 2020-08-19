@@ -8,11 +8,5 @@ public abstract class Mammal extends Animal implements Running {
 
     @Override
     public void feed() {
-
-    }
-
-    @Override
-    public void goHome() {
-
     }
 }

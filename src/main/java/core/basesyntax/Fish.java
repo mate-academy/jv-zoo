@@ -13,11 +13,5 @@ public abstract class Fish extends Animal implements Swimming {
 
     @Override
     public void feed() {
-
-    }
-
-    @Override
-    public void goHome() {
-
     }
 }

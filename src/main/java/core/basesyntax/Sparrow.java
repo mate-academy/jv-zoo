@@ -15,9 +15,4 @@ public class Sparrow extends Bird implements Flying {
     public void feed() {
         System.out.println("Sparrow " + getName() + " is eating");
     }
-
-    @Override
-    public void goHome() {
-        System.out.println("Time to go to " + getEnclosure());
-    }
 }

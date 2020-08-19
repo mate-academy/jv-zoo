@@ -13,11 +13,5 @@ public abstract class Bird extends Animal {
 
     @Override
     public void feed() {
-
-    }
-
-    @Override
-    public void goHome() {
-
     }
 }

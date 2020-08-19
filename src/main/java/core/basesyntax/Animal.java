@@ -17,31 +17,9 @@ public abstract class Animal {
         return enclosure;
     }
 
-    public void setEnclosure(String enclosure) {
-        this.enclosure = enclosure;
-    }
-
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     public abstract void feed();
-
-    public abstract void goHome();
-
-    public String home() {
-        return "Home";
-    }
 }
