@@ -28,24 +28,6 @@ public class Zoo {
         allAnimals.add(animal);
     }
 
-    private void walkersWalk() {
-        for (Walking walker : landHabitat) {
-            walker.walk();
-        }
-    }
-
-    private void swimmersSwim() {
-        for (Swimming swimmer : waterHabitat) {
-            swimmer.swim();
-        }
-    }
-
-    private void fliersFly() {
-        for (Flying flier : airHabitat) {
-            flier.fly();
-        }
-    }
-
     public <T extends Animal> void printAnimals(List<T> animals) {
         for (T animal : animals) {
             System.out.println(animal.getName());
@@ -66,5 +48,23 @@ public class Zoo {
         walkersWalk();
         fliersFly();
         swimmersSwim();
+    }
+
+    private void walkersWalk() {
+        for (Walking walker : landHabitat) {
+            walker.walk();
+        }
+    }
+
+    private void swimmersSwim() {
+        for (Swimming swimmer : waterHabitat) {
+            swimmer.swim();
+        }
+    }
+
+    private void fliersFly() {
+        for (Flying flier : airHabitat) {
+            flier.fly();
+        }
     }
 }
