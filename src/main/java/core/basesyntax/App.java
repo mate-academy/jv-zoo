@@ -1,37 +1,31 @@
 package core.basesyntax;
 
-import core.basesyntax.animals.Animal;
+import core.basesyntax.animals.bird.Bird;
 import core.basesyntax.animals.bird.Penguin;
 import core.basesyntax.animals.bird.Sparrow;
 import core.basesyntax.animals.fish.Fish;
 import core.basesyntax.animals.fish.Shark;
+import core.basesyntax.animals.mammals.Mammals;
 import core.basesyntax.animals.mammals.Tiger;
 import core.basesyntax.zoo.Aviary;
 
 public class App {
     public static void main(String[] args) {
+        Aviary<Fish> aviaryForFish = new Aviary<>();
+        Aviary<Mammals> aviaryForMammals = new Aviary<>();
+        Aviary<Bird> aviaryForBird = new Aviary<>();
 
-        Animal penguin = new Penguin();
-        penguin.eat();
+        aviaryForFish.addAnimal(new Shark());
+        aviaryForMammals.addAnimal(new Tiger());
+        aviaryForBird.addAnimal(new Penguin());
+        aviaryForBird.addAnimal(new Sparrow());
 
-        Animal sparrow = new Sparrow();
-        sparrow.eat();
+        aviaryForFish.feedAnimals();
+        aviaryForMammals.feedAnimals();
+        aviaryForBird.feedAnimals();
 
-        Fish shark = new Shark();
-        shark.eat();
-
-        Animal tiger = new Tiger();
-        tiger.eat();
-
-        Aviary aquarium = new Aviary();
-        aquarium.addAnimal(shark);
-        aquarium.addAnimal(penguin);
-
-        Aviary birdsAviary = new Aviary();
-        birdsAviary.addAnimal(sparrow);
-
-        Aviary common = new Aviary();
-        common.addAnimal(tiger);
+        aviaryForFish.executeAnimalAction();
+        aviaryForMammals.executeAnimalAction();
+        aviaryForBird.executeAnimalAction();
     }
-
 }
