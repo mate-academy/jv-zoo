@@ -1,5 +1,7 @@
 package core.basesyntax;
 
 public interface Flying {
-    void fly();
+    public default String fly() {
+        return "flying";
+    }
 }

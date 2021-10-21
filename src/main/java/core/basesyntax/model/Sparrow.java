@@ -4,14 +4,11 @@ import core.basesyntax.Bird;
 import core.basesyntax.Flying;
 
 public class Sparrow extends Bird implements Flying {
-
-    @Override
-    public void fly() {
-    }
+    private String food = "corn";
 
     @Override
     public void getInfo() {
-        System.out.println("Sparrow eats" + getFood() + "and live in ");
+        System.out.println("Sparrow eats " + getFood(food) + " can " + fly() + " and live in ");
     }
 
 }

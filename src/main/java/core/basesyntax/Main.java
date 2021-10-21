@@ -9,6 +9,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
         Penguin kavalski = new Penguin();
         Sparrow capitanJackSparrow = new Sparrow();
         Shark meg = new Shark();

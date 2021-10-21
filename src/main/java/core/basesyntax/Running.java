@@ -1,5 +1,7 @@
 package core.basesyntax;
 
 public interface Running {
-    void run();
+    public default String run() {
+        return "running";
+    }
 }

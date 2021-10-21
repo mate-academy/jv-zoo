@@ -4,12 +4,10 @@ import core.basesyntax.Bird;
 import core.basesyntax.Swimming;
 
 public class Penguin extends Bird implements Swimming {
-    @Override
-    public void getInfo() {
-        System.out.println("Penguin eats" + getFood() + " and live in ");
-    }
+    private String food = "small fish";
 
     @Override
-    public void swim() {
+    public void getInfo() {
+        System.out.println("Sparrow eats " + getFood(food) + " can " + swim() + " and live in ");
     }
 }

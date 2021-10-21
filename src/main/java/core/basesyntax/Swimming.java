@@ -1,5 +1,7 @@
 package core.basesyntax;
 
 public interface Swimming {
-    void swim();
+    public default String swim() {
+        return "swimming";
+    }
 }
