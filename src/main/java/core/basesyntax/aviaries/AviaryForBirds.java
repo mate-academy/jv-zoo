@@ -3,7 +3,6 @@ package core.basesyntax.aviaries;
 import core.basesyntax.abstracts.Animal;
 import core.basesyntax.abstracts.Aviary;
 import core.basesyntax.interfaces.Flyable;
-
 import java.util.ArrayList;
 
 public class AviaryForBirds extends Aviary {

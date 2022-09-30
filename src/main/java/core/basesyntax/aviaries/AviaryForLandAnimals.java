@@ -2,9 +2,7 @@ package core.basesyntax.aviaries;
 
 import core.basesyntax.abstracts.Animal;
 import core.basesyntax.abstracts.Aviary;
-import core.basesyntax.interfaces.Swimable;
 import core.basesyntax.interfaces.Walking;
-
 import java.util.ArrayList;
 
 public class AviaryForLandAnimals extends Aviary {

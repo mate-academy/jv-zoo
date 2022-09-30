@@ -2,8 +2,8 @@ package core.basesyntax;
 
 import core.basesyntax.abstracts.Animal;
 import core.basesyntax.aviaries.AviaryForBirds;
-import core.basesyntax.aviaries.AviaryForLandAnimals;
 import core.basesyntax.aviaries.AviaryForFish;
+import core.basesyntax.aviaries.AviaryForLandAnimals;
 import core.basesyntax.interfaces.Flyable;
 import core.basesyntax.interfaces.Swimable;
 
